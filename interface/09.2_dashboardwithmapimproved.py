@@ -5,12 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 DB_ENV     = "environment_morocco.db"
 DB_CLIMATE = "climate_morocco.db" if os.path.exists("climate_morocco.db") else "climate_morocco_era5_final.db"
-GEOJSON_FILE = "communes_morocco.geojson"
-
-# ============================================================
-# Détection automatique du schéma DB (identique à ta version)
-# ============================================================
-
+GEOJSON_FILE = "communes_morocco.geojs
 def detect_table():
     if not os.path.exists(DB_CLIMATE):
         return "climate"
@@ -62,9 +57,6 @@ C_CID    = col("commune_id")
 print(f"Using DB -> {DB_CLIMATE} ; table -> {TABLE}")
 print(f"Columns: {', '.join(COLS)}")
 
-# ============================================================
-# Mapping variable affichable -> colonne DB réelle + unité
-# ============================================================
 VARIABLES = {
     "temp_mean":     {"label": "Température moyenne",  "col": C_TEMP,   "unit": "°C",   "ramp": "thermal"},
     "temp_max":      {"label": "Température maximale",  "col": C_TMAX,   "unit": "°C",   "ramp": "thermal"},
@@ -97,9 +89,7 @@ def qe(sql, params=()):
     conn.close()
     return df
 
-# ============================================================
-# GEOJSON CACHE — chargé une fois en mémoire
-# ============================================================
+
 GEOJSON_DATA = None
 GEOJSON_AVAILABLE = os.path.exists(GEOJSON_FILE)
 
@@ -116,9 +106,6 @@ def build_points_fallback():
     df = qc(f"SELECT DISTINCT {C_CID} AS commune_id, {C_COM} AS commune, latitude, longitude FROM {TABLE}")
     return df.to_dict(orient="records")
 
-# ============================================================
-# API GÉOGRAPHIE (identique à ta version)
-# ============================================================
 
 @app.route("/api/regions")
 def api_regions():
@@ -149,11 +136,7 @@ def api_variables():
         "environment": ENV_VARIABLES,
     })
 
-# ============================================================
-# API CARTE — coeur de la nouvelle fonctionnalité
-# Retourne : geojson (ou points fallback) + valeurs par commune
-# pour la variable et l'année/mois demandés.
-# ============================================================
+
 
 @app.route("/api/map_data")
 def api_map_data():
@@ -223,10 +206,7 @@ def api_geojson():
         return jsonify({"type": "FeatureCollection", "features": []})
     return jsonify(GEOJSON_DATA)
 
-# ============================================================
-# API STATS / MONTHLY / CLIMATE / DB_INFO / ENV
-# (identiques à ta version originale)
-# ============================================================
+
 
 @app.route("/api/stats")
 def api_stats():
@@ -369,9 +349,6 @@ def api_env():
     df = qe(sql, params)
     return jsonify(df.where(pd.notna(df), None).to_dict(orient="records"))
 
-# ============================================================
-# HTML
-# ============================================================
 HTML = r"""<!DOCTYPE html>
 <html lang="fr">
 <head>
