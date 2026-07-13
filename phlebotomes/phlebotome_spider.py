@@ -97,7 +97,6 @@ class SandflySpider(scrapy.Spider):
                 })
 
      def create_csv(self):
-        if  self.results() in leish_
 
     def get_status(self, text_lower, location_terms):
         
