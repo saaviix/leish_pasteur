@@ -1,0 +1,4 @@
+modele,MAE,RMSE
+GLM Binomiale Négative,4.08,8.95
+Random Forest,4.14,8.82
+Gradient Boosting,4.11,9.17

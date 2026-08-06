@@ -1,0 +1,24 @@
+// Feuille de route
+digraph {
+	rankdir=TB
+	A [label=<Données Brutes<br/>(Cas, Climat, Scraping)> shape=box]
+	B [label="Phase 2: Modèle d'Occupation Bayésien" shape=box]
+	C [label=<Inférence: Probabilité de présence de P. sergenti<br/>+ Relations climat-vectoriel> shape=box]
+	D [label="Phase 3: Modèle de Machine Learning" shape=box]
+	E [label=<Prédiction: Cartes de risque généralisables<br/>+ Application CORAL> shape=box]
+	F [label="Phase 4: Modèle SIR" shape=box]
+	G [label=<Dynamique: Simulation temporelle<br/>& estimation de paramètres clés (R0)> shape=box]
+	H [label="Intégration & Validation" shape=diamond]
+	I [label=<Livrables finaux:<br/>1. Carte de risque probabiliste<br/>2. Modèle prédictif généralisable<br/>3. Compréhension des mécanismes> shape=box]
+	A -> B
+	B -> C
+	A -> D
+	C -> D [label="Probabilité postérieure comme cible"]
+	D -> E
+	A -> F
+	F -> G
+	C -> H
+	E -> H
+	G -> H
+	H -> I
+}

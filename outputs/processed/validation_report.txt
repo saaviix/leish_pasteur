@@ -1,0 +1,12 @@
+============================================================
+RAPPORT DE VALIDATION DES ENTREES
+============================================================
+
+ERREURS (1) :
+  [ERREUR] DOUBLONS dans communes_maroc_final.csv : 2 lignes (commune, province)
+
+AVERTISSEMENTS (2) :
+  Province : 2 valeurs manquantes sur 26016 lignes
+  Commune : 88 valeurs manquantes sur 26016 lignes
+
+============================================================

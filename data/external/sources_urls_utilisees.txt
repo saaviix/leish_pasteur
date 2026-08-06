@@ -1,0 +1,22 @@
+# URLs reelles utilisees pour compiler phlebotomus_sergenti_par_province.csv
+# (a coller dans urls.txt du dossier scraper_sergenti pour tester une extraction automatique)
+
+https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0003687
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4380298/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3359231/
+https://www.parasite-journal.org/articles/parasite/abs/2004/02/parasite2004112p189/parasite2004112p189.html
+https://www.parasite-journal.org/articles/parasite/pdf/2004/02/parasite2004112p189.pdf
+https://onlinelibrary.wiley.com/doi/10.1155/2015/438749
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4337056/
+https://pubmed.ncbi.nlm.nih.gov/36610984/
+https://www.researchgate.net/publication/43226521_Phlebotomine_sandflies_Diptera_Psychodidae_of_southern_Morocco_Results_of_entomological_surveys_along_the_Marrakech-Ouarzazat_and_Marrakech-Azilal_roads
+https://www.jle.com/fr/revues/mst/e-docs/inventaire_entomologique_des_phlebotomes_et_etude_epidemiologique_de_la_leishmaniose_a_afourer_province_dazilal_haut_atlas_maroc_313522/article.phtml
+https://www.sciencedirect.com/science/article/abs/pii/S0001706X15001023
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4736259/
+https://www.frontiersin.org/journals/epidemiology/articles/10.3389/fepid.2024.1462271/full
+https://www.tjnpr.org/index.php/home/article/view/20
+https://www.researchgate.net/publication/308336828_Cutaneous_leishmaniasis_in_Ouazzane_and_Sidi_Kacem_provinces_Morocco_1997-2012
+https://www.researchgate.net/publication/8594727_Leishmaniasis_due_to_Leishmania_tropica_MON-102_in_a_new_Moroccan_focus
+https://journals.plos.org/plosntds/article?id=10.1371%2Fjournal.pntd.0006315
+https://www.academia.edu/11366896/Phlebotomus_sergenti_Parrot_1917_identified_as_Leishmania_killicki_host_in_Ghardaïa_south_Algeria
+https://horizon.documentation.ird.fr/exl-doc/pleins_textes/cahiers/entomo/18944.pdf

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Data / outputs (gros fichiers exclus de git)
+data/raw/*.nc
+data/raw/*.pdf
+data/raw/*.grib
+data/raw/*.zarr
+outputs/figures/*.png
+outputs/figures/*.jpg
+outputs/posterior/*.nc
+*.nc
+outputs/processed/*.db
+outputs/processed/*.sqlite
+
+# Archive locale (vieux dossiers, pas de suppression)
+_archive/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb

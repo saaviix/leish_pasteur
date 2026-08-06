@@ -1,4 +1,0 @@
-"https://openmd.com/search?q=phlebotomus+sergenti",
-"https://pubmed.ncbi.nlm.nih.gov/?term=sergenti+morocco",
-"https://www.cochranelibrary.com/browse-by-topic",
-"https://www.sciencedirect.com/search?qs=phlebotomus+sergenti"

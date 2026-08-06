@@ -1,0 +1,31 @@
+# Dependances du projet leishmaniose / P. sergenti (Maroc)
+# Installation :  pip install -r requirements.txt
+
+# --- traitement de donnees ---
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+networkx>=3.0
+
+# --- climat (NetCDF ERA5) ---
+xarray>=2023.1
+netcdf4>=1.6
+cdsapi>=0.7          # telechargement ERA5 depuis le Climate Data Store (CDS)
+
+# --- modele bayesien ---
+pymc>=5.10
+pytensor>=2.18
+arviz>=0.17
+
+# --- scraping / extraction ---
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=4.9
+pdfplumber>=0.10
+
+# --- graphiques / analyse ---
+matplotlib>=3.7
+seaborn>=0.13
+
+# --- tableau de bord ---
+flask>=3.0
