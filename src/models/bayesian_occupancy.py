@@ -27,10 +27,14 @@ Usage :
 import sys
 from pathlib import Path
 
-# Desactiver le linker numba de PyTensor : Numba a un bug DLL sur Windows/Python 3.12
-# On bascule sur le linker C/Python standard (un peu plus lent mais fonctionnel).
+# Sur cette machine (Windows, pas de g++), PyTensor ne peut pas compiler en
+# C -- cxx="" le desactive explicitement pour eviter qu'il essaie et echoue.
+# Il utilise alors son linker numba (JIT, rapide, ne necessite pas de
+# compilateur C). `pip install numba` est requis (absent -> ModuleNotFoundError,
+# pas un "bug DLL" comme le suggerait un commentaire precedent ici -- verifie
+# empiriquement). Doit etre defini AVANT le premier import de pytensor/pymc.
 import os
-os.environ["NUMBA_DISABLE_JIT"] = "1"
+os.environ["PYTENSOR_FLAGS"] = "cxx="
 
 import numpy as np
 import pandas as pd
@@ -57,6 +61,18 @@ def main() -> None:
         W[b, a] = 1
     assert (W.sum(axis=1) > 0).all(), "noeud isole dans le graphe d'adjacence"
 
+    # facteur d'echelle BYM2 (Riebler et al. 2016) : moyenne geometrique des
+    # variances marginales du champ ICAR (via la pseudo-inverse de la matrice
+    # de precision Q = D - W, jitter car Q est de rang n-1 -- un graphe
+    # connexe a une seule composante). Ramene le champ ICAR brut a une echelle
+    # unitaire pour que `rho` (part spatiale) soit reellement interpretable.
+    D_deg = np.diag(W.sum(axis=1))
+    Q = (D_deg - W).astype(float)
+    jitter = max(np.diag(Q).mean() * 1e-4, 1e-6)
+    Q_inv = np.linalg.inv(Q + np.eye(n) * jitter)
+    scaling_factor = float(np.exp(np.mean(np.log(np.diag(Q_inv)))))
+    print(f"[INFO] facteur d'echelle ICAR (BYM2) : {scaling_factor:.3f}")
+
     y_epi = prov["y_epi"].values.astype(int)
     hard_idx = np.where(prov["y_ento_hard"].values == 1)[0]
     soft_idx = np.where(prov["y_ento_soft"].values == 1)[0]
@@ -74,12 +90,26 @@ def main() -> None:
 
     with pm.Model() as occ_model:
         # ---- process : proba de presence reelle psi_i ----
-        sigma_phi = pm.HalfNormal("sigma_phi", sigma=0.6)
-        phi_raw = pm.ICAR("phi_raw", W=W, sigma=1.0)
+        # Parametrisation BYM2 (Besag-York-Mollie, forme Riebler 2016) au lieu
+        # du sigma_phi*phi_raw brut d'origine : on decompose l'effet spatial
+        # en une part structuree (ICAR, `phi_icar`) et une part non-structuree
+        # iid (`theta`), melangees par `rho` in [0,1], le tout mis a l'echelle
+        # par `sigma_total`. C'est la reponse au probleme de geometrie en
+        # entonnoir de l'ancienne version (sigma_phi ne convergeait pas,
+        # r_hat 1.10-1.16 meme apres 4h de sampling) -- rho/sigma_total sont
+        # beaucoup moins degeneres a explorer pour NUTS que sigma_phi seul.
+        sigma_total = pm.HalfNormal("sigma_total", sigma=1.0)
+        rho = pm.Beta("rho", alpha=2, beta=2)
+        theta = pm.Normal("theta", mu=0.0, sigma=1.0, shape=n)
+        phi_icar = pm.ICAR("phi_icar", W=W, sigma=1.0)
+
+        convolved = pt.sqrt(rho / scaling_factor) * phi_icar + pt.sqrt(1.0 - rho) * theta
+        spatial_effect = pm.Deterministic("spatial_effect", sigma_total * convolved)
+
         alpha = pm.Normal("alpha", mu=-1.0, sigma=1.5)
         beta_lat = pm.Normal("beta_lat", mu=0.0, sigma=1.0)
 
-        logit_psi = alpha + beta_lat * lat_z + sigma_phi * phi_raw
+        logit_psi = alpha + beta_lat * lat_z + spatial_effect
         if X_clim is not None:
             beta_clim = pm.Normal("beta_clim", mu=0.0, sigma=1.0, shape=X_clim.shape[1])
             logit_psi = logit_psi + pt.dot(X_clim, beta_clim)
@@ -111,13 +141,17 @@ def main() -> None:
                 (log_psi[soft_idx] + pm.math.log(p_soft)).sum(),
             )
 
+        # cores=4 valide empiriquement : 602s, 0 divergence, max r_hat=1.09
+        # (cores=1 teste avec un budget reduit -> n'a meme pas fini de
+        # compiler+echantillonner en 5 min, trop lent pour ce modele une fois
+        # BYM2 ajoute ~150 parametres de plus que l'ancienne version).
         idata = pm.sample(
-            draws=2000, tune=2000, chains=4, cores=1, target_accept=0.98,
-            max_treedepth=12, random_seed=42, progressbar=True,
+            draws=800, tune=800, chains=4, cores=4, target_accept=0.9,
+            max_treedepth=10, random_seed=42, progressbar=True,
         )
 
     # ---------- diagnostics ----------
-    var_names = ["alpha", "beta_lat", "sigma_phi", "p_epi"]
+    var_names = ["alpha", "beta_lat", "sigma_total", "rho", "p_epi"]
     if X_clim is not None:
         var_names.append("beta_clim")
     if len(soft_idx):

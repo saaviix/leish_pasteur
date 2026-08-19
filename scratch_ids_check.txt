@@ -1,0 +1,16 @@
+city
+NaN           1538
+Casablanca       1
+Name: count, dtype: int64
+
+                   mun        city      Unnamed: 4     Unnamed: 5 Unnamed: 6
+0  Aarab Sebbah Gheris  Casablanca     Sidi Moumen      سيدي مومن        NaN
+1     Aarab Sebbah Ziz         NaN     Hay-Hassani    الحي الحسني        NaN
+2               Abadou         NaN       Aïn-Chock       عين الشق        NaN
+3              Abaynou         NaN   Moulay Rachid     مولاي رشيد        NaN
+4         Abbou Lakhal         NaN    Sidi Othmane     سيدي عثمان        NaN
+5   Abdelghaya Souahel         NaN  Sidi Bernoussi  سيدي البرنوصي        NaN
+6                Abteh         NaN       Aïn-Sebaâ      عين السبع        NaN
+7              Adaghas         NaN          Maârif       المعاريف        NaN
+8                 Adar         NaN    Sidi Belyout     سيدي بليوط        NaN
+9              Adassil         NaN         Al-Fida         الفداء        NaN

@@ -15,8 +15,17 @@ Etapes :
   8. build_province_table.py      (table province + climat + voisinage ICAR)
   9. bayesian_occupancy.py        (inference bayesienne de la presence)
   10. run_analysis.py             (graphes, correlations, projections, patterns)
-  11. summarize_results.py        (resume lisible des resultats)
-  12. dashboard : a lancer separement
+  11. bioclimatic_zoning.py + epi_map.py  (zonage bioclimatique/epi + carte)
+  11b. elevation_classification.py + elevation_case_drivers.py +
+       elevation_stratified_models.py (classes d'altitude, facteurs
+       climat/env par classe, modeles GBM separes par classe)
+  12. summarize_results.py        (resume lisible des resultats)
+  13. dashboard : a lancer separement
+
+Etapes optionnelles hors orchestrateur (exploratoires/lourdes, a lancer a la
+main quand besoin) :
+  - src/models/occupancy_gp.py     (variante GP spatial de l'occupancy model)
+  - src/models/model_benchmark.py  (comparatif etendu de modeles de prediction)
 
 Usage :
   python run_pipeline.py                    # base (sans download/climat/env/analysis)
@@ -24,6 +33,7 @@ Usage :
   python run_pipeline.py --with-climate     # + extraction climat
   python run_pipeline.py --with-env         # + environnement
   python run_pipeline.py --with-analysis    # + graphes/correlations/projections
+  python run_pipeline.py --with-zoning      # + zonage bioclimatique + carte epi
   python run_pipeline.py --all              # tout
 """
 
@@ -60,11 +70,13 @@ def main() -> None:
     with_env = do_all or "--with-env" in args
     with_scraping = do_all or "--with-scraping" in args
     with_analysis = do_all or "--with-analysis" in args
+    with_zoning = do_all or "--with-zoning" in args
 
     # etapes de base
     run("src/data_prep/validate_inputs.py", "Validation des entrees")
     run("src/data_prep/communes_by_region.py", "Requete communes par region/province")
     run("src/data_prep/clean_lct.py", "Nettoyage LCT + rapport donnees manquantes")
+    run("src/data_prep/fix_mun_pop.py", "Conversion/reconciliation population municipale (xlsx -> csv)")
 
     if do_download:
         run("src/data_prep/download_era5.py", "Telechargement ERA5 depuis le CDS")
@@ -99,13 +111,36 @@ def main() -> None:
     else:
         print("[INFO] analyse sautee (--with-analysis)")
 
+    if with_zoning:
+        run("src/models/bioclimatic_zoning.py", "Zonage bioclimatique/epidemiologique (K-means)")
+        run("src/analysis/epi_map.py", "Carte epidemiologique (zones + charge de cas)")
+        run("src/analysis/elevation_classification.py", "Classification par altitude (K-means 1D, 4 classes)")
+    else:
+        print("[INFO] zonage bioclimatique saute (--with-zoning)")
+
     if with_predict:
         run("src/data_prep/build_commune_panel.py", "Construction du panel Commune x Mois")
-        run("src/models/gbm_spatial_temporal.py", "Modèle Spatio-Temporel Gradient Boosting (80/20)")
+        # PINN AVANT le GBM : gbm_pinn_stacked.py depend de
+        # pinn_seirv_weights.pt (features mecanistes E_H/I_H/C_vraie pour le
+        # correcteur de residu GBM_2).
         run("src/models/pinn_seirv.py", "Modèle PINN SEIR-V (Vector-Host Physics)")
+        # Modele officiel : stacking residuel GBM_1 + GBM_2(PINN), R2=0.5448
+        # (vs 0.5312 pour un GBM seul). gbm_spatial_temporal.py reste
+        # disponible comme outil de comparaison/diagnostic (candidats
+        # LightGBM/ExtraTrees/RandomForest/HistGB) mais n'est plus l'etape
+        # officielle du pipeline.
+        run("src/models/gbm_pinn_stacked.py", "Modèle officiel : GBM + correcteur de résidu PINN (stacking)")
         run("src/models/robust_ensemble_recalibrated.py", "Recalibration & Stacking sur Données Réelles 2021-2024")
         run("src/analysis/forecast_future.py", "Projections 20 ans (2025-2045) par Commune, Province, Région")
         run("src/analysis/generate_full_report.py", "Rapport final d'étalonnage et de vérification")
+
+        if with_zoning:
+            # a besoin du panel + de la classification altitude, donc placee ici
+            run("src/analysis/elevation_case_drivers.py", "Facteurs climat/env par classe d'altitude (correlations)")
+            run("src/models/elevation_stratified_models.py", "Modeles GBM separes par classe d'altitude")
+
+    # depend du modele bayesien (occupancy_trace.nc) et, si dispo, du GBM
+    run("src/analysis/underreporting.py", "Estimation de la sous-declaration (capture-recapture + occupancy)")
 
     run("src/models/summarize_results.py", "Resume des resultats")
 

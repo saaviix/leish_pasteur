@@ -1,0 +1,35 @@
+2026-08-10 16:58:19,776 - INFO - Lignes exclues (n_cas=NaN, annee sans mois de diagnostic) : 0
+2026-08-10 16:58:19,776 - WARNING - Population reelle trouvee ('pop_total') mais manquante pour 11664/216432 lignes (communes non reconciliees a mun_pop.csv) -> mediane (9666) utilisee pour ces lignes seulement
+2026-08-10 16:58:22,065 - INFO - Entrainement PINN SEIR-V (autograd, 4000 epoques, batch=4096, 162324 points d'entrainement au total)...
+2026-08-10 16:58:22,174 - INFO -   epoch     0  data_loss=2.9358  phys_loss=0.212098
+2026-08-10 16:58:39,728 - INFO -   epoch   200  data_loss=1.7297  phys_loss=0.002894
+2026-08-10 16:58:57,388 - INFO -   epoch   400  data_loss=1.9021  phys_loss=0.000511
+2026-08-10 16:59:16,819 - INFO -   epoch   600  data_loss=1.0275  phys_loss=0.000185
+2026-08-10 16:59:35,668 - INFO -   epoch   800  data_loss=0.8452  phys_loss=0.000129
+2026-08-10 16:59:54,673 - INFO -   epoch  1000  data_loss=1.3603  phys_loss=0.000071
+2026-08-10 17:00:13,181 - INFO -   epoch  1200  data_loss=1.0133  phys_loss=0.000048
+2026-08-10 17:00:34,734 - INFO -   epoch  1400  data_loss=1.5327  phys_loss=0.000030
+2026-08-10 17:00:53,476 - INFO -   epoch  1600  data_loss=0.9309  phys_loss=0.000027
+2026-08-10 17:01:12,596 - INFO -   epoch  1800  data_loss=0.9994  phys_loss=0.000030
+2026-08-10 17:01:35,577 - INFO -   epoch  2000  data_loss=0.9600  phys_loss=0.000022
+2026-08-10 17:01:56,814 - INFO -   epoch  2200  data_loss=0.9075  phys_loss=0.000018
+2026-08-10 17:02:17,065 - INFO -   epoch  2400  data_loss=0.9817  phys_loss=0.000014
+2026-08-10 17:02:35,677 - INFO -   epoch  2600  data_loss=1.0366  phys_loss=0.000015
+2026-08-10 17:02:53,875 - INFO -   epoch  2800  data_loss=0.7803  phys_loss=0.000012
+2026-08-10 17:03:12,934 - INFO -   epoch  3000  data_loss=0.8523  phys_loss=0.000015
+2026-08-10 17:03:31,335 - INFO -   epoch  3200  data_loss=0.8456  phys_loss=0.000016
+2026-08-10 17:03:49,947 - INFO -   epoch  3400  data_loss=0.8495  phys_loss=0.000008
+2026-08-10 17:04:08,506 - INFO -   epoch  3600  data_loss=1.0352  phys_loss=0.000011
+2026-08-10 17:04:29,763 - INFO -   epoch  3800  data_loss=0.8820  phys_loss=0.000014
+2026-08-10 17:04:50,612 - INFO -   epoch  3999  data_loss=0.7929  phys_loss=0.000008
+2026-08-10 17:04:51,981 - INFO - Predictions PINN enregistrees dans : E:\leishpasteur\outputs\processed\pinn_predictions_2018_2020.csv
+2026-08-10 17:04:52,044 - INFO - Poids du modele sauvegardes dans : E:\leishpasteur\outputs\processed\pinn_seirv_weights.pt
+2026-08-10 17:04:52,044 - INFO - 
+Parametres epidemiologiques appris (constantes partagees, a comparer a la litterature):
+2026-08-10 17:04:52,044 - INFO -   taux de piqure a         = 0.8434 / mois
+2026-08-10 17:04:52,044 - INFO -   b_h (vecteur -> humain)  = 0.2330
+2026-08-10 17:04:52,044 - INFO -   c_v (humain -> vecteur)  = 0.3283
+2026-08-10 17:04:52,044 - INFO -   1/sigma_H (incubation)   = 2.65 mois
+2026-08-10 17:04:52,044 - INFO -   1/gamma_H (infectiosite) = 12.16 mois
+2026-08-10 17:04:52,044 - INFO -   rho (proba de rapportage)= 0.4145  <-- reponse a la sous-declaration
+2026-08-10 17:04:52,044 - INFO -   phi (dispersion NegBin)  = 7.69

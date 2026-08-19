@@ -1,0 +1,103 @@
+﻿province,annee,n_cas_annee,mois_pic_reel,mois_pic_predit,erreur_mois
+Chichaoua,2020,519.0,6,4,2
+Chichaoua,2019,496.0,5,2,3
+Chichaoua,2018,445.0,4,4,0
+Tinghir,2019,338.0,1,3,2
+Tinghir,2018,251.0,10,3,5
+Tinghir,2020,217.0,3,1,2
+Azilal,2019,214.0,4,3,1
+El Kelâa des Sraghna,2018,201.0,1,3,2
+Azilal,2020,198.0,2,4,2
+Azilal,2018,188.0,5,4,1
+Fquih Ben Salah,2018,158.0,2,5,3
+Béni Mellal,2020,144.0,3,4,1
+Al Haouz,2018,142.0,3,4,1
+Fquih Ben Salah,2019,135.0,1,3,2
+Fquih Ben Salah,2020,132.0,1,2,1
+El Kelâa des Sraghna,2019,124.0,1,1,0
+Taza,2018,112.0,4,4,0
+Taounate,2018,106.0,2,5,3
+Agadir-Ida Ou Tanane,2018,100.0,5,5,0
+Taza,2019,87.0,2,3,1
+Ouezzane,2019,85.0,11,1,2
+Béni Mellal,2019,80.0,1,2,1
+Ouarzazate,2018,79.0,1,2,1
+Béni Mellal,2018,79.0,2,3,1
+Essaouira,2018,75.0,3,4,1
+Essaouira,2019,74.0,7,4,3
+Taza,2020,71.0,2,3,1
+Sidi Kacem,2018,70.0,2,4,2
+Fès,2018,69.0,4,12,4
+Ouezzane,2018,66.0,11,12,1
+Taroudant,2020,59.0,6,12,6
+El Kelâa des Sraghna,2020,56.0,12,1,1
+Al Haouz,2019,55.0,3,4,1
+Essaouira,2020,54.0,2,4,2
+Ouarzazate,2019,52.0,3,12,3
+Sefrou,2018,45.0,5,5,0
+Taroudant,2018,43.0,1,4,3
+Taounate,2019,40.0,10,4,6
+Fès,2019,39.0,1,1,0
+Ouarzazate,2020,38.0,2,3,1
+Taounate,2020,38.0,11,6,5
+Taroudant,2019,36.0,12,5,5
+Ouezzane,2020,34.0,2,1,1
+Sidi Kacem,2019,34.0,2,1,1
+Agadir-Ida Ou Tanane,2019,33.0,1,4,3
+Sefrou,2019,30.0,4,5,1
+Khouribga,2018,29.0,12,12,0
+Larache,2018,29.0,1,3,2
+Boulemane,2018,29.0,1,2,1
+Inezgane-Aït Melloul,2019,27.0,1,6,5
+Al Haouz,2020,21.0,2,4,2
+Khénifra,2018,19.0,1,2,1
+Sidi Kacem,2020,19.0,1,2,1
+Khouribga,2019,19.0,2,3,1
+Khénifra,2019,18.0,1,2,1
+Inezgane-Aït Melloul,2018,18.0,1,2,1
+Meknès,2018,17.0,3,11,4
+Agadir-Ida Ou Tanane,2020,17.0,6,4,2
+Marrakech,2018,16.0,9,4,5
+Ifrane,2020,16.0,2,4,2
+Berkane,2018,15.0,2,5,3
+Sefrou,2020,15.0,1,3,2
+Nador,2018,14.0,1,3,2
+Berkane,2020,14.0,6,4,2
+Boulemane,2019,13.0,2,3,1
+Al Hoceïma,2018,12.0,2,5,3
+Al Hoceïma,2020,11.0,2,3,1
+Inezgane-Aït Melloul,2020,11.0,2,3,1
+Boulemane,2020,10.0,4,5,1
+Al Hoceïma,2019,10.0,5,4,1
+Larache,2020,10.0,8,1,5
+Settat,2018,10.0,2,3,1
+Rehamna,2018,9.0,11,2,3
+Rehamna,2020,7.0,5,12,5
+Larache,2019,7.0,4,2,2
+Ifrane,2019,7.0,4,5,1
+Khénifra,2020,6.0,6,1,5
+Chefchaouen,2018,6.0,6,1,5
+Tétouan,2019,6.0,5,11,6
+Fès,2020,6.0,2,1,1
+Moulay Yacoub,2020,5.0,11,12,1
+Errachidia,2020,5.0,3,12,3
+Chtouka-Aït Baha,2018,5.0,1,5,4
+Settat,2019,5.0,9,11,2
+Chtouka-Aït Baha,2019,5.0,10,1,3
+Oued Ed-Dahab,2020,5.0,3,4,1
+Moulay Yacoub,2019,4.0,1,2,1
+Berkane,2019,4.0,3,4,1
+Tata,2019,4.0,4,12,4
+Tiznit,2018,4.0,7,8,1
+Settat,2020,4.0,9,12,3
+Meknès,2020,4.0,12,1,1
+El Hajeb,2018,3.0,5,3,2
+Guercif,2018,3.0,2,3,1
+Nador,2019,3.0,12,2,2
+Moulay Yacoub,2018,3.0,2,2,0
+Meknès,2019,3.0,4,1,3
+Sidi Slimane,2018,3.0,5,3,2
+Tanger-Assilah,2019,3.0,6,2,4
+Tanger-Assilah,2018,3.0,11,2,3
+Tiznit,2019,3.0,1,4,3
+Youssoufia,2018,3.0,2,3,1

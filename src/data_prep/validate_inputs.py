@@ -9,8 +9,11 @@ Checks :
   - fichiers bruts presents et non vides
   - colonnes obligatoires dans chaque CSV
   - coherence des codes province entre les fichiers
-  - detection des doublons de communes
-  - rapport de valeurs manquantes dans les cas LCT
+  - detection des doublons de communes (referentiel + cas LCT)
+  - rapport de valeurs manquantes dans les cas LCT (colonnes cle + completude
+    Classification/Date_Diagnostic/Mois_Diagnostic)
+  - schema de regional_verification_2021_2024.csv et mun_pop.csv (avant la
+    Phase 2 de la refonte, ces deux fichiers n'etaient pas verifies du tout)
 
 Sorties :
   outputs/processed/validation_report.txt
@@ -34,7 +37,10 @@ REQUIRED_RAW = {
 
 LCT_YEAR_COL = "Annee_Source"
 LCT_MIN_YEAR = 2009
-LCT_MAX_YEAR = 2021
+# les donnees individuelles/communales LCT s'arretent en 2020 (confirme) ; la
+# verification 2021/2023/2024 ne se fait qu'au niveau regional agrege, via
+# regional_verification_2021_2024.csv, pas via ce fichier de cas individuels.
+LCT_MAX_YEAR = 2020
 
 
 def check_file(path: Path, required_cols: set) -> list:
@@ -97,12 +103,64 @@ def check_lct_missing() -> list:
     if not config.LCT_CSV.exists():
         return warnings
     df = pd.read_csv(config.LCT_CSV)
-    for col in ["Region", "Province", "Commune", "Annee_Source"]:
+    for col in ["Region", "Province", "Commune", "Annee_Source", "Classification",
+                "Date_Diagnostic", "Mois_Diagnostic"]:
         if col in df.columns:
             n_miss = int(df[col].isna().sum())
             if n_miss > 0:
-                warnings.append(f"  {col} : {n_miss} valeurs manquantes sur {len(df)} lignes")
+                warnings.append(f"  {col} : {n_miss} valeurs manquantes sur {len(df)} lignes "
+                                 f"({100 * n_miss / len(df):.0f}%)")
     return warnings
+
+
+def check_lct_duplicates() -> list:
+    """Detecte les lignes strictement dupliquees dans les cas LCT (non verifie
+    avant la Phase 2 -- 1013 lignes/26016 identifiees lors de l'audit).
+    Avertissement (pas une erreur bloquante) : clean_lct.py deduplique deja
+    en sortie, le fichier brut lui-meme reste intact (source de verite)."""
+    warnings = []
+    if not config.LCT_CSV.exists():
+        return warnings
+    df = pd.read_csv(config.LCT_CSV)
+    n_dup = int(df.duplicated(keep=False).sum())
+    if n_dup:
+        warnings.append(f"  DOUBLONS STRICTS dans leish_LCT.csv (fichier brut) : {n_dup} lignes "
+                         f"-- deja corrige en sortie par clean_lct.py")
+    return warnings
+
+
+def check_regional_verification() -> list:
+    """Schema minimal de regional_verification_2021_2024.csv (jamais verifie avant)."""
+    errors = []
+    required = {"region", "cas_2021_combine", "cas_2023_lct", "cas_2024_lct"}
+    errors.extend(check_file(config.REGIONAL_VERIF_CSV, required))
+    if config.REGIONAL_VERIF_CSV.exists() and config.COMMUNES_CSV.exists():
+        df = pd.read_csv(config.REGIONAL_VERIF_CSV)
+        communes = pd.read_csv(config.COMMUNES_CSV)
+        known = set(communes["region"].map(config.norm_key))
+        unknown = sorted(set(df["region"].map(config.canonical_region).map(config.norm_key)) - known)
+        if unknown:
+            errors.append(f"Regions non reconnues dans regional_verification_2021_2024.csv "
+                           f"(ajouter a config.CANONICAL_REGIONS) : {unknown}")
+    return errors
+
+
+def check_mun_pop() -> list:
+    """mun_pop.csv doit exister et etre un vrai CSV lisible (etait un xlsx
+    mal-nomme avant fix_mun_pop.py -- illisible et 0% utilise par le pipeline)."""
+    errors = []
+    if not config.MUN_POP_CSV.exists():
+        errors.append(f"{config.MUN_POP_CSV} introuvable. "
+                       f"Lance : python src/data_prep/fix_mun_pop.py")
+        return errors
+    try:
+        df = pd.read_csv(config.MUN_POP_CSV, nrows=3)
+        missing = {"commune_id", "pop_total"} - set(df.columns)
+        if missing:
+            errors.append(f"COLONNES MANQUANTES dans mun_pop.csv : {sorted(missing)}")
+    except Exception as e:
+        errors.append(f"ERREUR LECTURE mun_pop.csv : {e}")
+    return errors
 
 
 def main() -> None:
@@ -121,6 +179,11 @@ def main() -> None:
 
     # --- doublons ---
     all_errors.extend(check_communes_duplicates())
+    all_warnings.extend(check_lct_duplicates())
+
+    # --- fichiers auparavant non verifies ---
+    all_errors.extend(check_regional_verification())
+    all_errors.extend(check_mun_pop())
 
     # --- valeurs manquantes LCT ---
     lct_warns = check_lct_missing()

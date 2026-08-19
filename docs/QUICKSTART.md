@@ -76,8 +76,14 @@ E:\leishpasteur
 |   |   |-- text_extraction.py   <- extraction PDF/URL
 |   |   \-- urls.txt             <- URLs a scraper
 |   |
-|   |-- models/                  <- modele bayesien
-|   |   |-- bayesian_occupancy.py <- inference presence (y compris gap)
+|   |-- models/                  <- modeles bayesiens + prediction de cas
+|   |   |-- bayesian_occupancy.py <- occupancy ICAR (inference presence, y compris gap)
+|   |   |-- occupancy_gp.py       <- occupancy, variante noyau GP spatial
+|   |   |-- bioclimatic_zoning.py <- zonage bioclimatique/epi (K-means, 76 provinces)
+|   |   |-- gbm_spatial_temporal.py <- prediction de cas (LightGBM, commune x mois)
+|   |   |-- pinn_seirv.py         <- PINN SEIR-V (physique vecteur-hote)
+|   |   |-- robust_ensemble_recalibrated.py <- stacking + recalibration
+|   |   |-- model_benchmark.py    <- comparatif etendu (GLM/ZINB/GAM/CatBoost/...)
 |   |   \-- summarize_results.py  <- resume lisible des resultats
 |   |
 |   |-- analysis/                <- couche d'analyse complete
@@ -86,6 +92,9 @@ E:\leishpasteur
 |   |   |-- projections.py       <- projections 2030-2100 (SSP126/SSP585)
 |   |   |-- spatial.py           <- clusters spatiaux, Moran's I
 |   |   |-- figures.py           <- generateur de figures publication
+|   |   |-- epi_map.py           <- carte zones bioclimatiques + charge de cas
+|   |   |-- forecast_future.py   <- projections 2025-2045 commune/province/region
+|   |   |-- generate_full_report.py <- rapport de verification 2021/2023/2024
 |   |   \-- run_analysis.py      <- lance toute l'analyse
 |   |
 |   \-- interface/               <- dashboard interactif
@@ -125,7 +134,7 @@ E:\leishpasteur
     \-- modeles_notes.md         <- notes methodologiques
 ```
 
-## Les 12 etapes du pipeline
+## Les etapes du pipeline
 
 | # | Script | Ce qu'il fait | Duree |
 |---|--------|---------------|-------|
@@ -139,8 +148,13 @@ E:\leishpasteur
 | 8 | build_province_table.py | Table province + climat + voisinage ICAR | 30s |
 | 9 | bayesian_occupancy.py | Inference bayesienne (provinces gap incluses) | 5-30min |
 | 10 | run_analysis.py | Graphes, correlations, projections, patterns | 2-5min |
-| 11 | summarize_results.py | Resume lisible des resultats | 5s |
-| 12 | dashboard.py | Carte interactive + couche risque | continu |
+| 11 | bioclimatic_zoning.py + epi_map.py | Zonage bioclimatique/epi (K-means) + carte | 1-2min |
+| 12 | summarize_results.py | Resume lisible des resultats | 5s |
+| 13 | dashboard.py | Carte interactive + couche risque | continu |
+
+Variantes/comparatifs exploratoires, hors orchestrateur (a lancer a la main) :
+`occupancy_gp.py` (occupancy GP spatial), `model_benchmark.py` (GLM/ZINB/GAM/
+CatBoost/... vs GBM/LightGBM).
 
 ## Commandes rapides
 
@@ -214,8 +228,9 @@ python src/interface/dashboard.py
 
 ## Notes importantes
 
-- Les fichiers volumineux (.nc, .db, .pdf) sont ignores par git
-- Les anciens dossiers sont dans _archive/ (lancer CLEANUP.bat pour les deplacer)
+- Les fichiers volumineux (.nc, .db, .pdf) et les CSV generes lourds
+  (commune_panel.csv, predictions brutes GBM/PINN/ensemble) sont ignores par git
+- Les anciens dossiers sont deja ranges dans _archive/ (rien n'est supprime)
 - Le scraping peut prendre du temps selon le nombre de PDFs et URLs
 - Le modele bayesien prend 5-30min selon la taille du graphe
 - Les projections sont approximatives (logit-link, pas re-execution complete du modele)

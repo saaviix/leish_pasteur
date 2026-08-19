@@ -24,7 +24,6 @@ Usage :
   python src/data_prep/build_province_table.py
 """
 
-import unicodedata
 from math import radians, sin, cos, sqrt, atan2
 
 import numpy as np
@@ -36,12 +35,8 @@ import config
 
 MAX_EDGE_KM = 300
 
-
-def norm(s):
-    if pd.isna(s):
-        return s
-    s = unicodedata.normalize("NFKD", str(s).strip()).encode("ascii", "ignore").decode()
-    return s.lower()
+# alias : reconciliation partagee par tout le pipeline (voir config.norm_key)
+norm = config.norm_key
 
 
 def haversine(lat1, lon1, lat2, lon2):
@@ -64,8 +59,16 @@ def main() -> None:
     config.ensure_dirs()
 
     communes = pd.read_csv(config.COMMUNES_CSV)
-    lct = pd.read_csv(config.LCT_CSV)
+    # lct_clean.csv (dedupliqu par clean_lct.py) plutot que le brut LCT_CSV --
+    # trouve par audit (workflow) : ce script lisait encore data/raw/leish_LCT.csv
+    # brut, donc ~1003/1013 doublons nationaux (quasi tous classes "Autochtone")
+    # etaient recomptes dans lct_cases, jusqu'a +9.3% localement (Chichaoua).
+    lct_path = config.PROCESSED / "lct_clean.csv"
+    if not lct_path.exists():
+        lct_path = config.LCT_CSV
+    lct = pd.read_csv(lct_path)
     sergenti = pd.read_csv(config.SERGENTI_CSV)
+
 
     communes["prov_key"] = communes["province"].map(norm)
 
@@ -83,7 +86,19 @@ def main() -> None:
 
     # ---------- signal epidemiologique LCT ----------
     lct["prov_key"] = lct["Province"].map(norm)
-    lct_autoch = lct[lct["Classification"] == "Autochtone"]
+    # Classification=NaN (pas juste != "Autochtone") exclue jusqu'ici, ce qui
+    # sous-comptait silencieusement des provinces entieres : Chichaoua 2020
+    # (533/534 lignes sans Classification, trouve par audit) tombait a 0 cas
+    # "Autochtone" alors que 529 cas reels existent cette annee-la (le trou
+    # touche 92.6% de son total 2020). Classification==NaN est presumee
+    # Autochtone (base rate 96% sur les lignes renseignees) plutot qu'exclue ;
+    # seules les classifications explicites "Importee"/"Indeterminee" restent
+    # exclues. Alerte si l'imputation depasse 50 cas pour une province.
+    n_imputed_by_prov = lct.loc[lct["Classification"].isna()].groupby("prov_key").size()
+    if (n_imputed_by_prov > 50).any():
+        flagged = n_imputed_by_prov[n_imputed_by_prov > 50].to_dict()
+        print(f"[WARN] Classification manquante (imputee Autochtone) pour >50 cas dans : {flagged}")
+    lct_autoch = lct[lct["Classification"].isin(["Autochtone"]) | lct["Classification"].isna()]
     lct_agg = lct_autoch.groupby("prov_key").size().rename("lct_cases").reset_index()
     prov = prov.merge(lct_agg, on="prov_key", how="left")
     prov["lct_cases"] = prov["lct_cases"].fillna(0).astype(int)

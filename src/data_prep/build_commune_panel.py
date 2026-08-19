@@ -1,24 +1,51 @@
 """
 build_commune_panel.py
 ======================
-Construit le panel spatio-temporel complet : Commune x Année x Mois.
+Construit le panel spatio-temporel complet : Commune x Annee x Mois.
 
-Données d'entrée :
-  - data/raw/communes_maroc_final.csv (1503 communes)
-  - outputs/processed/lct_clean.csv (Cas de LCT 2009-2020)
-  - data/raw/era5_morocco_*_monthly.nc (Données climatiques ERA5 2009-2021)
-  - outputs/processed/province_table.csv (Caractéristiques environnementales statiques)
+Reecrit en Phase 3 de la refonte -- la version precedente avait 3 bugs
+serieux, tous corriges ici :
+  1. `load_communes()` faisait `drop_duplicates(subset=["commune"])`, ce qui
+     supprimait silencieusement les communes homonymes de provinces
+     differentes (ex. "Ait Ouallal" existe a la fois a Zagora et a Meknes).
+     -> on utilise desormais `commune_id` (l'id du referentiel) comme cle,
+     jamais le nom seul.
+  2. Le choix de la colonne commune pour les cas LCT prenait la premiere
+     colonne "commune*" trouvee dans lct_clean.csv, qui est "Commune" (le
+     texte BRUT, non reconcilie) et non "Commune_std"/"commune_id" (la
+     reconciliation de la Phase 2, cf. clean_lct.py) -- la quasi-totalite des
+     cas ne se joignaient donc jamais correctement au panel.
+     -> on joint desormais explicitement sur `commune_id`.
+  3. L'extraction climatique reimplementait sa propre extraction ERA5 (boucle
+     xarray par commune par fichier), dupliquant extract_climate.py en moins
+     robuste et surtout SANS jamais utiliser son resultat deja calcule.
+     -> on lit directement climate_morocco.db (source unique, deja verifiee).
+
+Ajoute aussi : l'environnement (altitude, LAI, aridite) et la population
+(pour un futur taux d'incidence), absents du panel precedent.
+
+Entrees :
+  data/raw/communes_maroc_final.csv
+  outputs/processed/lct_clean.csv           (clean_lct.py, Phase 2)
+  outputs/processed/climate_morocco.db      (extract_climate.py)
+  outputs/processed/environment_morocco.db  (build_environment.py)
+  outputs/processed/province_table.csv      (build_province_table.py)
+  data/raw/mun_pop.csv                      (fix_mun_pop.py, Phase 2)
 
 Sortie :
-  - outputs/processed/commune_panel.csv (~1503 communes x 12 mois x 12 ans)
+  outputs/processed/commune_panel.csv (1503 communes x 12 mois x n annees ERA5)
+
+Usage :
+  python src/data_prep/build_commune_panel.py
 """
 
+import logging
+import sqlite3
 import sys
 from pathlib import Path
+
 import numpy as np
 import pandas as pd
-import xarray as xr
-import logging
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src" / "data_prep"))
@@ -27,208 +54,214 @@ import config
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-def load_communes():
-    comm_path = config.RAW / "communes_maroc_final.csv"
-    if not comm_path.exists():
-        comm_path = config.PROCESSED / "communes_by_region.csv"
-    df = pd.read_csv(comm_path)
-    # Normalisation des colonnes
-    col_map = {}
-    for c in df.columns:
-        clow = c.lower().strip()
-        if clow in ["commune", "nom_commune", "municipality"]: col_map[c] = "commune"
-        elif clow in ["province", "nom_province"]: col_map[c] = "province"
-        elif clow in ["region", "nom_region"]: col_map[c] = "region"
-        elif clow in ["lat", "latitude"]: col_map[c] = "latitude"
-        elif clow in ["lon", "longitude"]: col_map[c] = "longitude"
-    df = df.rename(columns=col_map)
-    # Nettoyage
-    df["commune"] = df["commune"].astype(str).str.strip()
-    df["province"] = df["province"].astype(str).str.strip()
-    df["region"] = df["region"].astype(str).str.strip()
-    return df[["commune", "province", "region", "latitude", "longitude"]].drop_duplicates(subset=["commune"])
 
-def load_lct_cases():
+def load_communes() -> pd.DataFrame:
+    df = pd.read_csv(config.COMMUNES_CSV)
+    df = df.rename(columns={"id": "commune_id"})
+    return df[["commune_id", "commune", "province", "region", "latitude", "longitude"]]
+
+
+def load_climate() -> pd.DataFrame:
+    if not config.CLIMATE_DB.exists():
+        logger.error(f"{config.CLIMATE_DB} introuvable. Lance : python src/data_prep/extract_climate.py")
+        return None
+    conn = sqlite3.connect(config.CLIMATE_DB)
+    df = pd.read_sql(
+        "SELECT commune_id, annee, mois, temp_mean AS temp_moy, "
+        "precipitation AS precip_mm, humidity AS humidite_pct FROM climate",
+        conn,
+    )
+    conn.close()
+    return df
+
+
+def load_environment() -> pd.DataFrame:
+    if not config.ENV_DB.exists():
+        logger.warning(f"{config.ENV_DB} introuvable -> pas de covariables environnement "
+                        f"(lance build_environment.py)")
+        return None
+    conn = sqlite3.connect(config.ENV_DB)
+    df = pd.read_sql(
+        "SELECT commune_id, altitude_m AS elevation_m, vegetation_lai AS lai, "
+        "aridity_index FROM environment",
+        conn,
+    )
+    conn.close()
+    return df
+
+
+def load_population() -> pd.DataFrame:
+    if not config.MUN_POP_CSV.exists():
+        logger.warning(f"{config.MUN_POP_CSV} introuvable -> pas de taux d'incidence "
+                        f"(lance fix_mun_pop.py)")
+        return None
+    df = pd.read_csv(config.MUN_POP_CSV)[["commune_id", "pop_total"]].dropna(subset=["commune_id"])
+    # quelques noms de commune ambigus (homonymes) font pointer plusieurs
+    # lignes population vers le meme commune_id (cf. fix_mun_pop.py) -- les
+    # garder ferait exploser le nombre de lignes du panel par jointure
+    # many-to-many. On ne devine pas laquelle est correcte : on les exclut,
+    # incidence_100k restera NaN pour ces quelques communes plutot que fausse.
+    dup = df["commune_id"].duplicated(keep=False)
+    if dup.any():
+        n_ids = df.loc[dup, "commune_id"].nunique()
+        logger.warning(f"{n_ids} commune_id avec plusieurs lignes population ambigues -> exclues "
+                        f"(incidence_100k = NaN pour ces communes)")
+        df = df[~dup]
+    return df
+
+
+def load_occupancy_posterior() -> pd.DataFrame:
+    """psi_mean (probabilite de presence de P. sergenti) issue du modele
+    bayesien ICAR -- ajoute comme covariable : c'est un signal reel
+    (entomologique + epidemiologique + spatial), pas juste une feature de
+    plus, et relie enfin les deux modeles du projet l'un a l'autre."""
+    if not config.POSTERIOR_CSV.exists():
+        logger.warning(f"{config.POSTERIOR_CSV} introuvable -> pas de covariable psi_mean "
+                        f"(lance bayesian_occupancy.py)")
+        return None
+    df = pd.read_csv(config.POSTERIOR_CSV)
+    return df[["province", "psi_mean", "psi_sd"]]
+
+
+def find_years_without_month(df: pd.DataFrame) -> set:
+    """Detecte dynamiquement les annees ou AUCUN cas (parmi ceux avec
+    commune reconciliee) n'a de Mois_Diagnostic renseigne -- typiquement un
+    format de rapport annuel different a la source, pas une vraie absence de
+    cas. Trouve empiriquement en creusant pourquoi le signal temperature/
+    saisonnalite etait faible : 2016/2018/2019 ont 0% de mois renseigne alors
+    qu'ils contiennent des milliers de cas (5623 au total) -- ces annees
+    etaient jusqu'ici silencieusement remplies a n_cas=0 (voir build_panel),
+    ce qui injectait 3 annees de faux "zero cas" dans l'entrainement mensuel
+    des modeles (GBM/PINN), corrompant tout signal saisonnier appris sur ces
+    annees. Detection dynamique (pas une liste codee en dur) pour rester
+    correct si le fichier source LCT est mis a jour plus tard."""
+    matched = df[df["commune_matched"]].copy()
+    matched["annee_num"] = pd.to_numeric(matched["Annee_Source"], errors="coerce")
+    matched["mois_num"] = pd.to_numeric(matched["Mois_Diagnostic"], errors="coerce")
+    coverage = matched.groupby("annee_num")["mois_num"].apply(lambda s: s.notna().mean())
+    bad_years = set(coverage[coverage == 0.0].index.astype(int))
+    if bad_years:
+        n_cas_affectes = int((matched["annee_num"].isin(bad_years)).sum())
+        logger.warning(
+            f"Annees SANS AUCUN mois de diagnostic renseigne : {sorted(bad_years)} "
+            f"({n_cas_affectes} cas avec commune reconciliee mais illocalisables dans le mois) -- "
+            f"marquees n_cas=NaN dans le panel (pas 0) pour ces annees, colonne "
+            f"'annee_sans_mois'=True. A EXCLURE du train/test des modeles mensuels."
+        )
+    return bad_years
+
+
+def load_lct_cases() -> tuple:
+    """Agrege les cas LCT par (commune_id, annee, mois), en utilisant la
+    reconciliation commune de la Phase 2 (clean_lct.py) -- pas le texte brut.
+    Retourne (cases, annees_sans_mois)."""
     lct_path = config.PROCESSED / "lct_clean.csv"
     if not lct_path.exists():
-        lct_path = config.RAW / "leish_LCT.csv"
+        raise FileNotFoundError(f"{lct_path} introuvable. Lance d'abord : python src/data_prep/clean_lct.py")
     df = pd.read_csv(lct_path)
-    
-    # Identifier colonnes
-    comm_col = None
-    for c in df.columns:
-        if c.lower() in ["commune", "nom_commune", "commune_std"]:
-            comm_col = c
-            break
-            
-    year_col = None
-    for c in df.columns:
-        if c.lower() in ["annee", "annee_source", "year"]:
-            year_col = c
-            break
-            
-    month_col = None
-    for c in df.columns:
-        if c.lower() in ["mois", "mois_source", "mois_diagnostic", "month"]:
-            month_col = c
-            break
-            
-    cases_col = "n_cases" if "n_cases" in df.columns else ("Nbr_cas" if "Nbr_cas" in df.columns else "cases")
-    
-    if comm_col is None or year_col is None or month_col is None:
-        logger.warning(f"Colonnes manquantes: comm_col={comm_col}, year_col={year_col}, month_col={month_col}")
-        # Si cases_col n'existe pas, chaque ligne de lct_clean.csv représente 1 cas
-        if cases_col not in df.columns:
-            df["n_cas_count"] = 1
-            cases_col = "n_cas_count"
-    elif cases_col not in df.columns:
-        df["n_cas_count"] = 1
-        cases_col = "n_cas_count"
-        
-    df[comm_col] = df[comm_col].astype(str).str.strip()
-    df[year_col] = pd.to_numeric(df[year_col], errors='coerce')
-    df[month_col] = pd.to_numeric(df[month_col], errors='coerce')
-    
-    # Aggréger par commune, année, mois
-    cases = df.groupby([comm_col, year_col, month_col])[cases_col].sum().reset_index()
-    cases.columns = ["commune", "annee", "mois", "n_cas"]
-    cases = cases[(cases["annee"] >= 2009) & (cases["annee"] <= 2020) & (cases["mois"] >= 1) & (cases["mois"] <= 12)]
-    return cases
 
-def extract_climate_panel(communes_df):
-    """Extrait le climat ERA5 mensuel pour chaque commune de 2009 à 2024."""
-    logger.info("Extraction des séries climatiques ERA5 mensuelles...")
-    
-    monthly_files = sorted(config.RAW.glob("era5_morocco_*_monthly.nc"))
-    if not monthly_files:
-        # Fallback sur 1990_2025.nc s'il existe
-        single_nc = config.RAW / "era5_morocco_1990_2025.nc"
-        if single_nc.exists():
-            monthly_files = [single_nc]
-            
-    records = []
-    
-    for nc_file in monthly_files:
-        try:
-            ds = xr.open_dataset(nc_file)
-            
-            # Nommer les dims
-            lat_name = "lat" if "lat" in ds.coords else "latitude"
-            lon_name = "lon" if "lon" in ds.coords else "longitude"
-            time_name = "time" if "time" in ds.coords else "valid_time"
-            
-            t2m_name = "t2m" if "t2m" in ds.data_vars else ("2m_temperature" if "2m_temperature" in ds.data_vars else None)
-            tp_name = "tp" if "tp" in ds.data_vars else ("total_precipitation" if "total_precipitation" in ds.data_vars else None)
-            d2m_name = "d2m" if "d2m" in ds.data_vars else ("2m_dewpoint_temperature" if "2m_dewpoint_temperature" in ds.data_vars else None)
-            
-            times = pd.to_datetime(ds[time_name].values)
-            
-            for _, comm in communes_df.iterrows():
-                c_lat, c_lon = comm["latitude"], comm["longitude"]
-                
-                # Extraction du point le plus proche
-                sub_ds = ds.sel({lat_name: c_lat, lon_name: c_lon}, method="nearest")
-                
-                t2m = sub_ds[t2m_name].values - 273.15 if t2m_name else np.nan # K -> °C
-                tp = sub_ds[tp_name].values * 1000.0 if tp_name else np.nan # m -> mm
-                
-                if d2m_name:
-                    d2m = sub_ds[d2m_name].values - 273.15
-                    # Humidité relative approximative Magnus
-                    rh = 100.0 * np.exp((17.625 * d2m) / (243.04 + d2m)) / np.exp((17.625 * t2m) / (243.04 + t2m))
-                    rh = np.clip(rh, 0.0, 100.0)
-                else:
-                    rh = np.nan
-                    
-                for idx, t in enumerate(times):
-                    records.append({
-                        "commune": comm["commune"],
-                        "annee": t.year,
-                        "mois": t.month,
-                        "temp_moy": float(t2m[idx]) if hasattr(t2m, '__len__') else float(t2m),
-                        "precip_mm": float(tp[idx]) if hasattr(tp, '__len__') else float(tp),
-                        "humidite_pct": float(rh[idx]) if hasattr(rh, '__len__') else float(rh)
-                    })
-            ds.close()
-        except Exception as e:
-            logger.warning(f"Erreur lors du traitement de {nc_file.name}: {e}")
-            
-    if not records:
-        logger.error("Aucune donnée climatique extraite des fichiers NC.")
-        return None
-        
-    df_clim = pd.DataFrame(records).drop_duplicates(subset=["commune", "annee", "mois"])
-    return df_clim
+    n_total = len(df)
+    n_commune_matched = int(df["commune_matched"].sum())
+    df["annee_num"] = pd.to_numeric(df["Annee_Source"], errors="coerce")
+    df["mois_num"] = pd.to_numeric(df["Mois_Diagnostic"], errors="coerce")
 
-def build_panel():
+    annees_sans_mois = find_years_without_month(df)
+
+    placeable = df[
+        df["commune_matched"]
+        & df["annee_num"].between(2009, 2020)
+        & df["mois_num"].between(1, 12)
+    ].copy()
+
+    logger.info(
+        f"Cas LCT : {n_total} au total -> {n_commune_matched} avec commune reconciliee "
+        f"({100 * n_commune_matched / n_total:.1f}%) -> {len(placeable)} placables dans le panel "
+        f"commune x annee x mois ({100 * len(placeable) / n_total:.1f}% du total ; le reste manque "
+        f"soit de commune reconciliee, soit de mois de diagnostic -- cas non fabriques, exclus)"
+    )
+
+    cases = (
+        placeable.groupby(["commune_id", "annee_num", "mois_num"])
+        .size()
+        .rename("n_cas")
+        .reset_index()
+        .rename(columns={"annee_num": "annee", "mois_num": "mois"})
+    )
+    cases["annee"] = cases["annee"].astype(int)
+    cases["mois"] = cases["mois"].astype(int)
+    cases["commune_id"] = cases["commune_id"].astype(int)
+    return cases, annees_sans_mois
+
+
+def build_panel() -> None:
+    config.ensure_dirs()
+
     communes = load_communes()
-    logger.info(f"Chargé {len(communes)} communes distinctes.")
-    
-    cases = load_lct_cases()
-    climate = extract_climate_panel(communes)
-    
+    logger.info(f"{len(communes)} communes (referentiel, id unique).")
+
+    climate = load_climate()
     if climate is None:
-        logger.error("Impossible de créer le panel sans climat.")
+        logger.error("Panel non construit : climat indisponible.")
         return
-        
-    # Créer la grille complète commune x année (2009-2024) x mois (1-12)
-    years = list(range(2009, 2025))
+
+    years = sorted(climate["annee"].unique())
     months = list(range(1, 13))
-    
-    grid = []
-    for _, comm in communes.iterrows():
-        for y in years:
-            for m in months:
-                grid.append({
-                    "commune": comm["commune"],
-                    "province": comm["province"],
-                    "region": comm["region"],
-                    "latitude": comm["latitude"],
-                    "longitude": comm["longitude"],
-                    "annee": y,
-                    "mois": m
-                })
-    panel = pd.DataFrame(grid)
-    
-    # Merger avec le climat
-    panel = panel.merge(climate, on=["commune", "annee", "mois"], how="left")
-    
-    # Merger avec les cas (remplir 0 pour les mois sans cas si annee <= 2020)
-    if cases is not None:
-        panel = panel.merge(cases, on=["commune", "annee", "mois"], how="left")
-        # Si année <= 2020, NaN de cas = 0 cas
-        panel.loc[panel["annee"] <= 2020, "n_cas"] = panel.loc[panel["annee"] <= 2020, "n_cas"].fillna(0)
-    else:
-        panel["n_cas"] = np.nan
-        
-    # Charger les infos statiques des provinces (altitude, etc.)
-    pt_path = config.PROCESSED / "province_table.csv"
+    logger.info(f"Grille : {len(communes)} communes x {len(years)} annees ({years[0]}-{years[-1]}) x 12 mois")
+
+    grid = communes.merge(pd.DataFrame({"annee": years}), how="cross").merge(
+        pd.DataFrame({"mois": months}), how="cross"
+    )
+
+    panel = grid.merge(climate, on=["commune_id", "annee", "mois"], how="left")
+
+    env = load_environment()
+    if env is not None:
+        panel = panel.merge(env, on="commune_id", how="left")
+
+    pop = load_population()
+    if pop is not None:
+        panel = panel.merge(pop, on="commune_id", how="left")
+
+    cases, annees_sans_mois = load_lct_cases()
+    panel = panel.merge(cases, on=["commune_id", "annee", "mois"], how="left")
+    panel["annee_sans_mois"] = panel["annee"].isin(annees_sans_mois)
+    # n_cas=0 seulement pour les annees ou l'absence de cas places est reelle
+    # (mois connu, aucun cas ce mois-la) ; pour les annees sans AUCUN mois
+    # renseigne, n_cas reste NaN (inconnu, pas zero) -- voir load_lct_cases.
+    fillable = (panel["annee"] <= 2020) & (~panel["annee_sans_mois"])
+    panel.loc[fillable, "n_cas"] = panel.loc[fillable, "n_cas"].fillna(0)
+
+    if pop is not None:
+        panel["incidence_100k"] = np.where(
+            panel["pop_total"] > 0, panel["n_cas"] / panel["pop_total"] * 100_000, np.nan
+        )
+
+    pt_path = config.PROVINCE_TABLE
     if pt_path.exists():
         pt = pd.read_csv(pt_path)
-        # Harmoniser les noms
-        pt_cols = [c for c in pt.columns if c not in ["province", "lat", "lon"]]
+        pt_cols = [c for c in pt.columns if c not in ("province", "region", "lat", "lon")]
         panel = panel.merge(pt[["province"] + pt_cols], on="province", how="left")
-        
-    # Harmoniser le nom de la colonne région si suffixe _x ou _y
-    for col in panel.columns:
-        if col.startswith("region"):
-            panel["region"] = panel[col]
-            break
-    
-    # Calculer les lags climatiques (1 à 6 mois) par commune
-    logger.info("Calcul des lags climatiques (1 à 6 mois)...")
+
+    psi = load_occupancy_posterior()
+    if psi is not None:
+        panel = panel.merge(psi, on="province", how="left")
+
+    logger.info("Calcul des lags climatiques (1 a 6 mois) par commune...")
+    panel = panel.sort_values(["commune_id", "annee", "mois"])
     for lag in range(1, 7):
         for col in ["temp_moy", "precip_mm", "humidite_pct"]:
-            panel[f"{col}_lag{lag}"] = panel.groupby("commune")[col].shift(lag)
-            
-    # Encoder la saisonnalité (sinus / cosinus du mois)
+            panel[f"{col}_lag{lag}"] = panel.groupby("commune_id")[col].shift(lag)
+
     panel["sin_month"] = np.sin(2 * np.pi * panel["mois"] / 12.0)
     panel["cos_month"] = np.cos(2 * np.pi * panel["mois"] / 12.0)
-    
-    # Sauvegarder
+
     out_path = config.PROCESSED / "commune_panel.csv"
     panel.to_csv(out_path, index=False)
-    logger.info(f"Panel spatio-temporel sauvegardé dans : {out_path} ({len(panel)} lignes)")
+    n_cas_total = int(panel["n_cas"].sum())
+    n_nan_rows = int(panel["n_cas"].isna().sum())
+    logger.info(f"Panel ecrit : {out_path} ({len(panel)} lignes, {n_cas_total} cas places au total, "
+                f"{n_nan_rows} lignes n_cas=NaN [annees sans mois de diagnostic, a exclure du train/test])")
+
 
 if __name__ == "__main__":
     build_panel()

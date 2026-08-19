@@ -139,10 +139,43 @@ def _aggregate(ds, latn, lonn, timen, resolved, communes):
     daily_rows = []
     monthly_rows = []
 
+    # Fix (trouve par audit) : le plus-proche-voisin brut tombe parfois sur
+    # un pixel ERA5-Land masque (ocean) pres des cotes -> serie NaN sur toute
+    # la duree pour la commune entiere. Confirme sur 24 communes cotieres,
+    # dont Agadir (501797 hab.), Casablanca, Nador, Tanger, Fnideq -- 146 cas
+    # LCT reels invisibles a tout modele climat-dependant (dropna). Precalcule
+    # un masque de validite (sur t2m, la variable toujours presente) et,
+    # quand le pixel le plus proche est masque, cherche le pixel valide le
+    # plus proche par anneaux concentriques croissants plutot que d'accepter
+    # un NaN silencieux.
+    mask_invalid = None
+    if "t2m" in resolved:
+        mask_invalid = np.isnan(ds_daily[resolved["t2m"]].isel({timen: 0}).transpose(latn, lonn).values)
+
+    def _nearest_valid(iy, ix, max_r=10):
+        if mask_invalid is None or not mask_invalid[iy, ix]:
+            return iy, ix, 0
+        ny, nx = mask_invalid.shape
+        for r in range(1, max_r + 1):
+            candidates = [
+                (iy + dy, ix + dx)
+                for dy in range(-r, r + 1) for dx in range(-r, r + 1)
+                if max(abs(dy), abs(dx)) == r and 0 <= iy + dy < ny and 0 <= ix + dx < nx
+                and not mask_invalid[iy + dy, ix + dx]
+            ]
+            if candidates:
+                best = min(candidates, key=lambda c: (lats[c[0]] - lats[iy]) ** 2 + (lons[c[1]] - lons[ix]) ** 2)
+                return best[0], best[1], r
+        return iy, ix, -1  # aucun voisin valide trouve dans le rayon -- reste NaN
+
+    n_relocated = 0
     for _, com in communes.iterrows():
         clat, clon = com["latitude"], com["longitude"]
         iy = int(np.abs(lats - clat).argmin())
         ix = int(np.abs(lons - clon).argmin())
+        iy, ix, moved_r = _nearest_valid(iy, ix)
+        if moved_r > 0:
+            n_relocated += 1
 
         # extraction des series pour cette commune
         series = {}
@@ -159,7 +192,18 @@ def _aggregate(ds, latn, lonn, timen, resolved, communes):
 
             temp_c = float(t2m[t_idx] - 273.15) if t2m is not None and not np.isnan(t2m[t_idx]) else None
             dew_c = float(d2m[t_idx] - 273.15) if d2m is not None and not np.isnan(d2m[t_idx]) else None
-            precip = float(tp[t_idx] * 1000.0) if tp is not None and not np.isnan(tp[t_idx]) else None  # m -> mm
+            # ERA5 "monthly averaged" tp est un TAUX QUOTIDIEN MOYEN sur le mois
+            # (m/jour), pas un total mensuel deja accumule -- confirme empiriquement
+            # (une region humide comme Chefchaouen donnait ~45mm/an avec la formule
+            # precedente, ~10x trop bas). Multiplier par le nb de jours du mois
+            # donne le vrai total mensuel en mm. Pour les donnees HORAIRES
+            # resamplees en 1D (ds_daily), tp est deja un total/moyenne journaliere
+            # au sens propre -- ne pas multiplier par days_in_month dans ce cas.
+            if tp is not None and not np.isnan(tp[t_idx]):
+                precip_rate_mm = float(tp[t_idx] * 1000.0)  # m -> mm
+                precip = precip_rate_mm if is_hourly else precip_rate_mm * ts.days_in_month
+            else:
+                precip = None
 
             hum = None
             if temp_c is not None and dew_c is not None:
@@ -181,11 +225,15 @@ def _aggregate(ds, latn, lonn, timen, resolved, communes):
                 "precipitation": round(precip, 2) if precip is not None else None,
             })
 
-        # accumuler pour le monthly long-terme
-        if temp_c is not None:
-            months_temp.setdefault((ts.year, ts.month), []).append(temp_c)
-        if precip is not None:
-            months_precip.setdefault((ts.year, ts.month), []).append(precip)
+            # accumuler pour le monthly long-terme -- DOIT etre dans la boucle
+            # temporelle : c'etait par erreur au niveau de la boucle commune
+            # (indentation), donc n'accumulait jamais que le DERNIER mois de
+            # la serie au lieu des 156 mois -> precip_annual/temp_mean
+            # long-terme totalement faux (calcules sur un seul mois de decembre).
+            if temp_c is not None:
+                months_temp.setdefault((ts.year, ts.month), []).append(temp_c)
+            if precip is not None:
+                months_precip.setdefault((ts.year, ts.month), []).append(precip)
 
         # moyennes mensuelles pour ce commune (une ligne par mois)
         all_months = set(months_temp) | set(months_precip)
@@ -202,6 +250,10 @@ def _aggregate(ds, latn, lonn, timen, resolved, communes):
                 "temp_mean": round(float(np.nanmean(months_temp.get((yr, mo), [np.nan]))), 2),
                 "precip_monthly": round(float(np.nanmean(months_precip.get((yr, mo), [np.nan]))), 2),
             })
+
+    if n_relocated:
+        print(f"[INFO] {n_relocated} communes relocalisees vers le pixel ERA5 valide le plus proche "
+              f"(pixel initial masque -- typiquement cotier, cf. fix audit)")
 
     daily_df = pd.DataFrame(daily_rows)
     monthly_df = pd.DataFrame(monthly_rows)
@@ -221,13 +273,25 @@ def main() -> None:
         print(f"[INFO] concatenation de {len(nc_path)} fichiers annuels...")
         datasets = [xr.open_dataset(p) for p in nc_path]
         try:
-            ds = xr.concat(datasets, dim="time")
-            # trier par temps au cas ou
-            ds = ds.sortby("time")
+            # bug corrige : concatener sur "time" alors que la dimension
+            # temporelle reelle des fichiers ERA5 est "valid_time" creait une
+            # dimension "time" (longueur = nb de fichiers) EN PLUS de
+            # "valid_time" (longueur 12) inchangee dans chaque fichier, au
+            # lieu de les fusionner -> tableaux 4D au lieu de 3D et crash
+            # "truth value of an array with more than one element" plus loin.
+            concat_dim = pick(TIME_CANDIDATES, set(datasets[0].variables))
+            if concat_dim is None:
+                raise ValueError(
+                    f"Dimension temporelle introuvable dans {nc_path[0].name} : "
+                    f"{sorted(datasets[0].variables)}"
+                )
+            ds = xr.concat(datasets, dim=concat_dim, coords="minimal",
+                            compat="override", join="override")
+            ds = ds.sortby(concat_dim)
         finally:
             for d in datasets:
                 d.close()
-        print(f"[INFO] concatene : {len(ds['time'])} pas de temps")
+        print(f"[INFO] concatene : {len(ds[concat_dim])} pas de temps (dimension '{concat_dim}')")
     else:
         ds = _load_ds(nc_path)
 

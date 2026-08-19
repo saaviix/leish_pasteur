@@ -1,0 +1,1447 @@
+﻿rang,Commune,Province,Region_std,n_cas,suggestion_referentiel,score_suggestion,cumsum_pct
+1,Afourer,Azilal,Béni Mellal-Khénifra,523,Tamda Noumercid,0.455,7.722976963969285
+2,Bab zitouna,Taza,Fès-Meknès,158,Bab Marzouka,0.696,10.05611340815121
+3,Ait Attab,Azilal,Béni Mellal-Khénifra,157,Aït Abbas,0.667,12.374483165977555
+4,Babzitouna,Taza,Fès-Meknès,148,Bab Marzouka,0.636,14.559952746603662
+5,Ouaouizerth,Azilal,Béni Mellal-Khénifra,134,Ouaoula,0.556,16.538688718251624
+6,kelaa,Tinghir,Drâa-Tafilalet,108,Kalaat M'Gouna,0.421,18.13349084465446
+7,Iminoulaoun,Ouarzazate,Drâa-Tafilalet,107,Siroua,0.471,19.713526284701715
+8,Tizgui,Azilal,Béni Mellal-Khénifra,99,Tisqi,0.545,21.175428233904313
+9,Sam,Chichaoua,Marrakech-Safi,96,Gmassa,0.444,22.593030124040165
+10,Bab Zitouna,Taza,Fès-Meknès,92,Bab Marzouka,0.696,23.95156526875369
+11,A.Aicha,Taounate,Fès-Meknès,86,Aïn Aïcha,0.75,25.221500295333726
+12,Khmiss Dades,Tinghir,Drâa-Tafilalet,85,Souk Lakhmis Dades,0.733,26.47666863555818
+13,Boumalne,Ouarzazate,Drâa-Tafilalet,80,Toundoute,0.471,27.658003544004725
+14,Bab tété,Taza,Fès-Meknès,79,Bni Lent,0.375,28.824571766095687
+15,Kelaa,Tinghir,Drâa-Tafilalet,74,Kalaat M'Gouna,0.421,29.917306556408743
+16,Ait attab,Azilal,Béni Mellal-Khénifra,65,Aït Abbas,0.667,30.877141169521558
+17,"S,Fadma",Al Haouz,Marrakech-Safi,56,Sti Fadma,0.75,31.70407560543414
+18,Chafarni,Taroudant,Souss-Massa,54,Lakhnafif,0.471,32.50147666863556
+19,Khmiss,Tinghir,Drâa-Tafilalet,52,Souk Lakhmis Dades,0.5,33.26934435912581
+20,Ain Dorrij,Ouezzane,Tanger-Tétouan-Al Hoceïma,52,Ain Dfali,0.632,34.037212049616066
+21,A.Mediouna,Taounate,Fès-Meknès,51,Ain Mediouna,0.818,34.79031305375074
+22,Z.Cheikh,Béni Mellal,Béni Mellal-Khénifra,49,Isseksi,0.267,35.51388068517425
+23,Hanchen,Essaouira,Marrakech-Safi,49,El Hanchane,0.667,36.23744831659776
+24,Tanfarda,Azilal,Béni Mellal-Khénifra,48,Tanant,0.571,36.946249261665685
+25,Iminifri,Azilal,Béni Mellal-Khénifra,43,Tifni,0.462,37.5812167749557
+26,khmiss dades,Tinghir,Drâa-Tafilalet,41,Souk Lakhmis Dades,0.733,38.18665091553456
+27,Lakhmis,Tinghir,Drâa-Tafilalet,39,Souk Lakhmis Dades,0.56,38.76255168340224
+28,Z Cheikh,Béni Mellal,Béni Mellal-Khénifra,38,Ouled Yaïch,0.316,39.32368576491435
+29,Ait Sedrat Jbel Oulya,Ouarzazate,Drâa-Tafilalet,35,Skoura Ahl El Oust,0.462,39.84051978735972
+30,ait hamd,Tinghir,Drâa-Tafilalet,34,Aït Hani,0.75,40.3425871234495
+31,Takhsayte,Fquih Ben Salah,Béni Mellal-Khénifra,33,Tachraft,0.588,40.8298877731837
+32,Belksiri,Sidi Kacem,Rabat-Salé-Kénitra,33,Bir Taleb,0.353,41.317188422917894
+33,mcissi,Tinghir,Drâa-Tafilalet,32,M'Ssici,0.615,41.78972238629652
+34,Ain Dorrij,Sidi Kacem,Rabat-Salé-Kénitra,31,Ain Jemaa,0.526,42.24748966331955
+35,taguella,Azilal,Béni Mellal-Khénifra,30,Ait Taguella,0.8,42.69049025398701
+36,Lakhmis,Ouarzazate,Drâa-Tafilalet,29,Ait Oumdis,0.471,43.118724158298875
+37,Sarghine,Tinghir,Drâa-Tafilalet,29,Tinghir,0.4,43.54695806261075
+38,Bouzemlan,Taza,Fès-Meknès,29,Bouyablane,0.632,43.97519196692262
+39,Taguella,Azilal,Béni Mellal-Khénifra,28,Ait Taguella,0.8,44.38865918487891
+40,Kelaa Centre,Tinghir,Drâa-Tafilalet,28,Kalaat M'Gouna,0.462,44.802126402835206
+41,Lamzem,El Kelâa des Sraghna,Marrakech-Safi,28,Oulad Amer,0.5,45.215593620791495
+42,A.Maatouf,Taounate,Fès-Meknès,27,Ain Maatouf,0.8,45.614294152392205
+43,Ait hamd,Tinghir,Drâa-Tafilalet,27,Aït Hani,0.75,46.012994683992915
+44,Ouzoud,Azilal,Béni Mellal-Khénifra,26,Ouaoula,0.615,46.39692852923804
+45,ait idir,Tinghir,Drâa-Tafilalet,25,Aït Hani,0.625,46.766095688127585
+46,Bab Tete,Taza,Fès-Meknès,25,Bni Lent,0.375,47.13526284701713
+47,Babtété,Taza,Fès-Meknès,24,Bouyablane,0.471,47.48966331955109
+48,Ain Dorij,Ouezzane,Tanger-Tétouan-Al Hoceïma,24,Ain Dfali,0.667,47.84406379208506
+49,Ait idir,Tinghir,Drâa-Tafilalet,23,Aït Hani,0.625,48.18369757826344
+50,S.Y.B.Z,Taounate,Fès-Meknès,23,Sidi Yahya Bni Zeroual,0.276,48.523331364441816
+51,S.A.B.B,Azilal,Béni Mellal-Khénifra,23,Aït Abbas,0.125,48.8629651506202
+52,Bourmane,Ouarzazate,Drâa-Tafilalet,23,Toundoute,0.471,49.20259893679858
+53,ait tazarine,Tinghir,Drâa-Tafilalet,22,Aït Elfarsi,0.609,49.527466036621384
+54,Lbrouj,Settat,Casablanca-Settat,22,Lahouaza,0.429,49.85233313644418
+55,,Essaouira,Marrakech-Safi,22,Zaouiat Ben Hmida,0.0,50.177200236266984
+56,lakhmiss,Tinghir,Drâa-Tafilalet,22,Souk Lakhmis Dades,0.615,50.50206733608978
+57,Hanchène,Essaouira,Marrakech-Safi,22,El Hanchane,0.737,50.826934435912584
+58,Ghdira Hamra,Béni Mellal,Béni Mellal-Khénifra,22,Sidi Hammadi,0.583,51.15180153573538
+59,Od Ayad,Béni Mellal,Béni Mellal-Khénifra,21,Ouled Yaïch,0.556,51.4619019492026
+60,Bouachiba,Azilal,Béni Mellal-Khénifra,20,Ouaoula,0.5,51.75723567631424
+61,Tamraght,Agadir-Ida Ou Tanane,Souss-Massa,20,Tadrart,0.667,52.05256940342587
+62,S.H.M'ed,Taounate,Fès-Meknès,20,Ras El Oued,0.421,52.34790313053751
+63,Ait hammou osaid,Tinghir,Drâa-Tafilalet,20,Ait Ouassif,0.593,52.64323685764914
+64,Kelaa,Ouarzazate,Drâa-Tafilalet,20,Afella N'Dra,0.471,52.93857058476078
+65,Bouzemlane,Taza,Fès-Meknès,19,Bouyablane,0.7,53.21913762551684
+66,Boutaghrar,Tinghir,Drâa-Tafilalet,19,Outerbat,0.444,53.49970466627289
+67,Skour,Boulemane,Fès-Meknès,18,Missour,0.667,53.76550502067336
+68,Tassouit,Tinghir,Drâa-Tafilalet,18,Assoul,0.714,54.031305375073835
+69,Zegotta,Sidi Kacem,Rabat-Salé-Kénitra,18,Zaggota,0.714,54.2971057294743
+70,"S,fadma",Al Haouz,Marrakech-Safi,18,Sti Fadma,0.75,54.56290608387478
+71,Bab mrouj,Taza,Fès-Meknès,17,Bab Marzouka,0.762,54.81393975191967
+72,Chahid Baha,Sefrou,Fès-Meknès,17,Ahl Sidi Lahcen,0.538,55.06497341996456
+73,""" """,Taounate,Fès-Meknès,17,M'tioua,0.2,55.31600708800945
+74,Ait tazarine,Tinghir,Drâa-Tafilalet,17,Aït Elfarsi,0.609,55.56704075605434
+75,Tassouite,Tinghir,Drâa-Tafilalet,17,Assoul,0.667,55.81807442409923
+76,Hanchene,Essaouira,Marrakech-Safi,16,El Hanchane,0.737,56.05434140578854
+77,Taguela,Azilal,Béni Mellal-Khénifra,16,Ait Taguella,0.737,56.29060838747785
+78,Bni Kolla,Sidi Kacem,Rabat-Salé-Kénitra,15,Bir Taleb,0.444,56.51210868281158
+79,chafarni,Taroudant,Souss-Massa,15,Lakhnafif,0.471,56.733608978145305
+80,sarghine,Tinghir,Drâa-Tafilalet,15,Tinghir,0.4,56.95510927347903
+81,Khenichate,Sidi Kacem,Rabat-Salé-Kénitra,15,Khnichet,0.778,57.17660956881276
+82,Bani Saden,Sefrou,Fès-Meknès,15,Aït Seghrouchen,0.48,57.398109864146484
+83,Tislit,Azilal,Béni Mellal-Khénifra,15,Tisqi,0.727,57.61961015948021
+84,Fariata,Béni Mellal,Béni Mellal-Khénifra,14,Had Bradia,0.471,57.82634376845836
+85,"S,A,B,B",Azilal,Béni Mellal-Khénifra,14,Aït Abbas,0.125,58.033077377436506
+86,My Brahim,Al Haouz,Marrakech-Safi,13,Moulay Brahim,0.818,58.22504430005907
+87,Mzem,El Kelâa des Sraghna,Marrakech-Safi,13,Zemrane,0.545,58.41701122268163
+88,Foum Anser,Béni Mellal,Béni Mellal-Khénifra,13,Foum El Anceur,0.75,58.60897814530419
+89,Timolilte,Azilal,Béni Mellal-Khénifra,13,Imlil,0.714,58.800945067926754
+90,Bouzamlane,Taza,Fès-Meknès,13,Bouyablane,0.8,58.992911990549324
+91,Beni Sadden,Sefrou,Fès-Meknès,13,Aït Seghrouchen,0.154,59.184878913171886
+92,Aderj,Sefrou,Fès-Meknès,12,Ahermoumou,0.4,59.36207914943886
+93,boutghrar,Tinghir,Drâa-Tafilalet,12,Outerbat,0.588,59.539279385705846
+94,Tdili,Azilal,Béni Mellal-Khénifra,12,Tisqi,0.6,59.71647962197283
+95,Iaazazen,Nador,Oriental,12,Iaazzanene,0.778,59.893679858239814
+96,Ighilamgone,Tinghir,Drâa-Tafilalet,11,Kalaat M'Gouna,0.48,60.05611340815121
+97,"A,Chefk",Al Haouz,Marrakech-Safi,11,Ahl Tifnoute,0.316,60.21854695806261
+98,kabdani,Driouch,Oriental,11,Dar El Kebdani,0.571,60.38098050797401
+99,Ighil amgone,Tinghir,Drâa-Tafilalet,11,Tinghir,0.421,60.54341405788541
+100,bab zitouna,Taza,Fès-Meknès,11,Bab Marzouka,0.696,60.70584760779681
+101,Lkhmiss Dades,Tinghir,Drâa-Tafilalet,11,Souk Lakhmis Dades,0.774,60.86828115770821
+102,Kouacem,Fquih Ben Salah,Béni Mellal-Khénifra,11,Rouached,0.667,61.03071470761961
+103,My Bouchta,Taounate,Fès-Meknès,11,Bni Bouchibet,0.609,61.19314825753101
+104,Tirest,Azilal,Béni Mellal-Khénifra,11,Tisqi,0.545,61.35558180744241
+105,Iminoulaouen,Ouarzazate,Drâa-Tafilalet,11,Toundoute,0.476,61.51801535735381
+106,Yasmine,Sidi Kacem,Rabat-Salé-Kénitra,11,Ain Jemaa,0.5,61.68044890726521
+107,Neknafa,Essaouira,Marrakech-Safi,10,Meskala,0.571,61.82811577082103
+108,Ourbiaa,Béni Mellal,Béni Mellal-Khénifra,10,Afourar,0.571,61.97578263437685
+109,"A,Mediona",Taounate,Fès-Meknès,10,Ain Mediouna,0.762,62.12344949793266
+110,lekhmiss,Tinghir,Drâa-Tafilalet,10,Souk Lakhmis Dades,0.538,62.27111636148848
+111,Bab Mrouj,Taza,Fès-Meknès,10,Bab Marzouka,0.762,62.4187832250443
+112,Khmiss dades,Tinghir,Drâa-Tafilalet,10,Souk Lakhmis Dades,0.733,62.56645008860012
+113,Bani saden,Sefrou,Fès-Meknès,10,Aït Seghrouchen,0.48,62.71411695215593
+114,Boujediane,Larache,Tanger-Tétouan-Al Hoceïma,10,Souaken,0.471,62.86178381571175
+115,Tibihit,Béni Mellal,Béni Mellal-Khénifra,10,Taghzirt,0.4,63.00945067926757
+116,tassouite,Tinghir,Drâa-Tafilalet,9,Assoul,0.667,63.14235085646781
+117,Bouzmlne,Taza,Fès-Meknès,9,Bouyablane,0.667,63.27525103366804
+118,Tisi ousli,Taza,Fès-Meknès,9,Oued Amlil,0.4,63.40815121086828
+119,Ait guirte,Azilal,Béni Mellal-Khénifra,9,Ait Taguella,0.636,63.54105138806852
+120,afourer,Azilal,Béni Mellal-Khénifra,9,Tamda Noumercid,0.455,63.67395156526875
+121,Lakhemis,Tinghir,Drâa-Tafilalet,9,Souk Lakhmis Dades,0.538,63.80685174246899
+122,"B,Oulid",Taounate,Fès-Meknès,9,Bni Oulid,0.75,63.93975191966923
+123,hanchene,Essaouira,Marrakech-Safi,9,El Hanchane,0.737,64.07265209686946
+124,Amsa,Tétouan,Tanger-Tétouan-Al Hoceïma,9,Azla,0.5,64.2055522740697
+125,Kansara,Moulay Yacoub,Fès-Meknès,9,Laajajra,0.533,64.33845245126993
+126,Ain Doreij,Ouezzane,Tanger-Tétouan-Al Hoceïma,9,Ain Dfali,0.632,64.47135262847017
+127,Mesker,Sidi Kacem,Rabat-Salé-Kénitra,9,Sidi Kacem,0.125,64.60425280567041
+128,Ain Dfali Centre,Sidi Kacem,Rabat-Salé-Kénitra,8,Sidi Kacem,0.462,64.72238629651507
+129,Ait Idir,Tinghir,Drâa-Tafilalet,8,Aït Hani,0.625,64.84051978735971
+130,Taouloklot,Chichaoua,Marrakech-Safi,8,Taouloukoult,0.818,64.95865327820437
+131,"Od, Naceur",Fquih Ben Salah,Béni Mellal-Khénifra,8,Oulad Nacer,0.762,65.07678676904902
+132,Zaouia,Sidi Kacem,Rabat-Salé-Kénitra,8,Zaggota,0.615,65.19492025989368
+133,Tizqui,Azilal,Béni Mellal-Khénifra,8,Tisqi,0.727,65.31305375073833
+134,S K,Sidi Kacem,Rabat-Salé-Kénitra,8,Sidi Kacem,0.462,65.43118724158299
+135,khmiss,Tinghir,Drâa-Tafilalet,8,Souk Lakhmis Dades,0.5,65.54932073242765
+136,Afouear,Azilal,Béni Mellal-Khénifra,8,Taounza,0.571,65.6674542232723
+137,El Kelaa,El Kelâa des Sraghna,Marrakech-Safi,8,El Aamria,0.588,65.78558771411696
+138,Beni hassen,Azilal,Béni Mellal-Khénifra,8,Bni Hassane,0.818,65.90372120496161
+139,Daour Jdid,Fquih Ben Salah,Béni Mellal-Khénifra,8,Dar Oulad Zidouh,0.538,66.02185469580625
+140,Assg,Tinghir,Drâa-Tafilalet,8,Assoul,0.6,66.13998818665091
+141,Ouad Elbour,Chichaoua,Marrakech-Safi,8,Oued L'Bour,0.818,66.25812167749557
+142,Targa,Ouarzazate,Drâa-Tafilalet,8,Tarmigt,0.667,66.37625516834022
+143,Sahraoua,Sidi Kacem,Rabat-Salé-Kénitra,8,Bab Tiouka,0.444,66.49438865918488
+144,,Al Haouz,Marrakech-Safi,7,Zerkten,0.0,66.59775546367395
+145,Beni sadden,Sefrou,Fès-Meknès,7,Aït Seghrouchen,0.154,66.70112226816302
+146,S Y B Z,Taounate,Fès-Meknès,7,Sidi Yahya Bni Zeroual,0.483,66.8044890726521
+147,"Q,militaire",Taza,Fès-Meknès,7,Msila,0.5,66.90785587714117
+148,ait yassine,Tinghir,Drâa-Tafilalet,7,Ait Ouassif,0.727,67.01122268163024
+149,lbrouj,Settat,Casablanca-Settat,7,Lahouaza,0.429,67.11458948611931
+150,Dar kebdani,Nador,Oriental,7,Arekmane,0.526,67.21795629060838
+151,tabrkhachte,Tinghir,Drâa-Tafilalet,7,Souk Lakhmis Dades,0.345,67.32132309509745
+152,Chtioui,Fquih Ben Salah,Béni Mellal-Khénifra,7,Bni Oukil,0.5,67.42468989958654
+153,hanchan,Essaouira,Marrakech-Safi,7,El Hanchane,0.778,67.52805670407561
+154,Tikiouine,Agadir-Ida Ou Tanane,Souss-Massa,7,Imsouane,0.588,67.63142350856468
+155,Bab Wandar,Taounate,Fès-Meknès,7,Jbabra,0.5,67.73479031305375
+156,imzilne,Tinghir,Drâa-Tafilalet,7,Imider,0.615,67.83815711754282
+157,Ighilnoumgoune,Tinghir,Drâa-Tafilalet,7,Ikniouen,0.455,67.94152392203189
+158,Somaa,Béni Mellal,Béni Mellal-Khénifra,7,Oulad Gnaou,0.375,68.04489072652098
+159,Hsseya,Tinghir,Drâa-Tafilalet,7,Toudgha Essoufla,0.364,68.14825753101005
+160,Sebbab,Taza,Fès-Meknès,7,Smià,0.4,68.25162433549912
+161,Menara,Al Haouz,Marrakech-Safi,7,Amghras,0.462,68.35499113998819
+162,Lakhmiss Dadès,Ouarzazate,Drâa-Tafilalet,7,Ghassate,0.455,68.45835794447726
+163,"A,chefk",Al Haouz,Marrakech-Safi,6,Ahl Tifnoute,0.316,68.54695806261076
+164,Bouazayer,Azilal,Béni Mellal-Khénifra,6,Taounza,0.5,68.63555818074424
+165,Boutaghrar,Fquih Ben Salah,Béni Mellal-Khénifra,6,Tachraft,0.556,68.72415829887773
+166,"s,redouane",Ouezzane,Tanger-Tétouan-Al Hoceïma,6,Sidi Redouane,0.783,68.81275841701122
+167,slilou,Tinghir,Drâa-Tafilalet,6,Assoul,0.5,68.90135853514471
+168,amajaw,Driouch,Oriental,6,Amejjaou,0.571,68.98995865327821
+169,Ghar Nhal,Béni Mellal,Béni Mellal-Khénifra,6,Had Bradia,0.421,69.07855877141169
+170,Ait Idir,Ouarzazate,Drâa-Tafilalet,6,Ait Oumdis,0.667,69.16715888954519
+171,Ait Hammou Ousaid,Tinghir,Drâa-Tafilalet,6,Ait Ouassif,0.571,69.25575900767868
+172,Tizentest,Taroudant,Souss-Massa,6,Tizi N'Test,0.8,69.34435912581216
+173,B.Mellal,Béni Mellal,Béni Mellal-Khénifra,6,Beni Mellal,0.737,69.43295924394566
+174,B.Bouayach,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,6,Bni Bouayach,0.818,69.52155936207915
+175,Karia,Taounate,Fès-Meknès,6,Zarkat,0.364,69.61015948021264
+176,B.bouayach,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,6,Bni Bouayach,0.818,69.69875959834613
+177,Ghorm El Alem,Béni Mellal,Béni Mellal-Khénifra,6,Foum El Anceur,0.593,69.78735971647963
+178,Ajdir,Taza,Fès-Meknès,6,Bab Boudir,0.533,69.87595983461311
+179,Sk,Sidi Kacem,Rabat-Salé-Kénitra,6,Sidi Kacem,0.333,69.9645599527466
+180,Ras Alma,Moulay Yacoub,Fès-Meknès,6,Moulay Abdelkrim,0.417,70.0531600708801
+181,Al wahda,Taza,Fès-Meknès,6,Outat El Haj,0.4,70.14176018901358
+182,M.B.Mellal,Béni Mellal,Béni Mellal-Khénifra,6,Beni Mellal,0.667,70.23036030714708
+183,"S,Redoune",Ouezzane,Tanger-Tétouan-Al Hoceïma,6,Sidi Redouane,0.727,70.31896042528057
+184,Municipalité,Tétouan,Tanger-Tétouan-Al Hoceïma,6,Mallalienne,0.435,70.40756054341406
+185,O Akalay,Agadir-Ida Ou Tanane,Souss-Massa,6,Adaghas,0.4,70.49616066154755
+186,Bin jradi,Taza,Fès-Meknès,6,Bab Boudir,0.421,70.58476077968103
+187,"Bouzemlane,c",Taza,Fès-Meknès,6,Bouyablane,0.636,70.67336089781453
+188,A S Jbel sofla,Tinghir,Drâa-Tafilalet,6,Ait Sedrate Jbel El Soufla,0.7,70.76196101594802
+189,,Azilal,Béni Mellal-Khénifra,6,Zaouiat Ahansal,0.0,70.85056113408152
+190,tighrmatine,Tinghir,Drâa-Tafilalet,5,Tilmi,0.5,70.92439456585942
+191,Rhouazi,Taounate,Fès-Meknès,5,Rghioua,0.714,70.99822799763733
+192,Bouzmlane,Taza,Fès-Meknès,5,Bouyablane,0.737,71.07206142941524
+193,Bssabssa,Taounate,Fès-Meknès,5,Messassa,0.75,71.14589486119314
+194,Bibane,Taounate,Fès-Meknès,5,El Bibane,0.8,71.21972829297106
+195,Oulad Harti,Larache,Tanger-Tétouan-Al Hoceïma,5,Oulad Ouchih,0.696,71.29356172474897
+196,Al ouhda,Taza,Fès-Meknès,5,El Gouzate,0.556,71.36739515652688
+197,Al quods,Taza,Fès-Meknès,5,Bab Boudir,0.444,71.44122858830478
+198,Menara,Chichaoua,Marrakech-Safi,5,Majjat,0.5,71.5150620200827
+199,Ait Tazarin,Tinghir,Drâa-Tafilalet,5,Aït Elfarsi,0.636,71.58889545186061
+200,Dhar,Essaouira,Marrakech-Safi,5,Had Dra,0.545,71.66272888363851
+201,c boumalne,Tinghir,Drâa-Tafilalet,5,Boumalne Dadès,0.667,71.73656231541642
+202,"A,Maatouf",Taounate,Fès-Meknès,5,Ain Maatouf,0.8,71.81039574719433
+203,sekoura,Sefrou,Fès-Meknès,5,Sefrou,0.615,71.88422917897223
+204,lakhmis,Tinghir,Drâa-Tafilalet,5,Souk Lakhmis Dades,0.56,71.95806261075015
+205,kansara,Moulay Yacoub,Fès-Meknès,5,Laajajra,0.533,72.03189604252806
+206,Beni Garfat,Larache,Tanger-Tétouan-Al Hoceïma,5,Bni Garfett,0.818,72.10572947430596
+207,ait brahim,Tinghir,Drâa-Tafilalet,5,Aït Hani,0.667,72.17956290608387
+208,ait ali,Tinghir,Drâa-Tafilalet,5,Aït Hani,0.8,72.25339633786179
+209,Farkhana,Nador,Oriental,5,Arekmane,0.625,72.32722976963969
+210,Ait Atab,Azilal,Béni Mellal-Khénifra,5,Aït Abbas,0.706,72.4010632014176
+211,A.Y.Ouali,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,5,Rouadi,0.533,72.47489663319551
+212,A.Taourirt,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,5,Arbaa Taourirt,0.75,72.54873006497343
+213,A.Medouna,Taounate,Fès-Meknès,5,Ain Mediouna,0.762,72.62256349675133
+214,Z.cheikh,Béni Mellal,Béni Mellal-Khénifra,5,Isseksi,0.267,72.69639692852924
+215,Taouima,Nador,Oriental,5,Al Aroui,0.533,72.77023036030715
+216,H K,Sidi Kacem,Rabat-Salé-Kénitra,5,Sidi Kacem,0.308,72.84406379208505
+217,Taghgigt,Guelmim,Guelmim-Oued Noun,5,Tiglit,0.571,72.91789722386297
+218,Taza urbain,Taza,Fès-Meknès,5,Tazarine,0.737,72.99173065564088
+219,Kelaa,El Kelâa des Sraghna,Marrakech-Safi,5,El Aamria,0.571,73.06556408741878
+220,Kabdani,Driouch,Oriental,5,Dar El Kebdani,0.571,73.13939751919669
+221,B.E.O,Azilal,Béni Mellal-Khénifra,5,Bin El Ouidane,0.316,73.2132309509746
+222,"A,Aicha",Taounate,Fès-Meknès,4,Aïn Aïcha,0.75,73.27229769639693
+223,Sarghin,Tinghir,Drâa-Tafilalet,4,Tinghir,0.429,73.33136444181926
+224,Skhinate,Fès,Fès-Meknès,4,Sidi Hrazem,0.421,73.39043118724159
+225,Skoura,Taounate,Fès-Meknès,4,Ourtzagh,0.571,73.44949793266392
+226,Syba,Al Haouz,Marrakech-Safi,4,Sidi Badhaj,0.4,73.50856467808623
+227,Ras lma,Moulay Yacoub,Fès-Meknès,4,Sidi El Abed,0.105,73.56763142350856
+228,Passage,Chichaoua,Marrakech-Safi,4,Gmassa,0.615,73.62669816893089
+229,Alqods,Agadir-Ida Ou Tanane,Souss-Massa,4,Aqesri,0.5,73.68576491435321
+230,Alouahda,Taza,Fès-Meknès,4,Oulad Zbair,0.526,73.74483165977554
+231,M.I.B.D,Azilal,Béni Mellal-Khénifra,4,Moulay Aissa Ben Driss,0.276,73.80389840519787
+232,Lahmadna,El Kelâa des Sraghna,Marrakech-Safi,4,Hiadna,0.714,73.8629651506202
+233,Rk,Guercif,Oriental,4,Saka,0.333,73.92203189604253
+234,"S,Redouane",Ouezzane,Tanger-Tétouan-Al Hoceïma,4,Sidi Redouane,0.783,73.98109864146485
+235,,Chichaoua,Marrakech-Safi,4,Zaouia Annahlia,0.0,74.04016538688718
+236,Ouled Mbarek,Fquih Ben Salah,Béni Mellal-Khénifra,4,Oulad Zmam,0.636,74.09923213230951
+237,Ouled Abdellah,Fquih Ben Salah,Béni Mellal-Khénifra,4,Oulad Fares El Halla,0.588,74.15829887773184
+238,Od Hamdane,Béni Mellal,Béni Mellal-Khénifra,4,Sidi Hammadi,0.545,74.21736562315417
+239,A S S gharbia,Tinghir,Drâa-Tafilalet,4,Ait Sedrate Sahl El Gharbia,0.65,74.2764323685765
+240,tabrkhcht,Tinghir,Drâa-Tafilalet,4,Outerbat,0.353,74.33549911399882
+241,tazitount,Chichaoua,Marrakech-Safi,4,Ain Tazitounte,0.783,74.39456585942115
+242,Babmrouj,Taza,Fès-Meknès,4,Bab Marzouka,0.7,74.45363260484348
+243,Bkakcha,Settat,Casablanca-Settat,4,Dar Chaffai,0.444,74.5126993502658
+244,Binlwidane,Azilal,Béni Mellal-Khénifra,4,Bin El Ouidane,0.75,74.57176609568813
+245,tabrkhacht,Tinghir,Drâa-Tafilalet,4,Outerbat,0.333,74.63083284111046
+246,Takerkoust,Al Haouz,Marrakech-Safi,4,Lalla Takarkoust,0.692,74.68989958653279
+247,Ait brahim,Tinghir,Drâa-Tafilalet,4,Aït Hani,0.667,74.7489663319551
+248,Tichibite,Azilal,Béni Mellal-Khénifra,4,Tisqi,0.429,74.80803307737743
+249,Tigoudar,Essaouira,Marrakech-Safi,4,Lagdadra,0.5,74.86709982279976
+250,Ait h said,Tinghir,Drâa-Tafilalet,4,Aït Hani,0.778,74.92616656822209
+251,Targua,Ouarzazate,Drâa-Tafilalet,4,Tarmigt,0.615,74.98523331364441
+252,Iwariden,Azilal,Béni Mellal-Khénifra,4,Aït Majden,0.556,75.04430005906674
+253,Kolla,Larache,Tanger-Tétouan-Al Hoceïma,4,Souk Tolba,0.533,75.10336680448907
+254,Jyarine,Taza,Fès-Meknès,4,Barkine,0.714,75.1624335499114
+255,AS jberl,Tinghir,Drâa-Tafilalet,4,Assoul,0.429,75.22150029533373
+256,Z . Cheikh,Béni Mellal,Béni Mellal-Khénifra,4,Oulad M'Barek,0.348,75.28056704075605
+257,Ait Hamou Ousaid,Tinghir,Drâa-Tafilalet,4,Ait Ouassif,0.593,75.33963378617838
+258,Ait Hamd,Tinghir,Drâa-Tafilalet,4,Aït Hani,0.75,75.39870053160071
+259,Ighil Mgoune,Ouarzazate,Drâa-Tafilalet,4,Ighrem N'Ougdal,0.444,75.45776727702304
+260,Hcia,Tinghir,Drâa-Tafilalet,4,M'Ssici,0.364,75.51683402244537
+261,Hajra,Béni Mellal,Béni Mellal-Khénifra,4,Had Bradia,0.533,75.5759007678677
+262,Guéliz,Tinghir,Drâa-Tafilalet,4,Ouaklim,0.462,75.63496751329002
+263,Ighilamgoune,Tinghir,Drâa-Tafilalet,4,Kalaat M'Gouna,0.538,75.69403425871235
+264,B.S.jbel,Nador,Oriental,4,Bni Sidel Jbel,0.545,75.75310100413468
+265,Ait hammou ousaid,Tinghir,Drâa-Tafilalet,4,Ait Ouassif,0.571,75.812167749557
+266,bab tété,Taza,Fès-Meknès,4,Bni Lent,0.375,75.87123449497933
+267,Ghorm El Alam,Béni Mellal,Béni Mellal-Khénifra,4,Foum El Anceur,0.519,75.93030124040165
+268,ait abdoune,Tinghir,Drâa-Tafilalet,4,Ait Youl,0.632,75.98936798582398
+269,bab tete,Taza,Fès-Meknès,4,Bni Lent,0.375,76.0484347312463
+270,ighilnoumgoune,Tinghir,Drâa-Tafilalet,4,Ikniouen,0.455,76.10750147666863
+271,Bourached,Taza,Fès-Meknès,4,Bouchfaa,0.588,76.16656822209096
+272,Boutghrah,Tinghir,Drâa-Tafilalet,4,Outerbat,0.588,76.22563496751329
+273,laamarcha,Settat,Casablanca-Settat,4,Dar Chaffai,0.5,76.28470171293561
+274,ait h ousaid,Tinghir,Drâa-Tafilalet,4,Aït Hani,0.7,76.34376845835794
+275,Beni Aros,Larache,Tanger-Tétouan-Al Hoceïma,4,Bni Garfett,0.6,76.40283520378027
+276,boukerra,Ouezzane,Tanger-Tétouan-Al Hoceïma,4,Bou Jedyane,0.526,76.4619019492026
+277,Agoudid,Azilal,Béni Mellal-Khénifra,4,Agoudi N'Lkhair,0.545,76.52096869462493
+278,Boumlne,Ouarzazate,Drâa-Tafilalet,4,Toundoute,0.5,76.58003544004725
+279,"A,Mediouna",Taounate,Fès-Meknès,4,Ain Mediouna,0.818,76.63910218546958
+280,Demnate Israne,Azilal,Béni Mellal-Khénifra,4,Demnate,0.667,76.69816893089191
+281,***,Al Haouz,Marrakech-Safi,4,Zerkten,0.0,76.75723567631424
+282,,Tanger-Assilah,Tanger-Tétouan-Al Hoceïma,4,Tanger,0.0,76.81630242173657
+283,,Sidi Slimane,Rabat-Salé-Kénitra,4,Souk Tlet El Gharb,0.0,76.8753691671589
+284,,Ouezzane,Tanger-Tétouan-Al Hoceïma,4,Zoumi,0.0,76.93443591258122
+285,,Taza,Fès-Meknès,4,Zrarda,0.0,76.99350265800355
+286,15 Eme Gare,Taza,Fès-Meknès,4,El Gouzate,0.476,77.05256940342588
+287,,Tinghir,Drâa-Tafilalet,3,Toudgha Essoufla,0.0,77.09686946249262
+288,,Errachidia,Drâa-Tafilalet,3,Taouz,0.0,77.14116952155936
+289,wardana,Driouch,Oriental,3,Ourdana,0.714,77.1854695806261
+290,tansgharte,Tinghir,Drâa-Tafilalet,3,Tinghir,0.588,77.22976963969285
+291,segangan,Nador,Oriental,3,Zeghanghane,0.737,77.2740696987596
+292,A. taourirt,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,3,Arbaa Taourirt,0.8,77.31836975782635
+293,"A,chefkaoui",Al Haouz,Marrakech-Safi,3,Askaouen,0.526,77.36266981689309
+294,ighrmloulne,Tinghir,Drâa-Tafilalet,3,Aghbalou N'Kerdous,0.483,77.40696987595983
+295,boutaghrar,Tinghir,Drâa-Tafilalet,3,Outerbat,0.444,77.45126993502657
+296,boumalne k,Tinghir,Drâa-Tafilalet,3,Boumalne Dadès,0.75,77.49556999409333
+297,berraka,Nador,Oriental,3,Hassi Berkane,0.5,77.53987005316007
+298,b.chiker,Nador,Oriental,3,Beni Chiker,0.737,77.58417011222681
+299,ait slimane,Tinghir,Drâa-Tafilalet,3,Aït Hani,0.632,77.62847017129356
+300,ait s jbel,Tinghir,Drâa-Tafilalet,3,Ait Sedrate Jbel El Oulia,0.571,77.67277023036031
+301,ait idr,Tinghir,Drâa-Tafilalet,3,Aït Hani,0.667,77.71707028942706
+302,agouidir,Chichaoua,Marrakech-Safi,3,Ighoud,0.571,77.7613703484938
+303,Ain-Aicha Centre,Taounate,Fès-Meknès,3,Aïn Aïcha,0.72,77.80567040756054
+304,Walili,Meknès,Fès-Meknès,3,Oualili,0.769,77.84997046662728
+305,Tighboula,Béni Mellal,Béni Mellal-Khénifra,3,Timoulilt,0.556,77.89427052569404
+306,Bit goulem,Taza,Fès-Meknès,3,Bni Lent,0.556,77.93857058476078
+307,Tibihite,Béni Mellal,Béni Mellal-Khénifra,3,Tilougguite,0.526,77.98287064382752
+308,Tassouite,Ouarzazate,Drâa-Tafilalet,3,Tansifte,0.706,78.02717070289427
+309,Ait Tazarine,Tinghir,Drâa-Tafilalet,3,Aït Elfarsi,0.609,78.07147076196101
+310,Ait mraou,Tinghir,Drâa-Tafilalet,3,Ait Youl,0.706,78.11577082102777
+311,Taddert,Guercif,Oriental,3,Tissaf,0.308,78.16007088009451
+312,Slilou,Tinghir,Drâa-Tafilalet,3,Assoul,0.5,78.20437093916125
+313,Sidi ali ben brahim,Azilal,Béni Mellal-Khénifra,3,Moulay Aissa Ben Driss,0.488,78.248670998228
+314,Sidi ahmed tadli,Sefrou,Fès-Meknès,3,Sidi Youssef Ben Ahmed,0.526,78.29297105729475
+315,Sidi Ahmed Bouheddane,Ouezzane,Tanger-Tétouan-Al Hoceïma,3,Sidi Redouane,0.706,78.33727111636149
+316,Sidi A Tadeli,Sefrou,Fès-Meknès,3,Ahl Sidi Lahcen,0.5,78.38157117542823
+317,Si a ben brahim,Azilal,Béni Mellal-Khénifra,3,Aït Abbas,0.5,78.42587123449498
+318,Senhaja,Sefrou,Fès-Meknès,3,Dar El Hamra,0.421,78.47017129356172
+319,Sekoura,Sefrou,Fès-Meknès,3,Sefrou,0.615,78.51447135262848
+320,Ait yassine,Tinghir,Drâa-Tafilalet,3,Ait Ouassif,0.727,78.55877141169522
+321,Sais,Fès,Fès-Meknès,3,Ain Kansra,0.429,78.60307147076196
+322,Safsaf,Sidi Kacem,Rabat-Salé-Kénitra,3,Selfat,0.333,78.6473715298287
+323,Bouazier,Azilal,Béni Mellal-Khénifra,3,Bin El Ouidane,0.455,78.69167158889545
+324,Bouargane,Agadir-Ida Ou Tanane,Souss-Massa,3,Imsouane,0.588,78.7359716479622
+325,S/R,Ouezzane,Tanger-Tétouan-Al Hoceïma,3,Sidi Bousber,0.4,78.78027170702894
+326,S.Kacem,Sidi Kacem,Rabat-Salé-Kénitra,3,Sidi Kacem,0.706,78.82457176609569
+327,Rquen,Tinghir,Drâa-Tafilalet,3,Ikniouen,0.462,78.86887182516243
+328,R'Ghiwa,Taounate,Fès-Meknès,3,Rghioua,0.714,78.91317188422919
+329,Oulad L'Harti,Larache,Tanger-Tétouan-Al Hoceïma,3,Oulad Ouchih,0.64,78.95747194329593
+330,Ouizghet,Taounate,Fès-Meknès,3,Ourtzagh,0.625,79.00177200236267
+331,Oued Laabid,Azilal,Béni Mellal-Khénifra,3,Agoudi N'Lkhair,0.538,79.04607206142941
+332,"Ol,DAOUD",Taounate,Fès-Meknès,3,Oulad Daoud,0.737,79.09037212049616
+333,As jbel olia,Tinghir,Drâa-Tafilalet,3,Ferkla El Oulia,0.667,79.13467217956291
+334,Od Youssef,Settat,Casablanca-Settat,3,Guisser,0.471,79.17897223862965
+335,My brahim,Al Haouz,Marrakech-Safi,3,Moulay Brahim,0.818,79.2232722976964
+336,My Idriss,Meknès,Fès-Meknès,3,Moulay Idriss Zarhoun,0.6,79.26757235676314
+337,MunicipalitéBM,Béni Mellal,Béni Mellal-Khénifra,3,Tilougguite,0.32,79.31187241582988
+338,Municipalité,Nador,Oriental,3,Beni Chiker,0.435,79.35617247489664
+339,Mesmoda,Ouezzane,Tanger-Tétouan-Al Hoceïma,3,Masmouda,0.8,79.40047253396338
+340,Menara,Tinghir,Drâa-Tafilalet,3,Imider,0.5,79.44477259303012
+341,Medina,Al Haouz,Marrakech-Safi,3,Oukaimeden,0.5,79.48907265209687
+342,Mbarek El bakay,Sefrou,Fès-Meknès,3,Dar El Hamra,0.593,79.53337271116361
+343,Mansoura,Chefchaouen,Tanger-Tétouan-Al Hoceïma,3,Bni Mansour,0.737,79.57767277023036
+344,"M,Bouchta",Taounate,Fès-Meknès,3,Bouhouda,0.588,79.6219728292971
+345,Lalla Aicha,Sidi Kacem,Rabat-Salé-Kénitra,3,Bab Tiouka,0.19,79.66627288836385
+346,Laanoucer,Sefrou,Fès-Meknès,3,Laanoussar,0.737,79.71057294743059
+347,B.Abdellah,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,3,Bni Abdellah,0.818,79.75487300649735
+348,Kebdani,Driouch,Oriental,3,Dar El Kebdani,0.667,79.79917306556409
+349,Kamoune,Béni Mellal,Béni Mellal-Khénifra,3,Naour,0.5,79.84347312463083
+350,Jorf Elmrlha,Sidi Kacem,Rabat-Salé-Kénitra,3,Oulad Nouel,0.348,79.88777318369758
+351,Jnan ward,Fès,Fès-Meknès,3,Ain Kansra,0.421,79.93207324276432
+352,Jiyarine,Taza,Fès-Meknès,3,Barkine,0.667,79.97637330183107
+353,Jamila,Fquih Ben Salah,Béni Mellal-Khénifra,3,Bejaad,0.5,80.02067336089782
+354,Beni Gorfat,Larache,Tanger-Tétouan-Al Hoceïma,3,Bni Garfett,0.727,80.06497341996456
+355,Ben cheikh,Al Haouz,Marrakech-Safi,3,Ouneine,0.353,80.1092734790313
+356,Iknioune,Ouarzazate,Drâa-Tafilalet,3,Toundoute,0.471,80.15357353809804
+357,Ihchach,Agadir-Ida Ou Tanane,Souss-Massa,3,Ait Aissi Ihahane,0.333,80.1978735971648
+358,B.ensar,Nador,Oriental,3,Beni Ansar,0.706,80.24217365623154
+359,B.chiker,Nador,Oriental,3,Beni Chiker,0.737,80.28647371529829
+360,Hdr,Guercif,Oriental,3,Debdou,0.222,80.33077377436503
+361,Hay mohamadi,Agadir-Ida Ou Tanane,Souss-Massa,3,Agadir,0.444,80.37507383343178
+362,Hay Mohamadi,Agadir-Ida Ou Tanane,Souss-Massa,3,Agadir,0.444,80.41937389249853
+363,Haouafate,Sidi Kacem,Rabat-Salé-Kénitra,3,Chbanate,0.588,80.46367395156527
+364,Gzenaya,Ouezzane,Tanger-Tétouan-Al Hoceïma,3,Ounnana,0.429,80.50797401063201
+365,Gouzat,Taza,Fès-Meknès,3,El Gouzate,0.75,80.55227406969875
+366,Ghorm el alam,Béni Mellal,Béni Mellal-Khénifra,3,Foum El Anceur,0.519,80.59657412876551
+367,Foum er,Béni Mellal,Béni Mellal-Khénifra,3,Foum El Anceur,0.667,80.64087418783225
+368,Bab M'rouj,Taza,Fès-Meknès,3,Bab Marzouka,0.727,80.685174246899
+369,Barraca,Nador,Oriental,3,Bouarg,0.462,80.72947430596574
+370,zte sidi kacem,Tétouan,Tanger-Tétouan-Al Hoceïma,3,Zaouiat Sidi Kacem,0.812,80.77377436503248
+371,A h said,Tinghir,Drâa-Tafilalet,3,Ferkla Es-Soufla,0.417,80.81807442409924
+372,15éme GARE,Taza,Fès-Meknès,3,El Gouzate,0.5,80.86237448316598
+373,,Taounate,Fès-Meknès,2,Zrizer,0.0,80.89190785587714
+374,A H Said,Tinghir,Drâa-Tafilalet,2,Ferkla Es-Soufla,0.417,80.92144122858831
+375,A H oyahya,Tinghir,Drâa-Tafilalet,2,Aït Hani,0.444,80.95097460129946
+376,A Hammou,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,2,Aït Kamra,0.471,80.98050797401064
+377,A S Jbel,Tinghir,Drâa-Tafilalet,2,Ait Sedrate Jbel El Oulia,0.485,81.01004134672179
+378,A chefk,Al Haouz,Marrakech-Safi,2,Ahl Tifnoute,0.316,81.03957471943296
+379,tarmoucht,Tinghir,Drâa-Tafilalet,2,Bou Azmou,0.444,81.06910809214412
+380,"A, kansara",Moulay Yacoub,Fès-Meknès,2,Laajajra,0.556,81.09864146485529
+381,zaouit nogart,Tinghir,Drâa-Tafilalet,2,Ait Ouassif,0.5,81.12817483756645
+382,zouagha,Fès,Fès-Meknès,2,Louadaine,0.5,81.15770821027762
+383,,Béni Mellal,Béni Mellal-Khénifra,2,Timoulilt,0.0,81.18724158298878
+384,Bouzemalne,Taza,Fès-Meknès,2,Bouyablane,0.7,81.21677495569995
+385,tasouit,Tinghir,Drâa-Tafilalet,2,Assoul,0.615,81.2463083284111
+386,tazzakht,Tinghir,Drâa-Tafilalet,2,Outerbat,0.375,81.27584170112227
+387,tibihite,Béni Mellal,Béni Mellal-Khénifra,2,Tilougguite,0.526,81.30537507383343
+388,,Larache,Tanger-Tétouan-Al Hoceïma,2,Zouada,0.0,81.33490844654459
+389,senhaja,Sefrou,Fès-Meknès,2,Dar El Hamra,0.421,81.36444181925576
+390,sidi ahmed tadli,Sefrou,Fès-Meknès,2,Sidi Youssef Ben Ahmed,0.526,81.39397519196692
+391,sidi h o hamd,Essaouira,Marrakech-Safi,2,Sidi H'Mad Ou Hamed,0.812,81.42350856467809
+392,tansghart,Tinghir,Drâa-Tafilalet,2,Tinghir,0.625,81.45304193738924
+393,Chouiter,Al Haouz,Marrakech-Safi,2,Tighedouine,0.526,81.48257531010042
+394,ouarchdik,Tinghir,Drâa-Tafilalet,2,Ouaklim,0.5,81.51210868281157
+395,"s,yahya/zeroual",Taounate,Fès-Meknès,2,Sidi Yahya Bni Zeroual,0.757,81.54164205552274
+396,saiss,Fès,Fès-Meknès,2,Ain Kansra,0.4,81.5711754282339
+397,my bouchta,Taounate,Fès-Meknès,2,Bni Bouchibet,0.609,81.60070880094507
+398,old taher,Taounate,Fès-Meknès,2,Oulad Daoud,0.5,81.63024217365623
+399,magaz kelaa,Tinghir,Drâa-Tafilalet,2,Aït Elfarsi,0.455,81.6597755463674
+400,mecheraa laine,Taroudant,Souss-Massa,2,Machraa El Ain,0.786,81.68930891907856
+401,merna,Tinghir,Drâa-Tafilalet,2,Imider,0.545,81.71884229178973
+402,mezguitem,Guercif,Oriental,2,Mazguitam,0.778,81.74837566450088
+403,Aait adel,Al Haouz,Marrakech-Safi,2,Sti Fadma,0.444,81.77790903721205
+404,"k,militaire",Taza,Fès-Meknès,2,Msila,0.5,81.80744240992321
+405,kelaa,Ouarzazate,Drâa-Tafilalet,2,Afella N'Dra,0.471,81.83697578263438
+406,khmiss DADES,Tinghir,Drâa-Tafilalet,2,Souk Lakhmis Dades,0.733,81.86650915534554
+407,khmiss dadaes,Tinghir,Drâa-Tafilalet,2,Souk Lakhmis Dades,0.71,81.89604252805671
+408,Barraka,Nador,Oriental,2,Arekmane,0.4,81.92557590076787
+409,Bel,Sidi Kacem,Rabat-Salé-Kénitra,2,Selfat,0.444,81.95510927347902
+410,ighramloule,Tinghir,Drâa-Tafilalet,2,Toudgha El Oulia,0.519,81.9846426461902
+411,ighramloulne,Tinghir,Drâa-Tafilalet,2,Aghbalou N'Kerdous,0.533,82.01417601890135
+412,A.mediouna,Taounate,Fès-Meknès,2,Ain Mediouna,0.818,82.04370939161252
+413,A.taourirt,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,2,Arbaa Taourirt,0.75,82.07324276432368
+414,hanchen,Essaouira,Marrakech-Safi,2,El Hanchane,0.667,82.10277613703485
+415,hay salam kelaa,Tinghir,Drâa-Tafilalet,2,Ait Sedrate Sahl El Gharbia,0.476,82.13230950974601
+416,iazaneen,Nador,Oriental,2,Iaazzanene,0.778,82.16184288245718
+417,ibrghoussne,Tinghir,Drâa-Tafilalet,2,Ait Ouassif,0.455,82.19137625516834
+418,ida ouguerd,Essaouira,Marrakech-Safi,2,Aguerd,0.706,82.22090962787951
+419,igheram amazdar,Tinghir,Drâa-Tafilalet,2,Ait Sedrate Sahl Charkia,0.41,82.25044300059066
+420,bouzmlane,Taza,Fès-Meknès,2,Bouyablane,0.737,82.27997637330184
+421,chahid baha,Sefrou,Fès-Meknès,2,Ahl Sidi Lahcen,0.538,82.30950974601299
+422,hadkouret,Sidi Kacem,Rabat-Salé-Kénitra,2,Taoughilt,0.444,82.33904311872416
+423,Darksdani,Driouch,Oriental,2,Dar El Kebdani,0.696,82.36857649143532
+424,Dg,Sidi Kacem,Rabat-Salé-Kénitra,2,Zaggota,0.222,82.39810986414649
+425,Cmsu,Agadir-Ida Ou Tanane,Souss-Massa,2,Imsouane,0.5,82.42764323685765
+426,bni enssar,Nador,Oriental,2,Beni Ansar,0.8,82.45717660956882
+427,bouchair,Settat,Casablanca-Settat,2,Oulad Sghir,0.526,82.48670998227998
+428,boumardoul,Tinghir,Drâa-Tafilalet,2,Bou Azmou,0.632,82.51624335499115
+429,bab mrouj,Taza,Fès-Meknès,2,Bab Marzouka,0.762,82.5457767277023
+430,akdim,Tinghir,Drâa-Tafilalet,2,Ouaklim,0.667,82.57531010041346
+431,akdim ait mraou,Tinghir,Drâa-Tafilalet,2,Ait Youl,0.522,82.60484347312463
+432,ait harouit,Tinghir,Drâa-Tafilalet,2,Aït Hani,0.737,82.63437684583579
+433,ait kassi,Tinghir,Drâa-Tafilalet,2,Ait Ouassif,0.8,82.66391021854696
+434,ait ouffi,Tinghir,Drâa-Tafilalet,2,Ait Youl,0.706,82.69344359125812
+435,ait wahi,Tinghir,Drâa-Tafilalet,2,Aït Hani,0.75,82.72297696396929
+436,ait boamrane,Tinghir,Drâa-Tafilalet,2,Aït Hani,0.6,82.75251033668044
+437,ait boullal,Tinghir,Drâa-Tafilalet,2,Ait Youl,0.737,82.78204370939162
+438,ait driss,Tinghir,Drâa-Tafilalet,2,Ait Ouassif,0.6,82.81157708210277
+439,ait gmate,Tinghir,Drâa-Tafilalet,2,Aït Hani,0.588,82.84111045481394
+440,ait h said,Tinghir,Drâa-Tafilalet,2,Aït Hani,0.778,82.8706438275251
+441,ait hammou osaid,Tinghir,Drâa-Tafilalet,2,Ait Ouassif,0.593,82.90017720023627
+442,ait hamou oussaid,Tinghir,Drâa-Tafilalet,2,Ait Ouassif,0.643,82.92971057294743
+443,Douar Chems,Ouarzazate,Drâa-Tafilalet,2,Skoura Ahl El Oust,0.483,82.9592439456586
+444,Douar Oulad Mkadem,Guelmim,Guelmim-Oued Noun,2,Aouint Yghomane,0.242,82.98877731836976
+445,Zerhoune,Meknès,Fès-Meknès,2,Ouislane,0.5,83.01831069108093
+446,ain bziz,Meknès,Fès-Meknès,2,Aïn Orma,0.5,83.04784406379208
+447,ait Attab,Azilal,Béni Mellal-Khénifra,2,Aït Abbas,0.667,83.07737743650326
+448,Z'Rizar,Taounate,Fès-Meknès,2,Zrizer,0.769,83.10691080921441
+449,Ain dorrij,Ouezzane,Tanger-Tétouan-Al Hoceïma,2,Ain Dfali,0.632,83.13644418192557
+450,Toufist,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,2,Targuist,0.667,83.16597755463674
+451,Ait Hammou Osaid,Tinghir,Drâa-Tafilalet,2,Ait Ouassif,0.593,83.1955109273479
+452,Ait Sawane,Ouarzazate,Drâa-Tafilalet,2,Ait Zineb,0.632,83.22504430005907
+453,Tizagui,Azilal,Béni Mellal-Khénifra,2,Tisqi,0.5,83.25457767277022
+454,Bit Ghoulam,Taza,Fès-Meknès,2,Tahla,0.5,83.2841110454814
+455,Bni wanjel,Taounate,Fès-Meknès,2,Bni Rzine,0.632,83.31364441819255
+456,Timskalte,Tinghir,Drâa-Tafilalet,2,Tilmi,0.429,83.34317779090372
+457,Draa,Azilal,Béni Mellal-Khénifra,2,Rfala,0.667,83.37271116361488
+458,El Kassam,Settat,Casablanca-Settat,2,Oulad Saïd,0.421,83.40224453632605
+459,Ait atab,Azilal,Béni Mellal-Khénifra,2,Aït Abbas,0.706,83.43177790903721
+460,Tessa,Taounate,Fès-Meknès,2,Tissa,0.8,83.46131128174838
+461,Taoujtat,El Hajeb,Fès-Meknès,2,Agourai,0.533,83.49084465445954
+462,Tarmast,Fquih Ben Salah,Béni Mellal-Khénifra,2,Tachraft,0.667,83.52037802717071
+463,Tasouit,Tinghir,Drâa-Tafilalet,2,Assoul,0.615,83.54991139988186
+464,Ait majber,Tinghir,Drâa-Tafilalet,2,Aït Elfarsi,0.571,83.57944477259304
+465,Takerkouste,Al Haouz,Marrakech-Safi,2,Lalla Takarkoust,0.667,83.60897814530419
+466,Tabrkhachet,Tinghir,Drâa-Tafilalet,2,Souk Lakhmis Dades,0.345,83.63851151801536
+467,Tadout,Boulemane,Fès-Meknès,2,Talzemt,0.462,83.66804489072652
+468,Taglafte,Azilal,Béni Mellal-Khénifra,2,Tanant,0.571,83.69757826343769
+469,Skhinat,Fès,Fès-Meknès,2,Ain Bida,0.4,83.72711163614885
+470,Somâa,Béni Mellal,Béni Mellal-Khénifra,2,Oulad Gnaou,0.375,83.75664500886
+471,Souk laarbaa,Kénitra,Rabat-Salé-Kénitra,2,Oulad Slama,0.522,83.78617838157118
+472,Syba,Chichaoua,Marrakech-Safi,2,Saidate,0.364,83.81571175428233
+473,Ennakhil,Al Haouz,Marrakech-Safi,2,Ighil,0.462,83.8452451269935
+474,Ennakhil,Rehamna,Marrakech-Safi,2,Ait Taleb,0.118,83.87477849970466
+475,F.Anceur,Béni Mellal,Béni Mellal-Khénifra,2,Foum El Anceur,0.636,83.90431187241583
+476,Sbab,Guercif,Oriental,2,Assebbab,0.667,83.93384524512699
+477,Sebab,Guercif,Oriental,2,Assebbab,0.769,83.96337861783816
+478,Segangan,Nador,Oriental,2,Zeghanghane,0.737,83.99291199054932
+479,Sgangan,Nador,Oriental,2,Zeghanghane,0.667,84.02244536326049
+480,"Sidi A,Tadli",Sefrou,Fès-Meknès,2,Ahl Sidi Lahcen,0.444,84.05197873597164
+481,Sidi Abdelaziz,Sidi Slimane,Rabat-Salé-Kénitra,2,Sidi Al Kamel,0.593,84.08151210868282
+482,Ait oum bakht,Béni Mellal,Béni Mellal-Khénifra,2,Ait Ouqabli,0.583,84.11104548139397
+483,Sab,Azilal,Béni Mellal-Khénifra,2,Tabia,0.5,84.14057885410514
+484,Sab,Moulay Yacoub,Fès-Meknès,2,Sidi El Abed,0.4,84.1701122268163
+485,"S,Fasma",Al Haouz,Marrakech-Safi,2,Sti Fadma,0.625,84.19964559952747
+486,S-A-Ouhamd,Essaouira,Marrakech-Safi,2,Sidi H'Mad Ou Hamed,0.69,84.22917897223863
+487,S.M.B.L,Taounate,Fès-Meknès,2,Bouadel,0.286,84.2587123449498
+488,S.Redouane,Sidi Kacem,Rabat-Salé-Kénitra,2,Oulad Nouel,0.476,84.28824571766096
+489,Bnisadden,Sefrou,Fès-Meknès,2,Ahl Sidi Lahcen,0.333,84.31777909037213
+490,Fansseur,Béni Mellal,Béni Mellal-Khénifra,2,Foum El Anceur,0.545,84.34731246308328
+491,Feriata,Béni Mellal,Béni Mellal-Khénifra,2,Boutferda,0.5,84.37684583579444
+492,Fersiou,Ouezzane,Tanger-Tétouan-Al Hoceïma,2,Teroual,0.571,84.40637920850561
+493,B.hadifa,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,2,Bni Hadifa,0.778,84.43591258121677
+494,Alwahda,Taza,Fès-Meknès,2,Tahla,0.5,84.46544595392794
+495,Ribat Elkher,Sefrou,Fès-Meknès,2,Dar El Hamra,0.5,84.4949793266391
+496,S A Hamd,Essaouira,Marrakech-Safi,2,Sidi H'Mad Ou Hamed,0.593,84.52451269935027
+497,S'Rima,Taounate,Fès-Meknès,2,Rghioua,0.462,84.55404607206142
+498,Ras Alam,Moulay Yacoub,Fès-Meknès,2,Sebt Loudaya,0.2,84.5835794447726
+499,RassLoued,Taounate,Fès-Meknès,2,Ras El Oued,0.8,84.61311281748375
+500,Alhaouz,Al Haouz,Marrakech-Safi,2,Tahannaout,0.588,84.64264619019492
+501,Alouhda,Taza,Fès-Meknès,2,Bouchfaa,0.533,84.67217956290608
+502,Ourbiâa,Béni Mellal,Béni Mellal-Khénifra,2,Afourar,0.571,84.70171293561725
+503,Gfifat,Taroudant,Souss-Massa,2,Freija,0.5,84.73124630832841
+504,Ghorm Alem,Béni Mellal,Béni Mellal-Khénifra,2,Oulad M'Barek,0.435,84.76077968103958
+505,Guèliz,Tinghir,Drâa-Tafilalet,2,Ouaklim,0.462,84.79031305375074
+506,"Q,Industriel",Agadir-Ida Ou Tanane,Souss-Massa,2,Aqesri,0.444,84.81984642646191
+507,Qods,Taza,Fès-Meknès,2,Oued Amlil,0.286,84.84937979917306
+508,Qods1,Taza,Fès-Meknès,2,Oued Amlil,0.267,84.87891317188424
+509,Oulad-Tahar,Taounate,Fès-Meknès,2,Oulad Daoud,0.636,84.90844654459539
+510,Ouled Boukhadou,Fquih Ben Salah,Béni Mellal-Khénifra,2,Ouled Bourahmoune,0.75,84.93797991730656
+511,Oum bakht,Béni Mellal,Béni Mellal-Khénifra,2,Oulad M'Barek,0.636,84.96751329001772
+512,Ouald Bder,Ouezzane,Tanger-Tétouan-Al Hoceïma,2,Moulay Abdelkader,0.593,84.99704666272888
+513,Oued Romman,Meknès,Fès-Meknès,2,Oued Jdida,0.571,85.02658003544005
+514,Oued elabid,Azilal,Béni Mellal-Khénifra,2,Ouaoula,0.444,85.0561134081512
+515,Ouidane,Al Haouz,Marrakech-Safi,2,Ouirgane,0.8,85.08564678086238
+516,Aoulos,Taroudant,Souss-Massa,2,Aoulouz,0.769,85.11518015357353
+517,Arroui,Nador,Oriental,2,Al Aroui,0.714,85.1447135262847
+518,As Jbel,Tinghir,Drâa-Tafilalet,2,Assoul,0.462,85.17424689899586
+519,As jbel sofla,Tinghir,Drâa-Tafilalet,2,Ait Sedrate Jbel El Soufla,0.667,85.20378027170703
+520,As s charkia,Tinghir,Drâa-Tafilalet,2,Ait Sedrate Sahl Charkia,0.611,85.23331364441819
+521,Oel Bousalham,Taounate,Fès-Meknès,2,El Bsabsa,0.636,85.26284701712936
+522,Oled Bder,Ouezzane,Tanger-Tétouan-Al Hoceïma,2,Moulay Abdelkader,0.538,85.29238038984052
+523,Hamria,Moulay Yacoub,Fès-Meknès,2,Charqaoua,0.533,85.32191376255169
+524,Hay Elmohammadi,Agadir-Ida Ou Tanane,Souss-Massa,2,Agadir,0.381,85.35144713526284
+525,Od Mbark,Béni Mellal,Béni Mellal-Khénifra,2,Oulad M'Barek,0.762,85.38098050797402
+526,Od Soltane,Sidi Kacem,Rabat-Salé-Kénitra,2,Oulad Nouel,0.476,85.41051388068517
+527,Od Tahar,Taounate,Fès-Meknès,2,Oued Jemaa,0.556,85.44004725339634
+528,Od Ziane,Fquih Ben Salah,Béni Mellal-Khénifra,2,Oulad Zmam,0.556,85.4695806261075
+529,Amria,Béni Mellal,Béni Mellal-Khénifra,2,Had Bradia,0.533,85.49911399881867
+530,Amria 2,Béni Mellal,Béni Mellal-Khénifra,2,Had Bradia,0.471,85.52864737152983
+531,"N°6830,Sidi Belkacem",Inezgane-Aït Melloul,Souss-Massa,2,Sidi Bibi,0.429,85.55818074424099
+532,Od Barkate,Fquih Ben Salah,Béni Mellal-Khénifra,2,Ouled Bourahmoune,0.444,85.58771411695216
+533,My thami,Ouezzane,Tanger-Tétouan-Al Hoceïma,2,Masmouda,0.375,85.61724748966331
+534,"My,Bouchta",Taounate,Fès-Meknès,2,Bouhouda,0.556,85.64678086237448
+535,Médina,Al Haouz,Marrakech-Safi,2,Oukaimeden,0.5,85.67631423508564
+536,Boukora,Ouezzane,Tanger-Tétouan-Al Hoceïma,2,Bni Oual,0.533,85.70584760779681
+537,Boukorra,Ouezzane,Tanger-Tétouan-Al Hoceïma,2,Kalaat Booqorra,0.522,85.73538098050797
+538,Boukourra,Ouezzane,Tanger-Tétouan-Al Hoceïma,2,Kalaat Booqorra,0.5,85.76491435321914
+539,Ben Yazgha,Sefrou,Fès-Meknès,2,Mtarnagha,0.526,85.7944477259303
+540,Mly Hassan,Tétouan,Tanger-Tétouan-Al Hoceïma,2,Bni Arouss,0.4,85.82398109864147
+541,Mokrissat,Chefchaouen,Tanger-Tétouan-Al Hoceïma,2,Moqrisset,0.778,85.85351447135263
+542,Mokrisset,Ouezzane,Tanger-Tétouan-Al Hoceïma,2,Lamrabih,0.353,85.8830478440638
+543,Bouhmed,Chefchaouen,Tanger-Tétouan-Al Hoceïma,2,Tabouda,0.571,85.91258121677495
+544,Menara,Béni Mellal,Béni Mellal-Khénifra,2,Naour,0.545,85.94211458948612
+545,Menara,Ouarzazate,Drâa-Tafilalet,2,Afra,0.6,85.97164796219728
+546,Menara,Taroudant,Souss-Massa,2,Lamhara,0.615,86.00118133490845
+547,Mesker,Ouezzane,Tanger-Tétouan-Al Hoceïma,2,Moulay Abdelkader,0.435,86.03071470761961
+548,Mezguitem,Guercif,Oriental,2,Mazguitam,0.778,86.06024808033078
+549,Mazrawa,Taounate,Fès-Meknès,2,Mezraoua,0.667,86.08978145304194
+550,Medina,El Kelâa des Sraghna,Marrakech-Safi,2,Hiadna,0.5,86.11931482575311
+551,Meghasseine,Meknès,Fès-Meknès,2,Mrhassiyine,0.727,86.14884819846426
+552,Meknassa,Taza,Fès-Meknès,2,Meknassa Acharqia,0.64,86.17838157117542
+553,B.Hmed,Chefchaouen,Tanger-Tétouan-Al Hoceïma,2,Bni Ahmed Gharbia,0.435,86.20791494388659
+554,B.S. louta,Nador,Oriental,2,Bni Sidel Louta,0.64,86.23744831659775
+555,Marenienne,Fès,Fès-Meknès,2,Louadaine,0.421,86.26698168930892
+556,Marigha,Al Haouz,Marrakech-Safi,2,Amghras,0.571,86.29651506202008
+557,Marinienne,Fès,Fès-Meknès,2,Ain Bida,0.444,86.32604843473125
+558,Marjane,Meknès,Fès-Meknès,2,Majjate,0.714,86.3555818074424
+559,B'Sabsa,Taounate,Fès-Meknès,2,El Bsabsa,0.75,86.38511518015358
+560,B'sabsa,Taounate,Fès-Meknès,2,El Bsabsa,0.75,86.41464855286473
+561,M'kanssa,Taounate,Fès-Meknès,2,Kissane,0.533,86.4441819255759
+562,M.Bmellal,Béni Mellal,Béni Mellal-Khénifra,2,Beni Mellal,0.7,86.47371529828706
+563,M kellat magouna,Tinghir,Drâa-Tafilalet,2,Kalaat M'Gouna,0.733,86.50324867099823
+564,Azlaf,Driouch,Oriental,2,Tleta Azlef,0.5,86.53278204370939
+565,B S jbel,Nador,Oriental,2,Bni Sidel Jbel,0.727,86.56231541642056
+566,Lakmis,Tinghir,Drâa-Tafilalet,2,Tilmi,0.545,86.59184878913172
+567,Lkhmis,Tinghir,Drâa-Tafilalet,2,Tilmi,0.545,86.62138216184289
+568,Lkrakra,Settat,Casablanca-Settat,2,Oulad Freiha,0.316,86.65091553455404
+569,B.bouayach II,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,2,Bni Bouayach,0.72,86.68044890726522
+570,Igraouen,Khouribga,Béni Mellal-Khénifra,2,Mrizigue,0.5,86.70998227997637
+571,Ikaouen,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,2,Imzouren,0.667,86.73951565268754
+572,Bencharrou,Béni Mellal,Béni Mellal-Khénifra,2,Naour,0.533,86.7690490253987
+573,Koka si Moussa,Settat,Casablanca-Settat,2,Zaouiat Sidi Ben Hamdoun,0.474,86.79858239810986
+574,Kolea,Inezgane-Aït Melloul,Souss-Massa,2,Ouled Teima,0.5,86.82811577082103
+575,Krakra,Settat,Casablanca-Settat,2,Rima,0.4,86.85764914353219
+576,Krona,Driouch,Oriental,2,Ourdana,0.5,86.88718251624336
+577,Laamoucha,Settat,Casablanca-Settat,2,Lahouaza,0.588,86.91671588895451
+578,Laaouina,Azilal,Béni Mellal-Khénifra,2,Taounza,0.667,86.94624926166568
+579,B.Bch,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,2,Bni Bouayach,0.471,86.97578263437684
+580,B.Boufrah,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,2,Bni Boufrah,0.8,87.00531600708801
+581,Khlalta,Fquih Ben Salah,Béni Mellal-Khénifra,2,Fkih Ben Salah,0.381,87.03484937979917
+582,"B,Ounjel",Taounate,Fès-Meknès,2,Bouadel,0.667,87.06438275251034
+583,Beni Gorfet,Larache,Tanger-Tétouan-Al Hoceïma,2,Bni Garfett,0.818,87.0939161252215
+584,Isskssi,Azilal,Béni Mellal-Khénifra,2,Tisqi,0.5,87.12344949793267
+585,J Melha,Sidi Kacem,Rabat-Salé-Kénitra,2,Selfat,0.462,87.15298287064383
+586,Jiyarin,Taza,Fès-Meknès,2,Jbarna,0.615,87.182516243355
+587,Jorf M,Sidi Kacem,Rabat-Salé-Kénitra,2,Bir Taleb,0.267,87.21204961606615
+588,***,Azilal,Béni Mellal-Khénifra,2,Zaouiat Ahansal,0.0,87.24158298877732
+589,Bensergao,Agadir-Ida Ou Tanane,Souss-Massa,2,Idmine,0.133,87.27111636148848
+590,Bensergao,Ouarzazate,Drâa-Tafilalet,2,Amerzgane,0.444,87.30064973419965
+591,tigoudar,Essaouira,Marrakech-Safi,2,Lagdadra,0.5,87.33018310691081
+592,tissli,Tinghir,Drâa-Tafilalet,2,Tilmi,0.727,87.35971647962197
+593,,,Fès-Meknès,2,,0.0,87.38924985233314
+594,tlat boubker,Driouch,Oriental,2,Oulad Boubker,0.8,87.4187832250443
+595,,Sidi Kacem,Rabat-Salé-Kénitra,1,Zirara,0.0,87.43354991139988
+596,6éme BSI,Taza,Fès-Meknès,1,Msila,0.462,87.44831659775546
+597,,Tiznit,Souss-Massa,1,Tnine Aglou,0.0,87.46308328411105
+598,***,Taourirt,Oriental,1,Taourirt,0.0,87.47784997046662
+599,,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Tizgane,0.0,87.49261665682221
+600,Boumya,Khénifra,Béni Mellal-Khénifra,1,Oum Rabia,0.533,87.50738334317779
+601,Bouyafer,Nador,Oriental,1,Bouarg,0.714,87.52215002953338
+602,Bozamlane,Taza,Fès-Meknès,1,Bouyablane,0.737,87.53691671588895
+603,Brakt Lamine,Safi,Marrakech-Safi,1,Sebt Gzoula,0.435,87.55168340224454
+604,7Eme Bsi,Taza,Fès-Meknès,1,Msila,0.462,87.56645008860012
+605,tarmouchte,Tinghir,Drâa-Tafilalet,1,Outerbat,0.444,87.5812167749557
+606,tasouite,Tinghir,Drâa-Tafilalet,1,Assoul,0.571,87.59598346131128
+607,tassouit,Tinghir,Drâa-Tafilalet,1,Assoul,0.714,87.61075014766686
+608,taynza,Tinghir,Drâa-Tafilalet,1,Tinejdad,0.286,87.62551683402245
+609,tazakhte,Tinghir,Drâa-Tafilalet,1,Taghzoute N'Ait Atta,0.357,87.64028352037803
+610,tazintest,Taroudant,Souss-Massa,1,Tizi N'Test,0.8,87.6550502067336
+611,tighmatine,Tinghir,Drâa-Tafilalet,1,Tilmi,0.533,87.66981689308919
+612,,Meknès,Fès-Meknès,1,Toulal,0.0,87.68458357944478
+613,,Rehamna,Marrakech-Safi,1,Tamda,0.0,87.69935026580035
+614,,Safi,Marrakech-Safi,1,Talmest,0.0,87.71411695215593
+615,Jabriénne,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Aïn Béida,0.333,87.72888363851152
+616,Jamaat Lamrasla,Safi,Marrakech-Safi,1,Lamrasla,0.696,87.7436503248671
+617,Jamat sidi ghayat,Al Haouz,Marrakech-Safi,1,Sidi Badhaj,0.5,87.75841701122268
+618,Jemeât old mimoun,Moulay Yacoub,Fès-Meknès,1,Oulad Mimoun,0.621,87.77318369757826
+619,Jerf lmlha,Sidi Kacem,Rabat-Salé-Kénitra,1,Ain Jemaa,0.421,87.78795038393385
+620,Jida,Tinghir,Drâa-Tafilalet,1,Tinejdad,0.5,87.80271707028943
+621,Jiha-Soufla,Taounate,Fès-Meknès,1,Thar Es-Souk,0.522,87.817483756645
+622,Jnan Ward,Fès,Fès-Meknès,1,Ain Kansra,0.421,87.83225044300059
+623,Jnan kastiyine,Larache,Tanger-Tétouan-Al Hoceïma,1,Ksar el-Kebir,0.296,87.84701712935617
+624,Jnan nokbi,Fès,Fès-Meknès,1,Ain Bida,0.556,87.86178381571176
+625,Bengrir,El Kelâa des Sraghna,Marrakech-Safi,1,Errafiaya,0.375,87.87655050206733
+626,A s s charkia,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Sahl Charkia,0.703,87.89131718842292
+627,,Taroudant,Souss-Massa,1,Zaouia Sidi Tahar,0.0,87.9060838747785
+628,Beni Saden,Sefrou,Fès-Meknès,1,Bir Tamtam,0.4,87.92085056113409
+629,Beni guerfet,Larache,Tanger-Tétouan-Al Hoceïma,1,Bni Garfett,0.783,87.93561724748966
+630,Beni-Kissane,Taounate,Fès-Meknès,1,Kissane,0.737,87.95038393384525
+631,Beni Chiker Benichiker,Nador,Oriental,1,Beni Chiker,0.667,87.96515062020083
+632,Beni Chiker Benichiker,Tinghir,Drâa-Tafilalet,1,M'Semrir,0.2,87.9799173065564
+633,Beni Makada,Larache,Tanger-Tétouan-Al Hoceïma,1,Bni Garfett,0.455,87.99468399291199
+634,Beni Maraaz,Meknès,Fès-Meknès,1,Nzala Bni Ammar,0.538,88.00945067926757
+635,Beni Meraaz,Meknès,Fès-Meknès,1,Ait Yaazem,0.476,88.02421736562316
+636,Boumalene,Ouarzazate,Drâa-Tafilalet,1,Toundoute,0.333,88.03898405197873
+637,Boumalne k,Tinghir,Drâa-Tafilalet,1,Boumalne Dadès,0.75,88.05375073833432
+638,Boumalne kcer,Tinghir,Drâa-Tafilalet,1,Boumalne Dadès,0.741,88.0685174246899
+639,Boumardoul,Tinghir,Drâa-Tafilalet,1,Bou Azmou,0.632,88.08328411104549
+640,Imgharne,Ouarzazate,Drâa-Tafilalet,1,Idelsane,0.5,88.09805079740106
+641,Imgoune,Taroudant,Souss-Massa,1,Bigoudine,0.75,88.11281748375664
+642,Imouzar Kendr,Sefrou,Fès-Meknès,1,Imouzzer Kandar,0.786,88.12758417011223
+643,Imzilne,Tinghir,Drâa-Tafilalet,1,Imider,0.615,88.14235085646781
+644,Irguita,Taroudant,Souss-Massa,1,Igli,0.545,88.15711754282339
+645,B.bouayach I,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Bni Bouayach,0.75,88.17188422917897
+646,Iwareden,Azilal,Béni Mellal-Khénifra,1,Aït Majden,0.556,88.18665091553456
+647,K.Tadla,Béni Mellal,Béni Mellal-Khénifra,1,Kasba Tadla,0.667,88.20141760189014
+648,K_Ba_Mohamed,Taounate,Fès-Meknès,1,Sidi Haj M’hamed,0.519,88.21618428824571
+649,Kaa Assrass,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Al Hamra,0.421,88.2309509746013
+650,Kalaa Magoune,Ouarzazate,Drâa-Tafilalet,1,Amerzgane,0.364,88.24571766095688
+651,Kalaa Sraghna,El Kelâa des Sraghna,Marrakech-Safi,1,El Kelâat Es-Sraghna,0.727,88.26048434731246
+652,Kalaa-Ourache,Taounate,Fès-Meknès,1,Abdelghaya Souahel,0.645,88.27525103366804
+653,Kariat,Nador,Oriental,1,Arekmane,0.429,88.29001772002363
+654,Karoil,Azilal,Béni Mellal-Khénifra,1,Azilal,0.5,88.30478440637921
+655,Karouel,Azilal,Béni Mellal-Khénifra,1,Taounza,0.429,88.31955109273478
+656,Kasba,Sefrou,Fès-Meknès,1,Azzaba,0.545,88.33431777909037
+657,Kcebia,Sidi Slimane,Rabat-Salé-Kénitra,1,Kceibya,0.769,88.34908446544596
+658,Kebdani,Nador,Oriental,1,Iksane,0.462,88.36385115180154
+659,"B,bouayach",Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Bni Bouayach,0.818,88.37861783815711
+660,"B,chiker",Nador,Oriental,1,Beni Chiker,0.737,88.3933845245127
+661,"B,enssar",Nador,Oriental,1,Beni Ansar,0.667,88.40815121086828
+662,Issakssi,Azilal,Béni Mellal-Khénifra,1,Tisqi,0.462,88.42291789722387
+663,Laabiate,Sidi Slimane,Rabat-Salé-Kénitra,1,Nouirate,0.5,88.43768458357944
+664,Laai chikh,Nador,Oriental,1,Beni Chiker,0.571,88.45245126993503
+665,Laari Chikh,Taounate,Fès-Meknès,1,Aïn Aïcha,0.5,88.46721795629061
+666,B. Bounsar,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Boudinar,0.667,88.4819846426462
+667,B. ensar,Nador,Oriental,1,Beni Ansar,0.667,88.49675132900177
+668,B.Bchir,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Chakran,0.429,88.51151801535735
+669,B.Bouayach II,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Bni Bouayach,0.72,88.52628470171294
+670,B.Bouchibat,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Boudinar,0.526,88.54105138806852
+671,B.Bouyafroun,Nador,Oriental,1,Bni Bouifrou,0.667,88.5558180744241
+672,B.Elain,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Bni Selmane,0.556,88.57058476077968
+673,"Kelaat M,",Tinghir,Drâa-Tafilalet,1,Kalaat M'Gouna,0.609,88.58535144713527
+674,Khandak Zeboua,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Al Kharroub,0.4,88.60011813349084
+675,Kharba,Chtouka-Aït Baha,Souss-Massa,1,Tabia,0.545,88.61488481984642
+676,Khmalca,Taounate,Fès-Meknès,1,Khlalfa,0.714,88.62965150620201
+677,Khmis Anjra,Fahs-Anjra,Tanger-Tétouan-Al Hoceïma,1,Anjra,0.625,88.6444181925576
+678,Khmiss AitAmira,Chtouka-Aït Baha,Souss-Massa,1,Ait Mzal,0.348,88.65918487891317
+679,Ighrem Amazdar,Tinghir,Drâa-Tafilalet,1,Taghzoute N'Ait Atta,0.412,88.67395156526875
+680,Ighrmloulne,Tinghir,Drâa-Tafilalet,1,Aghbalou N'Kerdous,0.483,88.68871825162434
+681,Ihchach,Essaouira,Marrakech-Safi,1,El Hanchane,0.444,88.70348493797992
+682,Ihoudjine,Azilal,Béni Mellal-Khénifra,1,Imi N'Oulaoune,0.435,88.7182516243355
+683,Ihoudjjine,Azilal,Béni Mellal-Khénifra,1,Imi N'Oulaoune,0.417,88.73301831069108
+684,Ijfi,Driouch,Oriental,1,Ifarni,0.6,88.74778499704667
+685,Ikhourba,Béni Mellal,Béni Mellal-Khénifra,1,Afourar,0.533,88.76255168340225
+686,Ben Zit,Marrakech,Marrakech-Safi,1,Jbilate,0.286,88.77731836975782
+687,Bendib,Sidi Slimane,Rabat-Salé-Kénitra,1,Kceibya,0.462,88.79208505611341
+688,Hmer Iglalcha,Taroudant,Souss-Massa,1,Ahmar Laglalcha,0.786,88.806851742469
+689,Khmiss anjra,Fahs-Anjra,Tanger-Tétouan-Al Hoceïma,1,Anjra,0.588,88.82161842882458
+690,Kmis Anjra,Fahs-Anjra,Tanger-Tétouan-Al Hoceïma,1,Anjra,0.667,88.83638511518015
+691,Kssibat,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Tassift,0.571,88.85115180153574
+692,Kssibiya,Sidi Kacem,Rabat-Salé-Kénitra,1,Sidi Kacem,0.444,88.86591848789132
+693,L Foukani,Driouch,Oriental,1,Ifarni,0.533,88.88068517424689
+694,L'Habita,Sefrou,Fès-Meknès,1,Dar El Hamra,0.5,88.89545186060248
+695,Laayayta,Béni Mellal,Béni Mellal-Khénifra,1,Kasba Tadla,0.211,88.91021854695806
+696,Laazib,Taroudant,Souss-Massa,1,Lamhadi,0.615,88.92498523331365
+697,Labita od said,Settat,Casablanca-Settat,1,Oulad Saïd,0.667,88.93975191966922
+698,Lakrakra,Settat,Casablanca-Settat,1,Lahouaza,0.5,88.9545186060248
+699,Lakrimat,Essaouira,Marrakech-Safi,1,Korimate,0.75,88.96928529238039
+700,Lalla Aicha,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Lamrabih,0.526,88.98405197873598
+701,Lalla aicha,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Lamrabih,0.526,88.99881866509155
+702,Lari Chiekh,Nador,Oriental,1,Beni Chiker,0.545,89.01358535144713
+703,Lbour,Tinghir,Drâa-Tafilalet,1,Outerbat,0.462,89.02835203780272
+704,Lemzar,Zagora,Drâa-Tafilalet,1,Zagora,0.5,89.0431187241583
+705,Lhote,Tinghir,Drâa-Tafilalet,1,Outerbat,0.462,89.05788541051388
+706,Lhotte,Tinghir,Drâa-Tafilalet,1,Outerbat,0.429,89.07265209686946
+707,Lmzam*,Azilal,Béni Mellal-Khénifra,1,Ait M'Hamed,0.353,89.08741878322505
+708,Khmiss Anjra,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Bni Mansour,0.348,89.10218546958063
+709,B.bounsar,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Boudinar,0.706,89.1169521559362
+710,Ighil amgoune,Ouarzazate,Drâa-Tafilalet,1,Idelsane,0.476,89.13171884229179
+711,Machouar,Al Haouz,Marrakech-Safi,1,Aghouatim,0.588,89.14648552864737
+712,Machouar,Tinghir,Drâa-Tafilalet,1,Assoul,0.429,89.16125221500295
+713,Mahrek Melak,Settat,Casablanca-Settat,1,Ain Blal,0.4,89.17601890135853
+714,Lmzem,El Kelâa des Sraghna,Marrakech-Safi,1,Zemrane,0.5,89.19078558771412
+715,M Bakay,Sefrou,Fès-Meknès,1,Matmata,0.429,89.2055522740697
+716,M bekay,Sefrou,Fès-Meknès,1,Imouzzer Kandar,0.364,89.22031896042527
+717,M'Hannech,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Mallalienne,0.5,89.23508564678086
+718,M'Hirija,Guercif,Oriental,1,Lamrija,0.667,89.24985233313645
+719,M'Sasa,Taounate,Fès-Meknès,1,Messassa,0.714,89.26461901949203
+720,Assifane,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Tassift,0.667,89.2793857058476
+721,Attaouia Chaaibia,El Kelâa des Sraghna,Marrakech-Safi,1,Laattaouia Ech-Chaybia,0.769,89.29415239220319
+722,Aychtoume,Taounate,Fès-Meknès,1,Taounate,0.471,89.30891907855877
+723,Azlaf,Nador,Oriental,1,Al Aroui,0.462,89.32368576491436
+724,Azou,Tinghir,Drâa-Tafilalet,1,Assoul,0.6,89.33845245126993
+725,B Bouyafrou,Nador,Oriental,1,Bni Bouifrou,0.783,89.35321913762552
+726,B K,Sidi Kacem,Rabat-Salé-Kénitra,1,Bab Tiouka,0.462,89.3679858239811
+727,Marenniene,Fès,Fès-Meknès,1,Louadaine,0.421,89.38275251033669
+728,Marjane,Boulemane,Fès-Meknès,1,Boulemane,0.5,89.39751919669226
+729,Massira,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Masmouda,0.533,89.41228588304784
+730,Massira,Taza,Fès-Meknès,1,Msila,0.667,89.42705256940343
+731,Massira 2,Béni Mellal,Béni Mellal-Khénifra,1,Kasba Tadla,0.4,89.44181925575901
+732,Massira 2,Taza,Fès-Meknès,1,Msila,0.571,89.45658594211459
+733,Massira I,Taza,Fès-Meknès,1,Msila,0.571,89.47135262847017
+734,B Sidel,Nador,Oriental,1,Bni Sidel Jbel,0.667,89.48611931482576
+735,B' sabsa,Taounate,Fès-Meknès,1,El Bsabsa,0.75,89.50088600118133
+736,"B,M",Béni Mellal,Béni Mellal-Khénifra,1,Beni Mellal,0.286,89.51565268753691
+737,"B,Maraghnine",Driouch,Oriental,1,Bni Marghnine,0.8,89.5304193738925
+738,M'sasa,Taounate,Fès-Meknès,1,Messassa,0.714,89.54518606024808
+739,"M, Bakay",Sefrou,Fès-Meknès,1,Matmata,0.4,89.55995274660366
+740,"M,Bouchta M,Bouchta",Taounate,Fès-Meknès,1,Bouhouda,0.519,89.57471943295924
+741,M/bouchta,Taounate,Fès-Meknès,1,Bni Bouchibet,0.636,89.58948611931483
+742,Maayach,Tinghir,Drâa-Tafilalet,1,Imilchil,0.4,89.60425280567041
+743,Houciema,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Al Hoceïma,0.667,89.61901949202598
+744,Idaouguelloule,Essaouira,Marrakech-Safi,1,Sidi El Jazouli,0.483,89.63378617838157
+745,Idaouzemzeme,Essaouira,Marrakech-Safi,1,Ida Ou Aazza,0.583,89.64855286473716
+746,Idaouzemzème,Essaouira,Marrakech-Safi,1,Ida Ou Aazza,0.583,89.66331955109274
+747,Ighil Ouderdour,Agadir-Ida Ou Tanane,Souss-Massa,1,Ida Ou Guelloul,0.467,89.67808623744831
+748,B.Ensar,Nador,Oriental,1,Beni Ansar,0.706,89.6928529238039
+749,B.Gmil Maksouline,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Tifarouine,0.519,89.70761961015948
+750,B.Louta,Nador,Oriental,1,Bouarg,0.615,89.72238629651507
+751,B.M,Béni Mellal,Béni Mellal-Khénifra,1,Beni Mellal,0.286,89.73715298287064
+752,B.S Jbel,Nador,Oriental,1,Bni Sidel Jbel,0.636,89.75191966922623
+753,B.S jbel,Nador,Oriental,1,Bni Sidel Jbel,0.636,89.76668635558181
+754,Hay Korsi Rue Almasjid,Taroudant,Souss-Massa,1,Sidi Abdellah Ou Said,0.419,89.78145304193738
+755,Maksouline,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Tifarouine,0.6,89.79621972829297
+756,Malhart,Settat,Casablanca-Settat,1,Mniaa,0.5,89.81098641464855
+757,Mallaha,Settat,Casablanca-Settat,1,Lahouaza,0.533,89.82575310100414
+758,Mallaha centre,Settat,Casablanca-Settat,1,Machraa Ben Abbou,0.452,89.84051978735971
+759,Mhamid 1 N°31,Al Haouz,Marrakech-Safi,1,Oukaimeden,0.273,89.8552864737153
+760,Mbarek El Bakay,Sefrou,Fès-Meknès,1,Dar El Hamra,0.593,89.87005316007088
+761,Mbarek bakay,Sefrou,Fès-Meknès,1,Mtarnagha,0.476,89.88481984642647
+762,Mbarek lbkay,Sefrou,Fès-Meknès,1,Dar El Hamra,0.417,89.89958653278204
+763,Mdiq Fnideq,M'diq-Fnideq,Tanger-Tétouan-Al Hoceïma,1,Fnideq,0.706,89.91435321913762
+764,Medina,Essaouira,Marrakech-Safi,1,Tafedna,0.615,89.92911990549321
+765,Meghater,Larache,Tanger-Tétouan-Al Hoceïma,1,Sidi Mohamed Lahmar,0.37,89.9438865918488
+766,Meghrawa,Taza,Fès-Meknès,1,Maghraoua,0.706,89.95865327820437
+767,Mellaha,Settat,Casablanca-Settat,1,Lahouaza,0.533,89.97341996455995
+768,Mellaha,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Mallalienne,0.444,89.98818665091554
+769,Mellala,Settat,Casablanca-Settat,1,Mniaa,0.5,90.00295333727112
+770,Menara,Azilal,Béni Mellal-Khénifra,1,Demnate,0.462,90.0177200236267
+771,Menara,Boulemane,Fès-Meknès,1,Ermila,0.333,90.03248670998228
+772,Maimouna,Kénitra,Rabat-Salé-Kénitra,1,Ait Malek,0.235,90.04725339633787
+773,Hors Province,Settat,Casablanca-Settat,1,Ras Al Ain,0.435,90.06202008269344
+774,Houara od rahou,Taza,Fès-Meknès,1,Oulad Bourima,0.5,90.07678676904902
+775,Mrabih,Sidi Kacem,Rabat-Salé-Kénitra,1,Bab Tiouka,0.375,90.09155345540461
+776,Mtiwa,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Amtar,0.6,90.1063201417602
+777,Bougumez,Azilal,Béni Mellal-Khénifra,1,Taounza,0.4,90.12108682811576
+778,Bouhaira,Essaouira,Marrakech-Safi,1,Essaouira,0.588,90.13585351447135
+779,Bouhamza,Azilal,Béni Mellal-Khénifra,1,Taounza,0.533,90.15062020082694
+780,Bouigra,Chtouka-Aït Baha,Souss-Massa,1,Tizoughrane,0.556,90.16538688718252
+781,Menara,El Kelâa des Sraghna,Marrakech-Safi,1,Lamharra,0.571,90.18015357353809
+782,Menara,Fquih Ben Salah,Béni Mellal-Khénifra,1,Hel Merbaa,0.5,90.19492025989368
+783,Menara,Taounate,Fès-Meknès,1,Mezraoua,0.571,90.20968694624926
+784,Menara,Tiznit,Souss-Massa,1,Massa,0.545,90.22445363260485
+785,Menzel,Sefrou,Fès-Meknès,1,El Menzel,0.8,90.23922031896042
+786,Merna,Tinghir,Drâa-Tafilalet,1,Imider,0.545,90.253987005316
+787,Mesnana,Guercif,Oriental,1,Saka,0.545,90.26875369167159
+788,Mestitef,Sidi Kacem,Rabat-Salé-Kénitra,1,Selfat,0.286,90.28352037802718
+789,Mezdglia jorf,Sefrou,Fès-Meknès,1,El Menzel,0.364,90.29828706438275
+790,Mghassyne,Meknès,Fès-Meknès,1,Mrhassiyine,0.8,90.31305375073833
+791,Boukhalef,Guercif,Oriental,1,Bouchaouene,0.6,90.32782043709392
+792,Boukora,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Bni Bouzra,0.588,90.3425871234495
+793,Boukorra,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Bni Bouzra,0.556,90.35735380980508
+794,Boulaajat,Taroudant,Souss-Massa,1,Ouled Aissa,0.5,90.37212049616066
+795,Ben Tayeb,Nador,Oriental,1,Beni Ansar,0.526,90.38688718251625
+796,My AHMED CHRIF,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Bni Hadifa,0.417,90.40165386887182
+797,My Abdelkader,Sidi Kacem,Rabat-Salé-Kénitra,1,Sidi Kacem,0.348,90.4164205552274
+798,My Abdelkarim,Taounate,Fès-Meknès,1,Moulay Ahmed Cherif,0.5,90.43118724158299
+799,My Abdelkrim,Taounate,Fès-Meknès,1,Moulay Ahmed Cherif,0.516,90.44595392793858
+800,My Abdellah Chrif,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Moulay Abdelkader,0.588,90.46072061429415
+801,Midar haut,Nador,Oriental,1,Bni Sidel Louta,0.4,90.47548730064973
+802,Mly El Hassane,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Mallalienne,0.4,90.49025398700532
+803,Moujahidin,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Bou Jedyane,0.476,90.5050206733609
+804,Mouklata,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Oued Laou,0.471,90.51978735971647
+805,Moulay Bouchebla,Taounate,Fès-Meknès,1,Moulay Ahmed Cherif,0.571,90.53455404607206
+806,Moulay Driss,Meknès,Fès-Meknès,1,Moulay Idriss Zarhoun,0.727,90.54932073242765
+807,Hay Mohammadi,Béni Mellal,Béni Mellal-Khénifra,1,Sidi Hammadi,0.64,90.56408741878323
+808,Hay Salam,Meknès,Fès-Meknès,1,Ait Yaazem,0.526,90.5788541051388
+809,Hay Sidi Daoud,Inezgane-Aït Melloul,Souss-Massa,1,Oulad Dahou,0.56,90.59362079149439
+810,Hay Taslouine,Agadir-Ida Ou Tanane,Souss-Massa,1,Imsouane,0.476,90.60838747784997
+811,Hay eljadid,Larache,Tanger-Tétouan-Al Hoceïma,1,Bahhara Oulad Ayad,0.483,90.62315416420556
+812,Hay elyasmine,Sidi Kacem,Rabat-Salé-Kénitra,1,Chbanate,0.286,90.63792085056113
+813,Hay hassani,Al Haouz,Marrakech-Safi,1,Assaki,0.588,90.65268753691672
+814,Hay khatabi rue 4 n°32,Nador,Oriental,1,Hassi Berkane,0.353,90.6674542232723
+815,Hdida,Tinghir,Drâa-Tafilalet,1,Tinejdad,0.462,90.68222090962787
+816,Hed Mssila,Taza,Fès-Meknès,1,Msila,0.667,90.69698759598346
+817,Hey Mohammadi,Béni Mellal,Béni Mellal-Khénifra,1,Sidi Hammadi,0.64,90.71175428233904
+818,Hidar,Driouch,Oriental,1,Midar,0.8,90.72652096869463
+819,Hk,Sidi Kacem,Rabat-Salé-Kénitra,1,Tekna,0.286,90.7412876550502
+820,Hkmiss,Tinghir,Drâa-Tafilalet,1,M'Ssici,0.462,90.75605434140579
+821,Gzenaya,Tinghir,Drâa-Tafilalet,1,Kalaat M'Gouna,0.286,90.77082102776137
+822,Boujdian,Larache,Tanger-Tétouan-Al Hoceïma,1,Souaken,0.533,90.78558771411696
+823,Od Brhil,Taroudant,Souss-Massa,1,Oulad Berhil,0.8,90.80035440047253
+824,My Abdlkrim,Taounate,Fès-Meknès,1,Moulay Ahmed Cherif,0.467,90.81512108682811
+825,My BRAHIM,Al Haouz,Marrakech-Safi,1,Moulay Brahim,0.818,90.8298877731837
+826,My Bouaazza,Khénifra,Béni Mellal-Khénifra,1,Ouaoumana,0.5,90.84465445953929
+827,My Dris,Meknès,Fès-Meknès,1,Moulay Idriss Zarhoun,0.5,90.85942114589486
+828,My Driss,Meknès,Fès-Meknès,1,Moulay Idriss Zarhoun,0.552,90.87418783225044
+829,My El Hassan,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Bni Arouss,0.364,90.88895451860603
+830,My abdellah cherif,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Moulay Abdelkader,0.629,90.90372120496161
+831,My driss,Meknès,Fès-Meknès,1,Moulay Idriss Zarhoun,0.552,90.91848789131718
+832,My youssef,Meknès,Fès-Meknès,1,Ouislane,0.444,90.93325457767277
+833,Mzioukat Chiadma,Essaouira,Marrakech-Safi,1,Zaouiat Ben Hmida,0.545,90.94802126402836
+834,Mzlat,Tiznit,Souss-Massa,1,Massa,0.4,90.96278795038394
+835,Médina,Meknès,Fès-Meknès,1,Oued Jdida,0.5,90.97755463673951
+836,Médina,Safi,Marrakech-Safi,1,Loualidia,0.4,90.9923213230951
+837,Boujarrah,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Bni Karrich,0.5,91.00708800945068
+838,Hay Maurice,Inezgane-Aït Melloul,Souss-Massa,1,Ait Melloul,0.364,91.02185469580625
+839,Od Sghair,Settat,Casablanca-Settat,1,Oulad Sghir,0.8,91.03662138216184
+840,Od Teima,Taroudant,Souss-Massa,1,Oulad Berhil,0.5,91.05138806851743
+841,Amsernat,Agadir-Ida Ou Tanane,Souss-Massa,1,Tamri,0.462,91.06615475487301
+842,"N 222,Hay Alfalah",Chtouka-Aït Baha,Souss-Massa,1,Ait Abdellah,0.483,91.08092144122858
+843,Nkheila,Settat,Casablanca-Settat,1,Mniaa,0.5,91.09568812758417
+844,N°114 H Biranzarane,Taroudant,Souss-Massa,1,Tinzart,0.4,91.11045481393975
+845,"N°20, Rue 958,Hay Salam",Agadir-Ida Ou Tanane,Souss-Massa,1,Ait Aissi Ihahane,0.256,91.12522150029534
+846,"N°39,Akniss",Taroudant,Souss-Massa,1,Lakhnafif,0.421,91.13998818665091
+847,"N°80,Lot Almostakbal,Bloc3",Inezgane-Aït Melloul,Souss-Massa,1,Ait Melloul,0.167,91.1547548730065
+848,O Akalay,Taroudant,Souss-Massa,1,Oualqadi,0.5,91.16952155936208
+849,O S B,Al Haouz,Marrakech-Safi,1,Sidi Badhaj,0.375,91.18428824571767
+850,"O, Daoud",Taounate,Fès-Meknès,1,Oulad Daoud,0.737,91.19905493207324
+851,Od Amghar,Nador,Oriental,1,Beni Ansar,0.421,91.21382161842882
+852,Od Belahcen,Larache,Tanger-Tétouan-Al Hoceïma,1,Souaken,0.444,91.22858830478441
+853,Od Belhcen,Larache,Tanger-Tétouan-Al Hoceïma,1,Moulay Bousselham,0.444,91.24335499114
+854,Od Bouchour,Settat,Casablanca-Settat,1,Oulad Abbou,0.545,91.25812167749557
+855,Had msila,Taza,Fès-Meknès,1,Msila,0.714,91.27288836385115
+856,Hal Merbea,Fquih Ben Salah,Béni Mellal-Khénifra,1,Hel Merbaa,0.8,91.28765505020674
+857,Hamd,Tinghir,Drâa-Tafilalet,1,Imider,0.4,91.30242173656231
+858,Hamria,Taounate,Fès-Meknès,1,Zarkat,0.5,91.3171884229179
+859,Hana,El Kelâa des Sraghna,Marrakech-Safi,1,Hiadna,0.8,91.33195510927348
+860,Haouara,Taza,Fès-Meknès,1,Maghraoua,0.625,91.34672179562907
+861,Haoura,Guercif,Oriental,1,Bouchaouene,0.471,91.36148848198464
+862,Hay Alfarah Im 14 N°5,Agadir-Ida Ou Tanane,Souss-Massa,1,Ait Aissi Ihahane,0.216,91.37625516834022
+863,Hay Jadid,Sidi Kacem,Rabat-Salé-Kénitra,1,Ain Jemaa,0.444,91.39102185469581
+864,Foum Anseur,Béni Mellal,Béni Mellal-Khénifra,1,Foum El Anceur,0.8,91.4057885410514
+865,Od Illoul,Béni Mellal,Béni Mellal-Khénifra,1,Timoulilt,0.444,91.42055522740696
+866,Od Kasaba,Taounate,Fès-Meknès,1,Oudka,0.571,91.43532191376255
+867,Od Malrk,Sidi Kacem,Rabat-Salé-Kénitra,1,Oulad Nouel,0.421,91.45008860011814
+868,Od Mbarek,Béni Mellal,Béni Mellal-Khénifra,1,Oulad M'Barek,0.818,91.46485528647372
+869,Od Noual,Sidi Kacem,Rabat-Salé-Kénitra,1,Oulad Nouel,0.737,91.47962197282929
+870,Od Rahou Benaissa,Nador,Oriental,1,Beni Ansar,0.444,91.49438865918488
+871,Oulaayoune,Essaouira,Marrakech-Safi,1,Moulay Bouzarqtoune,0.621,91.50915534554046
+872,Oulad Jerrar,Tiznit,Souss-Massa,1,Ait Erkha,0.476,91.52392203189605
+873,Anamer,Taroudant,Souss-Massa,1,Argana,0.5,91.53868871825162
+874,Aolos,Taroudant,Souss-Massa,1,Aoulouz,0.667,91.5534554046072
+875,Aruit,Nador,Oriental,1,Al Aroui,0.615,91.56822209096279
+876,As jbel oulia,Tinghir,Drâa-Tafilalet,1,Ferkla El Oulia,0.714,91.58298877731836
+877,As s Gharbia,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Sahl El Gharbia,0.564,91.59775546367395
+878,Old Ayad,Béni Mellal,Béni Mellal-Khénifra,1,Ouled Yaïch,0.632,91.61252215002953
+879,Old Bader,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Moulay Abdelkader,0.538,91.62728883638512
+880,Ouaadia,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Rouadi,0.769,91.64205552274069
+881,Ouad Almakhazine,Kénitra,Rabat-Salé-Kénitra,1,Oulad Slama,0.593,91.65682220909628
+882,Od Ghalem,Settat,Casablanca-Settat,1,Toualet,0.5,91.67158889545186
+883,H.Mohamadi,Béni Mellal,Béni Mellal-Khénifra,1,Sidi Hammadi,0.545,91.68635558180745
+884,H.Mohmadi,Béni Mellal,Béni Mellal-Khénifra,1,Sidi Hammadi,0.571,91.70112226816302
+885,Hachane,Essaouira,Marrakech-Safi,1,El Hanchane,0.778,91.7158889545186
+886,Had Sidi Abdellah,Rehamna,Marrakech-Safi,1,Sidi Abdallah,0.8,91.73065564087419
+887,Ouled Jirar,Tiznit,Souss-Massa,1,Ouijjane,0.316,91.74542232722978
+888,Ouled aarfa,Taroudant,Souss-Massa,1,Ouled Aissa,0.727,91.76018901358535
+889,Ouled jameâ,Moulay Yacoub,Fès-Meknès,1,Oulad Mimoun,0.522,91.77495569994093
+890,Oulkadi,Al Haouz,Marrakech-Safi,1,Ourika,0.615,91.78972238629652
+891,Oum Rabii,Meknès,Fès-Meknès,1,Oualili,0.625,91.8044890726521
+892,Oum Rbie,Meknès,Fès-Meknès,1,Ouislane,0.5,91.81925575900767
+893,Ouad elabid,Azilal,Béni Mellal-Khénifra,1,Ouaoula,0.556,91.83402244536326
+894,Ouadelabid,Azilal,Béni Mellal-Khénifra,1,Ouaoula,0.588,91.84878913171885
+895,Ouald Rahou,Guercif,Oriental,1,Houara Oulad Raho,0.714,91.86355581807443
+896,Ouaouizert,Azilal,Béni Mellal-Khénifra,1,Ouaoula,0.588,91.87832250443
+897,Oued Lahmer,Taza,Fès-Meknès,1,Oued Amlil,0.571,91.89308919078559
+898,Oued kasaba,Taounate,Fès-Meknès,1,Oued Jemaa,0.667,91.90785587714117
+899,Oued kassaba,Taounate,Fès-Meknès,1,Oued Jemaa,0.636,91.92262256349674
+900,Oued laabid,Azilal,Béni Mellal-Khénifra,1,Agoudi N'Lkhair,0.538,91.93738924985233
+901,Oughroud,Tinghir,Drâa-Tafilalet,1,Bou Azmou,0.471,91.95215593620792
+902,Ouidane,El Kelâa des Sraghna,Marrakech-Safi,1,Taouzint,0.533,91.9669226225635
+903,Pres de lecole 6 novombre,Fès,Fès-Meknès,1,Sidi Hrazem,0.167,91.98168930891907
+904,Q-Industriel,Agadir-Ida Ou Tanane,Souss-Massa,1,Aqesri,0.444,91.99645599527466
+905,QUARTIER NAJMA RUE Espagne,Tanger-Assilah,Tanger-Tétouan-Al Hoceïma,1,Al Bahraoyine,0.256,92.01122268163024
+906,Quartier Benkirane,Béni Mellal,Béni Mellal-Khénifra,1,Bni Zrantel,0.414,92.02598936798583
+907,Quolla,Larache,Tanger-Tétouan-Al Hoceïma,1,Souk Tolba,0.5,92.0407560543414
+908,R kheir,Sefrou,Fès-Meknès,1,Kandar Sidi Khiar,0.5,92.05552274069699
+909,"R,Kheir",Sefrou,Fès-Meknès,1,Kandar Sidi Khiar,0.417,92.07028942705257
+910,Ras Aghil,Meknès,Fès-Meknès,1,Ras Ijerri,0.526,92.08505611340816
+911,Ras Aghil,Sidi Kacem,Rabat-Salé-Kénitra,1,Taoughilt,0.556,92.09982279976373
+912,Oulad Tahar,Taounate,Fès-Meknès,1,Oulad Daoud,0.636,92.11458948611931
+913,Oulad allal,Meknès,Fès-Meknès,1,Ait Ouallal,0.636,92.1293561724749
+914,Oulad-Boundar,Taounate,Fès-Meknès,1,Oulad Daoud,0.75,92.14412285883049
+915,"Oulad-Kadour,",Taounate,Fès-Meknès,1,Oulad Daoud,0.75,92.15888954518606
+916,Oulad-Taher,Taounate,Fès-Meknès,1,Oulad Daoud,0.636,92.17365623154164
+917,Ouled Hammou,Fquih Ben Salah,Béni Mellal-Khénifra,1,Ouled Bourahmoune,0.69,92.18842291789723
+918,Ouled Jarrar,Tiznit,Souss-Massa,1,Ouijjane,0.4,92.2031896042528
+919,Foum anseur,Béni Mellal,Béni Mellal-Khénifra,1,Foum El Anceur,0.8,92.21795629060838
+920,Fraoua,Sidi Kacem,Rabat-Salé-Kénitra,1,Zirara,0.5,92.23272297696397
+921,Fès médina,Fès,Fès-Meknès,1,Fès,0.462,92.24748966331956
+922,GALAZ Centre,Taounate,Fès-Meknès,1,Galaz,0.588,92.26225634967513
+923,Ghafsey,Taounate,Fès-Meknès,1,Ghafsai,0.714,92.27702303603071
+924,Ghiyata gharb,Taza,Fès-Meknès,1,Ghiata Al Gharbia,0.8,92.2917897223863
+925,Gourziana,Taounate,Fès-Meknès,1,Ourtzagh,0.588,92.30655640874188
+926,Gueldaman,Taza,Fès-Meknès,1,Galdamane,0.778,92.32132309509745
+927,Guèliz,Al Haouz,Marrakech-Safi,1,Iguidi,0.5,92.33608978145304
+928,Guéliz,Al Haouz,Marrakech-Safi,1,Iguidi,0.5,92.35085646780863
+929,Guéliz,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Targuist,0.429,92.36562315416421
+930,Guéliz,Taza,Fès-Meknès,1,Oued Amlil,0.5,92.38038984051978
+931,Fahs anjra,Fahs-Anjra,Tanger-Tétouan-Al Hoceïma,1,Anjra,0.667,92.39515652687537
+932,Ourbâa,Béni Mellal,Béni Mellal-Khénifra,1,Afourar,0.615,92.40992321323095
+933,Ouriaa,Béni Mellal,Béni Mellal-Khénifra,1,Afourar,0.615,92.42468989958654
+934,Ousikiss,Tinghir,Drâa-Tafilalet,1,Ouaklim,0.4,92.43945658594211
+935,S H O hamdtidzi,Essaouira,Marrakech-Safi,1,Sidi H'Mad Ou Hamed,0.588,92.4542232722977
+936,S Y B A,Al Haouz,Marrakech-Safi,1,Sidi Badhaj,0.444,92.46898995865328
+937,"S,A,Benaissa",Sidi Kacem,Rabat-Salé-Kénitra,1,Mkansa,0.444,92.48375664500885
+938,"S,A,Chrif",Sidi Kacem,Rabat-Salé-Kénitra,1,Taoughilt,0.333,92.49852333136444
+939,Ras brouj,Settat,Casablanca-Settat,1,Machraa Ben Abbou,0.462,92.51329001772002
+940,Rbat El khier,Sefrou,Fès-Meknès,1,Dar El Hamra,0.56,92.52805670407561
+941,Remla,Larache,Tanger-Tétouan-Al Hoceïma,1,Khemis Sahel,0.353,92.54282339043118
+942,Retba,Taounate,Fès-Meknès,1,Ratba,0.8,92.55759007678677
+943,Riad Kostani,Meknès,Fès-Meknès,1,Dar Oum Soltane,0.519,92.57235676314235
+944,Ribat El Kheir,Sefrou,Fès-Meknès,1,Dar El Hamra,0.538,92.58712344949794
+945,Ribat El kheir,Sefrou,Fès-Meknès,1,Dar El Hamra,0.538,92.60189013585351
+946,Albassatine,Meknès,Fès-Meknès,1,Mrhassiyine,0.545,92.6166568222091
+947,Alhouda Bloc B N° 545,Agadir-Ida Ou Tanane,Souss-Massa,1,Ida Ou Kazzou,0.303,92.63142350856468
+948,Alqods,Taza,Fès-Meknès,1,Galdamane,0.4,92.64619019492027
+949,Alquds,Agadir-Ida Ou Tanane,Souss-Massa,1,Aqesri,0.5,92.66095688127584
+950,Alquods,Taza,Fès-Meknès,1,Galdamane,0.375,92.67572356763142
+951,B.sidel,Nador,Oriental,1,Bni Sidel Jbel,0.571,92.69049025398701
+952,B.sidel jbal,Nador,Oriental,1,Bni Sidel Jbel,0.769,92.7052569403426
+953,B/jbel,Nador,Oriental,1,Bni Sidel Jbel,0.6,92.72002362669816
+954,BEN Maraaz,Meknès,Fès-Meknès,1,Aïn Orma,0.444,92.73479031305375
+955,Bab Mrouje,Taza,Fès-Meknès,1,Bab Marzouka,0.727,92.74955699940934
+956,Bab ramla,Taza,Fès-Meknès,1,Bab Marzouka,0.571,92.76432368576492
+957,Bab tété,Ouarzazate,Drâa-Tafilalet,1,Télouet,0.4,92.77909037212049
+958,Bab wandar,Taounate,Fès-Meknès,1,Jbabra,0.5,92.79385705847608
+959,El bahri,Nador,Oriental,1,Al Aroui,0.625,92.80862374483166
+960,Amallal,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Amtar,0.5,92.82339043118724
+961,Amdnagh,Tinghir,Drâa-Tafilalet,1,Tinghir,0.429,92.83815711754282
+962,Amkhlij,Al Haouz,Marrakech-Safi,1,Assaki,0.462,92.8529238038984
+963,Rue 309 Hay Moulay Rachid,Taroudant,Souss-Massa,1,Oulad Berhil,0.432,92.86769049025399
+964,"Rue 516,Masdoura Inzgane",Inezgane-Aït Melloul,Souss-Massa,1,Inezgane,0.438,92.88245717660956
+965,S / K,Sidi Kacem,Rabat-Salé-Kénitra,1,Sidi Kacem,0.462,92.89722386296515
+966,S A El Hadi,Sidi Kacem,Rabat-Salé-Kénitra,1,Selfat,0.471,92.91199054932073
+967,Sabati,Fès,Fès-Meknès,1,Louadaine,0.4,92.92675723567632
+968,"S,A,Ouhamed",Essaouira,Marrakech-Safi,1,Sidi H'Mad Ou Hamed,0.6,92.94152392203189
+969,"S,Abder",Taounate,Fès-Meknès,1,Jbabra,0.462,92.95629060838748
+970,S.A.Elhadi,Sidi Kacem,Rabat-Salé-Kénitra,1,Selfat,0.5,92.97105729474306
+971,S.A.S,Essaouira,Marrakech-Safi,1,Meskala,0.333,92.98582398109865
+972,S.Abderhma,Taounate,Fès-Meknès,1,Jbabra,0.5,93.00059066745422
+973,S.H. M'ed,Taounate,Fès-Meknès,1,Sidi Haj M’hamed,0.5,93.0153573538098
+974,S.H.M'd,Taounate,Fès-Meknès,1,Ras El Oued,0.333,93.03012404016539
+975,S.Sebt,Béni Mellal,Béni Mellal-Khénifra,1,Semguet,0.462,93.04489072652098
+976,S/Abdelah Cherif,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Sidi Ahmed Cherif,0.667,93.05965741287655
+977,S;Mokhfi,Taounate,Fès-Meknès,1,Sidi El Mokhfi,0.636,93.07442409923213
+978,Bojediane,Larache,Tanger-Tétouan-Al Hoceïma,1,Sidi Lyamani,0.381,93.08919078558772
+979,Alwafae,Larache,Tanger-Tétouan-Al Hoceïma,1,Larache,0.429,93.10395747194329
+980,Far,Tinghir,Drâa-Tafilalet,1,Aït Elfarsi,0.429,93.11872415829887
+981,Fes medina,Fès,Fès-Meknès,1,Fès,0.462,93.13349084465446
+982,Fokra,Settat,Casablanca-Settat,1,Mzoura,0.545,93.14825753101005
+983,Samsa,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Saddina,0.5,93.16302421736562
+984,Sanit Rmel,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Sahtryine,0.421,93.1777909037212
+985,Sarsar,Larache,Tanger-Tétouan-Al Hoceïma,1,Ksar Bjir,0.533,93.19255759007679
+986,Bolaajlat,Taroudant,Souss-Massa,1,Lamhara,0.5,93.20732427643237
+987,Borj Mechkouk,Taounate,Fès-Meknès,1,Bouhouda,0.476,93.22209096278795
+988,Bouallou,Taounate,Fès-Meknès,1,Bouarouss,0.706,93.23685764914353
+989,Bouaziar,Azilal,Béni Mellal-Khénifra,1,Azilal,0.571,93.25162433549912
+990,Bouazoune,Taounate,Fès-Meknès,1,Ouaouzgane,0.737,93.2663910218547
+991,Boubaan,Nador,Oriental,1,Bouarg,0.615,93.28115770821027
+992,Boubria,Berkane,Oriental,1,Boughriba,0.75,93.29592439456586
+993,Bouchamate,Taounate,Fès-Meknès,1,Bouadel,0.588,93.31069108092144
+994,Bouchibat,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Boudinar,0.588,93.32545776727703
+995,Bouderbala,Sefrou,Fès-Meknès,1,Imouzzer Kandar,0.48,93.3402244536326
+996,Bouezgar,Essaouira,Marrakech-Safi,1,Bouzemmour,0.556,93.35499113998819
+997,Bougaala,Guelmim,Guelmim-Oued Noun,1,Bouizakarne,0.526,93.36975782634377
+998,SI sidi yahya,Sidi Slimane,Rabat-Salé-Kénitra,1,Sidi Al Kamel,0.538,93.38452451269934
+999,Sebt lgardane,Taroudant,Souss-Massa,1,El Guerdane,0.667,93.39929119905493
+1000,Sekour,Boulemane,Fès-Meknès,1,Missour,0.615,93.41405788541051
+1001,Sidi Abdellah Rhamna,Settat,Casablanca-Settat,1,Sidi Abdelkhaleq,0.667,93.4288245717661
+1002,Sidi Ahmed Tadli,Sefrou,Fès-Meknès,1,Sidi Youssef Ben Ahmed,0.526,93.44359125812167
+1003,Sahrij,Azilal,Béni Mellal-Khénifra,1,Aït Majden,0.375,93.45835794447726
+1004,Ait s jbel,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Jbel El Oulia,0.571,93.47312463083284
+1005,Ait sedrat jbel,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Jbel El Oulia,0.75,93.48789131718843
+1006,Ait youl kalaa,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.727,93.502658003544
+1007,Aity wassif,Tinghir,Drâa-Tafilalet,1,Ait Ouassif,0.818,93.51742468989958
+1008,Akch hsiya,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.444,93.53219137625517
+1009,Akdim,Tinghir,Drâa-Tafilalet,1,Ouaklim,0.667,93.54695806261076
+1010,Al Boustane,Meknès,Fès-Meknès,1,Dar Oum Soltane,0.692,93.56172474896633
+1011,Al Wahda,Taza,Fès-Meknès,1,Outat El Haj,0.4,93.57649143532191
+1012,Al masjid,Nador,Oriental,1,Al Aroui,0.588,93.5912581216775
+1013,Al qods,Nador,Oriental,1,Al Aroui,0.533,93.60602480803308
+1014,Al qods,Taza,Fès-Meknès,1,Bab Boudir,0.471,93.62079149438865
+1015,Sidi Driss,El Kelâa des Sraghna,Marrakech-Safi,1,Sidi Moussa,0.667,93.63555818074424
+1016,Sidi Ghayat,Al Haouz,Marrakech-Safi,1,Sidi Badhaj,0.636,93.65032486709983
+1017,Sidi Khyar,Sefrou,Fès-Meknès,1,Kandar Sidi Khiar,0.667,93.66509155345541
+1018,Sidi Mbraek,Sidi Ifni,Guelmim-Oued Noun,1,Sidi M'Bark,0.818,93.67985823981098
+1019,Sidi Yahia,Taounate,Fès-Meknès,1,Sidi El Mokhfi,0.583,93.69462492616657
+1020,Sidi Yahya,Sidi Slimane,Rabat-Salé-Kénitra,1,Sidi Al Kamel,0.609,93.70939161252215
+1021,Sidi ahmed Tadeli,Sefrou,Fès-Meknès,1,Sidi Youssef Ben Ahmed,0.513,93.72415829887773
+1022,Sidi boujida,Fès,Fès-Meknès,1,Ain Bida,0.6,93.73892498523331
+1023,Sidi ghiate,Al Haouz,Marrakech-Safi,1,Ghmate,0.588,93.7536916715889
+1024,Sidi khyar,Sefrou,Fès-Meknès,1,Kandar Sidi Khiar,0.667,93.76845835794448
+1025,Sas,Essaouira,Marrakech-Safi,1,Meskala,0.4,93.78322504430005
+1026,Sbt Lagfifat,Taroudant,Souss-Massa,1,Lakhnafif,0.476,93.79799173065564
+1027,Sebt,Taroudant,Souss-Massa,1,Sidi Borja,0.286,93.81275841701122
+1028,Sebt Bni Guerfet,Larache,Tanger-Tétouan-Al Hoceïma,1,Bni Garfett,0.667,93.82752510336681
+1029,Sebt Kdim,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Bni Karrich,0.4,93.84229178972238
+1030,Sebt Lagfifat,Taroudant,Souss-Massa,1,Lakhnafif,0.455,93.85705847607797
+1031,Elhajeb II,El Hajeb,Fès-Meknès,1,El Hajeb,0.778,93.87182516243355
+1032,Elkodia,Taroudant,Souss-Massa,1,El Koudia El Beida,0.56,93.88659184878914
+1033,Eloualja,Taounate,Fès-Meknès,1,Khlalfa,0.533,93.90135853514471
+1034,Elqods,Guelmim,Guelmim-Oued Noun,1,Guelmim,0.308,93.9161252215003
+1035,Elwafae,Larache,Tanger-Tétouan-Al Hoceïma,1,Larache,0.143,93.93089190785588
+1036,Ennakhil,Chichaoua,Marrakech-Safi,1,Ahdil,0.615,93.94565859421147
+1037,Ennakhil,Ouarzazate,Drâa-Tafilalet,1,Taznakht,0.5,93.96042528056704
+1038,Ess ville,Essaouira,Marrakech-Safi,1,Essaouira,0.444,93.97519196692262
+1039,F.B.Salah,Fquih Ben Salah,Béni Mellal-Khénifra,1,Fkih Ben Salah,0.609,93.98995865327821
+1040,Fahs Anjra,Fahs-Anjra,Tanger-Tétouan-Al Hoceïma,1,Anjra,0.667,94.00472533963378
+1041,Douar dar lakhchab,Moulay Yacoub,Fès-Meknès,1,Bouchabel,0.444,94.01949202598936
+1042,Sidi Ali ben brahim,Azilal,Béni Mellal-Khénifra,1,Moulay Aissa Ben Driss,0.488,94.03425871234495
+1043,Sidi Amar L'Hadi,Larache,Tanger-Tétouan-Al Hoceïma,1,Sidi Lyamani,0.643,94.04902539870054
+1044,Sidi Amer,Meknès,Fès-Meknès,1,Nzala Bni Ammar,0.417,94.06379208505611
+1045,Sidi Amer Hadi,Sidi Kacem,Rabat-Salé-Kénitra,1,Sidi Kacem,0.583,94.07855877141169
+1046,Sidi Brahim,Fès,Fès-Meknès,1,Sidi Hrazem,0.727,94.09332545776728
+1047,Ait kassi ouali,Tinghir,Drâa-Tafilalet,1,Ait Ouassif,0.615,94.10809214412286
+1048,Sidi ouabdellah,Taroudant,Souss-Massa,1,Sidi Ahmed Ou Abdellah,0.811,94.12285883047844
+1049,Sidi-Yahia,Taounate,Fès-Meknès,1,Sidi El Mokhfi,0.583,94.13762551683402
+1050,Sidi-Yahia Ben,Taounate,Fès-Meknès,1,Sidi Yahya Bni Zeroual,0.667,94.1523922031896
+1051,SidiAhmed Tadli,Sefrou,Fès-Meknès,1,Sidi Youssef Ben Ahmed,0.486,94.16715888954519
+1052,Smd,Chichaoua,Marrakech-Safi,1,Saidate,0.4,94.18192557590076
+1053,Souk Lhad,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Oued Malha,0.632,94.19669226225635
+1054,Souk Tlat,Sidi Kacem,Rabat-Salé-Kénitra,1,Selfat,0.533,94.21145894861193
+1055,Souk laarbia,Taounate,Fès-Meknès,1,Oudka,0.471,94.22622563496752
+1056,Sraghna,Sefrou,Fès-Meknès,1,Mtarnagha,0.625,94.24099232132309
+1057,Syba,Agadir-Ida Ou Tanane,Souss-Massa,1,Imsouane,0.333,94.25575900767868
+1058,Syba,Azilal,Béni Mellal-Khénifra,1,Tabant,0.4,94.27052569403426
+1059,Syba,Essaouira,Marrakech-Safi,1,Bizdad,0.4,94.28529238038983
+1060,Sidi Ahmed Zerrouk,Taza,Fès-Meknès,1,Bab Marzouka,0.4,94.30005906674542
+1061,El wahda,Taza,Fès-Meknès,1,Outat El Haj,0.4,94.314825753101
+1062,Elguenzra,Khemisset,Rabat-Salé-Kénitra,1,El Kansera,0.526,94.32959243945659
+1063,Tamassint,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Targuist,0.471,94.34435912581216
+1064,Tamsemen,Driouch,Oriental,1,Temsamane,0.471,94.35912581216775
+1065,Tamsslout,Taroudant,Souss-Massa,1,Tamaloukte,0.737,94.37389249852333
+1066,Tamzirt,Ouarzazate,Drâa-Tafilalet,1,Tarmigt,0.714,94.38865918487892
+1067,Syba,Tinghir,Drâa-Tafilalet,1,Outerbat,0.333,94.40342587123449
+1068,TAOUNATE Centre,Taounate,Fès-Meknès,1,Taounate,0.696,94.41819255759007
+1069,TAOUNATEDouar,Taounate,Fès-Meknès,1,Taounate,0.762,94.43295924394566
+1070,Tabarante,Taounate,Fès-Meknès,1,Tafrant,0.75,94.44772593030125
+1071,Tabarrant,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Chakran,0.5,94.46249261665682
+1072,Tabolkhirte,Tinghir,Drâa-Tafilalet,1,Tinghir,0.444,94.4772593030124
+1073,Tabrent,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Targuist,0.533,94.49202598936799
+1074,Ait hadouch,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.632,94.50679267572357
+1075,Ait halli ait Daoud,Khemisset,Rabat-Salé-Kénitra,1,Sebt Aït Rahou,0.545,94.52155936207915
+1076,Ait hamou yahya,Boulemane,Fès-Meknès,1,Almis Marmoucha,0.533,94.53632604843473
+1077,Ait hamoyahya,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.571,94.55109273479032
+1078,Ait kassi,Tinghir,Drâa-Tafilalet,1,Ait Ouassif,0.8,94.5658594211459
+1079,Ait Sdrat Ghrbia,Ouarzazate,Drâa-Tafilalet,1,Ait Oumdis,0.385,94.58062610750147
+1080,Ait Sdrat Shel Charqia,Ouarzazate,Drâa-Tafilalet,1,Skoura Ahl El Oust,0.4,94.59539279385706
+1081,Ait Tislit,Béni Mellal,Béni Mellal-Khénifra,1,Ait Ouqabli,0.571,94.61015948021264
+1082,Ait Tisslit,Béni Mellal,Béni Mellal-Khénifra,1,Ait Ouqabli,0.545,94.62492616656822
+1083,Ait aabou,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.706,94.6396928529238
+1084,Ait ali imider,Tinghir,Drâa-Tafilalet,1,Imider,0.6,94.65445953927939
+1085,Ait maala,Azilal,Béni Mellal-Khénifra,1,Ait Blal,0.706,94.66922622563497
+1086,Ait mahdi,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.706,94.68399291199054
+1087,Ait moussa,Zagora,Drâa-Tafilalet,1,Ait Ouallal,0.667,94.69875959834613
+1088,Tahar Souk,Taounate,Fès-Meknès,1,Thar Es-Souk,0.818,94.71352628470171
+1089,Tahar-Souk,Taounate,Fès-Meknès,1,Thar Es-Souk,0.818,94.7282929710573
+1090,Taienest,Taza,Fès-Meknès,1,Taïnaste,0.75,94.74305965741287
+1091,Takyout,El Kelâa des Sraghna,Marrakech-Safi,1,Taouzint,0.667,94.75782634376846
+1092,Tamadite,Taounate,Fès-Meknès,1,Tamedit,0.8,94.77259303012404
+1093,Tamait Oufella,Agadir-Ida Ou Tanane,Souss-Massa,1,Ida Ou Guelloul,0.483,94.78735971647963
+1094,Tamaounza,Agadir-Ida Ou Tanane,Souss-Massa,1,Taghazout,0.556,94.8021264028352
+1095,Taza haut,Taza,Fès-Meknès,1,Taza,0.615,94.81689308919078
+1096,Tazitount,Chichaoua,Marrakech-Safi,1,Ain Tazitounte,0.783,94.83165977554637
+1097,Tazourakht,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Arbaa Taourirt,0.5,94.84642646190196
+1098,Tidrara,Al Haouz,Marrakech-Safi,1,Tisrasse,0.533,94.86119314825753
+1099,Tidsi,Taroudant,Souss-Massa,1,Tindine,0.667,94.87595983461311
+1100,Bensheikh,Al Haouz,Marrakech-Safi,1,Ouneine,0.375,94.8907265209687
+1101,Berraca,Nador,Oriental,1,Beni Ansar,0.353,94.90549320732427
+1102,Berraka,Nador,Oriental,1,Hassi Berkane,0.5,94.92025989367986
+1103,Biban,Taounate,Fès-Meknès,1,El Bibane,0.714,94.93502658003544
+1104,Taouiyalt,Taroudant,Souss-Massa,1,Taroudant,0.667,94.94979326639103
+1105,Taoujdate,El Hajeb,Fès-Meknès,1,Ait Boubidmane,0.522,94.9645599527466
+1106,Targha,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Amtar,0.545,94.97932663910218
+1107,Tasouite,Tinghir,Drâa-Tafilalet,1,Assoul,0.571,94.99409332545777
+1108,Tassaltant,Al Haouz,Marrakech-Safi,1,Taouyalte,0.526,95.00886001181335
+1109,Tassaltant,Azilal,Béni Mellal-Khénifra,1,Tabant,0.625,95.02362669816893
+1110,Tassaltant,Marrakech,Marrakech-Safi,1,Tasoultante,0.762,95.03839338452451
+1111,Douar tarouate,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Teroual,0.476,95.0531600708801
+1112,Douar tiaret bni frassen,Taza,Fès-Meknès,1,Oulad Chrif,0.343,95.06792675723568
+1113,Douar zrarda,Taounate,Fès-Meknès,1,Oulad Daoud,0.522,95.08269344359125
+1114,Dr Lamharig,Sidi Kacem,Rabat-Salé-Kénitra,1,Zirara,0.353,95.09746012994684
+1115,Dr Zhair Bouata,Sidi Kacem,Rabat-Salé-Kénitra,1,Zirara,0.476,95.11222681630242
+1116,Dr lagraa,Rehamna,Marrakech-Safi,1,Sidi Ali Labrahla,0.538,95.12699350265801
+1117,Ehahane,Essaouira,Marrakech-Safi,1,El Hanchane,0.778,95.14176018901358
+1118,El Bassatine,Meknès,Fès-Meknès,1,Mrhassiyine,0.522,95.15652687536917
+1119,El Hana,El Kelâa des Sraghna,Marrakech-Safi,1,El Aamria,0.625,95.17129356172475
+1120,El Qods,El Kelâa des Sraghna,Marrakech-Safi,1,El Marbouh,0.471,95.18606024808032
+1121,El Yasmine,Sidi Kacem,Rabat-Salé-Kénitra,1,Ain Jemaa,0.421,95.20082693443591
+1122,Douar Bahi,Azilal,Béni Mellal-Khénifra,1,Zaouiat Ahansal,0.48,95.2155936207915
+1123,Ait boyoussef,Tinghir,Drâa-Tafilalet,1,Ait Ouassif,0.75,95.23036030714708
+1124,Ait gmat,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.625,95.24512699350265
+1125,Tassaltnt,Al Haouz,Marrakech-Safi,1,Taouyalte,0.556,95.25989367985824
+1126,Taughmerte,Taroudant,Souss-Massa,1,Toughmart,0.737,95.27466036621382
+1127,Bin Jradi,Taza,Fès-Meknès,1,Bab Boudir,0.421,95.28942705256941
+1128,Bit Ghouleme,Taza,Fès-Meknès,1,Bni Lent,0.5,95.30419373892498
+1129,Bit ghoulem,Taza,Fès-Meknès,1,Bni Lent,0.526,95.31896042528057
+1130,Bkakacha,Settat,Casablanca-Settat,1,Dar Chaffai,0.421,95.33372711163615
+1131,Bni Amer,El Kelâa des Sraghna,Marrakech-Safi,1,Oulad Amer,0.556,95.34849379799174
+1132,Bni Koulla,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Bni Quolla,0.8,95.36326048434731
+1133,Bni Saden,Sefrou,Fès-Meknès,1,Bir Tamtam,0.421,95.3780271707029
+1134,Bni ahmed,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Bni Hadifa,0.632,95.39279385705848
+1135,Bnimaati,Settat,Casablanca-Settat,1,Mniaa,0.615,95.40756054341406
+1136,Tifirte,Azilal,Béni Mellal-Khénifra,1,Tifni,0.667,95.42232722976964
+1137,Tighrmatine,Tinghir,Drâa-Tafilalet,1,Tilmi,0.5,95.43709391612522
+1138,Tiguenziouine,Al Haouz,Marrakech-Safi,1,Tighedouine,0.75,95.4518606024808
+1139,Tikiouine,Marrakech,Marrakech-Safi,1,Sid Zouine,0.632,95.46662728883639
+1140,Ait amar ouissa,Tinghir,Drâa-Tafilalet,1,Ait Ouassif,0.615,95.48139397519196
+1141,Douar ouled salem ain gdah,Taounate,Fès-Meknès,1,Oued Jemaa,0.5,95.49616066154755
+1142,Douar sidi saoud,Taounate,Fès-Meknès,1,Oulad Daoud,0.667,95.51092734790313
+1143,Urbaine,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Bni Selmane,0.444,95.5256940342587
+1144,Wawirzagh,Azilal,Béni Mellal-Khénifra,1,Ait Mazigh,0.526,95.54046072061429
+1145,Z .cheikh,Béni Mellal,Béni Mellal-Khénifra,1,Ouled Yaïch,0.3,95.55522740696988
+1146,Tinzerte,Taroudant,Souss-Massa,1,Tinzart,0.8,95.56999409332546
+1147,Tirset,Azilal,Béni Mellal-Khénifra,1,Tisqi,0.545,95.58476077968103
+1148,Tisi Ousli,Taza,Fès-Meknès,1,Oued Amlil,0.4,95.59952746603662
+1149,Tislite,Azilal,Béni Mellal-Khénifra,1,Tisqi,0.667,95.6142941523922
+1150,Ait Guirt,Azilal,Béni Mellal-Khénifra,1,Ait Ouaarda,0.6,95.62906083874779
+1151,Ait Guirte,Azilal,Béni Mellal-Khénifra,1,Ait Taguella,0.636,95.64382752510336
+1152,Ait Hammou Said,Ouarzazate,Drâa-Tafilalet,1,Ait Oumdis,0.56,95.65859421145895
+1153,Ait Iaala,Tinghir,Drâa-Tafilalet,1,Aït Elfarsi,0.5,95.67336089781453
+1154,Ait Moumen,Taza,Fès-Meknès,1,Bab Marzouka,0.455,95.68812758417012
+1155,Ait Moussa Fadma,Ouarzazate,Drâa-Tafilalet,1,Ait Oumdis,0.538,95.70289427052569
+1156,Ait Rouadi,Béni Mellal,Béni Mellal-Khénifra,1,Ait Ouqabli,0.762,95.71766095688128
+1157,Ait Sadrat J oulioa,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Jbel El Oulia,0.773,95.73242764323686
+1158,Tizi Oussli,Taza,Fès-Meknès,1,Oued Amlil,0.381,95.74719432959245
+1159,Ainjamaa,Meknès,Fès-Meknès,1,Aïn Orma,0.625,95.76196101594802
+1160,Ait Abou,Khemisset,Rabat-Salé-Kénitra,1,Ait Ikkou,0.706,95.7767277023036
+1161,Zaazaa,Larache,Tanger-Tétouan-Al Hoceïma,1,Zaaroura,0.571,95.79149438865919
+1162,Zagmouzne,Taroudant,Souss-Massa,1,Talgjount,0.556,95.80626107501476
+1163,Tizki Akesri Tamraght,Agadir-Ida Ou Tanane,Souss-Massa,1,Aqesri,0.37,95.82102776137035
+1164,Tlat Lamzam,Azilal,Béni Mellal-Khénifra,1,Ait Blal,0.421,95.83579444772593
+1165,Tlat louta,Nador,Oriental,1,Bni Sidel Louta,0.56,95.85056113408152
+1166,Tmaloust,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Masmouda,0.5,95.86532782043709
+1167,Tnin Ait Rkha,Tiznit,Souss-Massa,1,Ait Erkha,0.727,95.88009450679267
+1168,Tnine el ouleja,Taounate,Fès-Meknès,1,Ras El Oued,0.538,95.89486119314826
+1169,Touelaa,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Oued Laou,0.625,95.90962787950384
+1170,Touibla,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Tétouan,0.571,95.92439456585942
+1171,Touilaa,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Tétouan,0.571,95.939161252215
+1172,Tozrigutte,Tinghir,Drâa-Tafilalet,1,Outerbat,0.444,95.95392793857059
+1173,Trifa II,Berkane,Oriental,1,Saidia,0.286,95.96869462492617
+1174,Trik Alouahda,Taza,Fès-Meknès,1,Tahla,0.444,95.98346131128174
+1175,Zoualet,Meknès,Fès-Meknès,1,Toulal,0.615,95.99822799763733
+1176,____,Ouarzazate,Drâa-Tafilalet,1,Toundoute,0.0,96.01299468399291
+1177,agouti,Tinghir,Drâa-Tafilalet,1,Assoul,0.5,96.0277613703485
+1178,ain chaib,Taroudant,Souss-Massa,1,Lamhadi,0.5,96.04252805670407
+1179,ainzora,Nador,Oriental,1,Zaïo,0.545,96.05729474305966
+1180,ait aatab,Azilal,Béni Mellal-Khénifra,1,Ait Ouaarda,0.7,96.07206142941524
+1181,Z'Mamra,Taounate,Fès-Meknès,1,Zarkat,0.615,96.08682811577081
+1182,Z'Rarka,Taounate,Fès-Meknès,1,Zarkat,0.769,96.1015948021264
+1183,Z.Ahansal,Béni Mellal,Béni Mellal-Khénifra,1,Kasba Tadla,0.4,96.11636148848199
+1184,Z.S.A.Kader,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Zouaiat sidi Abdelkader,0.471,96.13112817483757
+1185,Ain Chifa,Sefrou,Fès-Meknès,1,Ain Timguenai,0.545,96.14589486119314
+1186,Ain Johra,Khemisset,Rabat-Salé-Kénitra,1,Ait Ouribel,0.5,96.16066154754873
+1187,Ain K ara,Moulay Yacoub,Fès-Meknès,1,Ain Taoujdate,0.545,96.17542823390431
+1188,Ain Taoujtat,El Hajeb,Fès-Meknès,1,Ait Boubidmane,0.462,96.1901949202599
+1189,AinDoreij,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Ain Dfali,0.556,96.20496160661547
+1190,Ainchgag,Sefrou,Fès-Meknès,1,Ain Timguenai,0.476,96.21972829297106
+1191,Douar Ibzazn,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Rouadi,0.444,96.23449497932664
+1192,Douar Lazrak,Inezgane-Aït Melloul,Souss-Massa,1,Ouad Essafa,0.522,96.24926166568223
+1193,Douar Lhouari,Sidi Kacem,Rabat-Salé-Kénitra,1,Oulad Nouel,0.5,96.2640283520378
+1194,Douar Matil,Chichaoua,Marrakech-Safi,1,Oulad M'Rabet,0.583,96.27879503839338
+1195,Douar Skhira moulay bouchta,Taounate,Fès-Meknès,1,Bni Bouchibet,0.4,96.29356172474897
+1196,"Douar Tahchoucht, Tamraght",Agadir-Ida Ou Tanane,Souss-Massa,1,Ida Ou Kazzou,0.308,96.30832841110455
+1197,Douar ait ichout,Sefrou,Fès-Meknès,1,Aït Seghrouchen,0.387,96.32309509746013
+1198,Douar amghizide,Azilal,Béni Mellal-Khénifra,1,Zaouiat Ahansal,0.4,96.33786178381571
+1199,Douar bni zgyiene,Taounate,Fès-Meknès,1,Bni Rzine,0.615,96.3526284701713
+1200,D.Tabarine,Tiznit,Souss-Massa,1,Ibdar,0.4,96.36739515652688
+1201,Zaouia S K,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Zaouiat Sidi Kacem,0.714,96.38216184288245
+1202,Zaouite ait Ishaq,Khénifra,Béni Mellal-Khénifra,1,Aït Ishaq,0.692,96.39692852923804
+1203,Zeagngan,Nador,Oriental,1,Zeghanghane,0.737,96.41169521559362
+1204,Zelten,Essaouira,Marrakech-Safi,1,Tahelouante,0.471,96.4264619019492
+1205,Zerhounia,Meknès,Fès-Meknès,1,Ouislane,0.353,96.44122858830478
+1206,Zouagha,Fès,Fès-Meknès,1,Louadaine,0.5,96.45599527466037
+1207,ait tazarin,Tinghir,Drâa-Tafilalet,1,Aït Elfarsi,0.636,96.47076196101595
+1208,ait tazrine,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.632,96.48552864737152
+1209,ait aliyahya,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.6,96.50029533372711
+1210,ait alouane,Tinghir,Drâa-Tafilalet,1,Ait Ouassif,0.636,96.5150620200827
+1211,ait amer,Tinghir,Drâa-Tafilalet,1,Aït Elfarsi,0.632,96.52982870643828
+1212,ait bouallal,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.7,96.54459539279385
+1213,ait boubker,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.632,96.55936207914944
+1214,ait boulmane,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.7,96.57412876550502
+1215,ait bouyossef,Tinghir,Drâa-Tafilalet,1,Ait Ouassif,0.75,96.58889545186061
+1216,ait boyousef,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.7,96.60366213821618
+1217,ait boyoysef,Tinghir,Drâa-Tafilalet,1,Ait Ouassif,0.609,96.61842882457177
+1218,Zaouia Nezzaghia,Settat,Casablanca-Settat,1,Oulad Sghir,0.519,96.63319551092735
+1219,Douar Bouzgar Sidi Boushab,Agadir-Ida Ou Tanane,Souss-Massa,1,Ait Aissi Ihahane,0.372,96.64796219728294
+1220,Douar Chaoui Onarqui,El Kelâa des Sraghna,Marrakech-Safi,1,Oulad Cherki,0.438,96.66272888363851
+1221,Douar Elhomane,Inezgane-Aït Melloul,Souss-Massa,1,Ouad Essafa,0.48,96.6774955699941
+1222,Douar Elmchaâ oudka,Taounate,Fès-Meknès,1,Ras El Oued,0.533,96.69226225634968
+1223,amsa,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Azla,0.5,96.70702894270525
+1224,anonizme,Tinghir,Drâa-Tafilalet,1,Alnif,0.462,96.72179562906084
+1225,arroui,Nador,Oriental,1,Al Aroui,0.714,96.73656231541642
+1226,"b,s,louta",Nador,Oriental,1,Selouane,0.588,96.751329001772
+1227,b.bouayach,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Bni Bouayach,0.818,96.76609568812758
+1228,bab merzk,Taza,Fès-Meknès,1,Bab Marzouka,0.762,96.78086237448316
+1229,ait hdouch,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.667,96.79562906083875
+1230,ait hmed,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.625,96.81039574719433
+1231,ait hmoudene,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.6,96.8251624335499
+1232,ait iaala,Tinghir,Drâa-Tafilalet,1,Aït Elfarsi,0.5,96.83992911990549
+1233,ait idit,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.625,96.85469580626108
+1234,ait mahdi,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.706,96.86946249261666
+1235,ait messoud,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.632,96.88422917897223
+1236,ait oglif,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.706,96.89899586532782
+1237,ait ouglif,Tinghir,Drâa-Tafilalet,1,Ait Youl,0.778,96.9137625516834
+1238,ait sakri,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.706,96.92852923803899
+1239,bni enssar,Agadir-Ida Ou Tanane,Souss-Massa,1,Aziar,0.4,96.94329592439456
+1240,Admam,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Senada,0.545,96.95806261075015
+1241,Afellaisen,Chichaoua,Marrakech-Safi,1,Afalla Issen,0.818,96.97282929710573
+1242,Agadir n'ait taleb,Taroudant,Souss-Massa,1,Ahmar Laglalcha,0.242,96.98759598346132
+1243,Agadir tassaout,Al Haouz,Marrakech-Safi,1,Lalla Takarkoust,0.581,97.00236266981689
+1244,Agdal,Fès,Fès-Meknès,1,Ain Bida,0.462,97.01712935617248
+1245,Agdime,Tinghir,Drâa-Tafilalet,1,Imider,0.5,97.03189604252806
+1246,Aghbalo K,Sefrou,Fès-Meknès,1,Aghbalou Aqorar,0.667,97.04666272888363
+1247,ait zelten,Essaouira,Marrakech-Safi,1,Tahelouante,0.476,97.06142941523922
+1248,ait ziad,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.625,97.0761961015948
+1249,aitali oyahya,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.476,97.09096278795039
+1250,almasjid,Nador,Oriental,1,Al Aroui,0.5,97.10572947430596
+1251,alouahda,Taza,Fès-Meknès,1,Oulad Zbair,0.526,97.12049616066155
+1252,amassine tondout,Tinghir,Drâa-Tafilalet,1,Assoul,0.455,97.13526284701713
+1253,amdnagh,Tinghir,Drâa-Tafilalet,1,Tinghir,0.429,97.15002953337272
+1254,amejjaw,Driouch,Oriental,1,Amejjaou,0.8,97.16479621972829
+1255,Ai Boussalef,Taza,Fès-Meknès,1,Bouyablane,0.545,97.17956290608387
+1256,Ain Chgaga,Sefrou,Fès-Meknès,1,Mtarnagha,0.526,97.19432959243946
+1257,bohrou,Tinghir,Drâa-Tafilalet,1,Bou Azmou,0.533,97.20909627879504
+1258,booujediane,Larache,Tanger-Tétouan-Al Hoceïma,1,Souaken,0.444,97.22386296515062
+1259,bouachiba,Azilal,Béni Mellal-Khénifra,1,Ouaoula,0.5,97.2386296515062
+1260,boujdian,Larache,Tanger-Tétouan-Al Hoceïma,1,Souaken,0.533,97.25339633786179
+1261,boujdiane,Larache,Tanger-Tétouan-Al Hoceïma,1,Souaken,0.5,97.26816302421737
+1262,bouqorra,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Kalaat Booqorra,0.609,97.28292971057294
+1263,bouramana,Driouch,Oriental,1,Ourdana,0.75,97.29769639692853
+1264,bab zitouba,Taza,Fès-Meknès,1,Bab Marzouka,0.696,97.31246308328411
+1265,bani Saden,Sefrou,Fès-Meknès,1,Aït Seghrouchen,0.48,97.32722976963969
+1266,ben souda,Fès,Fès-Meknès,1,Ain Bou Ali,0.5,97.34199645599527
+1267,beni bouyafrour,Nador,Oriental,1,Bni Bouifrou,0.815,97.35676314235086
+1268,bibane,Taounate,Fès-Meknès,1,El Bibane,0.8,97.37152982870644
+1269,bin jradi,Taza,Fès-Meknès,1,Bab Boudir,0.421,97.38629651506201
+1270,bizamame,Ouarzazate,Drâa-Tafilalet,1,Ouarzazate,0.444,97.4010632014176
+1271,DD Mohamed,Driouch,Oriental,1,M'Hajer,0.471,97.41582988777319
+1272,Dar-Louhra,Taounate,Fès-Meknès,1,Mançoura,0.556,97.43059657412877
+1273,Dchar Ben Dibane,Larache,Tanger-Tétouan-Al Hoceïma,1,Ksar el-Kebir,0.345,97.44536326048434
+1274,De Passage,Agadir-Ida Ou Tanane,Souss-Massa,1,Ait Aissi Ihahane,0.444,97.46012994683993
+1275,De Passage,Ouarzazate,Drâa-Tafilalet,1,Idelsane,0.556,97.47489663319551
+1276,Demna,Taounate,Fès-Meknès,1,Oued Jemaa,0.533,97.4896633195511
+1277,Demnate K.,Chichaoua,Marrakech-Safi,1,Imintanoute,0.476,97.50443000590667
+1278,Diour sabone,Al Haouz,Marrakech-Safi,1,Ouirgane,0.6,97.51919669226226
+1279,DiourEssalam,Sidi Kacem,Rabat-Salé-Kénitra,1,Zirara,0.444,97.53396337861784
+1280,"Douar Afa, Azrarague",Agadir-Ida Ou Tanane,Souss-Massa,1,Ida Ou Kazzou,0.424,97.54873006497343
+1281,Douar Agafay,Agadir-Ida Ou Tanane,Souss-Massa,1,Adaghas,0.421,97.563496751329
+1282,Douar Ait Bousset,Chtouka-Aït Baha,Souss-Massa,1,Arbaa Aït Ahmed,0.5,97.57826343768458
+1283,Douar Asserssif,Agadir-Ida Ou Tanane,Souss-Massa,1,Aqesri,0.286,97.59303012404017
+1284,Aglou,Agadir-Ida Ou Tanane,Souss-Massa,1,Taghazout,0.571,97.60779681039574
+1285,Agouidir,Chichaoua,Marrakech-Safi,1,Ighoud,0.571,97.62256349675133
+1286,Aguidir,Chichaoua,Marrakech-Safi,1,Ait Hadi,0.533,97.63733018310691
+1287,idaogaylat,Taroudant,Souss-Massa,1,Ida Ou Gailal,0.696,97.6520968694625
+1288,igermaouas,Driouch,Oriental,1,Amejjaou,0.444,97.66686355581807
+1289,bouzlne,Taza,Fès-Meknès,1,Bouyablane,0.706,97.68163024217365
+1290,centre,El Kelâa des Sraghna,Marrakech-Safi,1,Zemrane,0.462,97.69639692852924
+1291,dalas,Béni Mellal,Béni Mellal-Khénifra,1,Dir El Ksiba,0.235,97.71116361488482
+1292,douar OUDAD,Taounate,Fès-Meknès,1,Oulad Daoud,0.636,97.7259303012404
+1293,douar ain sora,Taounate,Fès-Meknès,1,Oulad Daoud,0.48,97.74069698759598
+1294,dr Afra,Ouarzazate,Drâa-Tafilalet,1,Afra,0.727,97.75546367395157
+1295,dr doultma,Essaouira,Marrakech-Safi,1,Sidi Boulaalam,0.5,97.77023036030715
+1296,dépisté à azrou,Larache,Tanger-Tétouan-Al Hoceïma,1,Rissana Janoubia,0.452,97.78499704666272
+1297,farkhana,Nador,Oriental,1,Arekmane,0.625,97.79976373301831
+1298,ghigou,Sefrou,Fès-Meknès,1,Aït Seghrouchen,0.381,97.8145304193739
+1299,ghorm El Alem,Béni Mellal,Béni Mellal-Khénifra,1,Foum El Anceur,0.593,97.82929710572948
+1300,had mssila,Taza,Fès-Meknès,1,Msila,0.667,97.84406379208505
+1301,hamria,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Lamrabih,0.571,97.85883047844064
+1302,Aghwatime,Al Haouz,Marrakech-Safi,1,Aghouatim,0.778,97.87359716479622
+1303,iminifri,Azilal,Béni Mellal-Khénifra,1,Tifni,0.462,97.88836385115181
+1304,imzoudar,Tinghir,Drâa-Tafilalet,1,Imider,0.571,97.90313053750738
+1305,izourka,Tinghir,Drâa-Tafilalet,1,Outerbat,0.533,97.91789722386297
+1306,jmaat abdellah,Al Haouz,Marrakech-Safi,1,Tameslouht,0.167,97.93266391021855
+1307,jnan ward,Fès,Fès-Meknès,1,Ain Kansra,0.421,97.94743059657412
+1308,A.ali Youssef,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Aït Youssef Ou Ali,0.645,97.96219728292971
+1309,A.maatouf,Taounate,Fès-Meknès,1,Ain Maatouf,0.8,97.9769639692853
+1310,A/ Chefk,Al Haouz,Marrakech-Safi,1,Ahl Tifnoute,0.316,97.99173065564088
+1311,hamria,Taounate,Fès-Meknès,1,Zarkat,0.5,98.00649734199645
+1312,harmomo,Sefrou,Fès-Meknès,1,Ahermoumou,0.706,98.02126402835204
+1313,harmomou,Sefrou,Fès-Meknès,1,Ahermoumou,0.778,98.03603071470762
+1314,hay dari,Agadir-Ida Ou Tanane,Souss-Massa,1,Tadrart,0.533,98.0507974010632
+1315,hdida,Tinghir,Drâa-Tafilalet,1,Tinejdad,0.462,98.06556408741878
+1316,iatachne,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.375,98.08033077377436
+1317,iazanenn,Nador,Oriental,1,Iaazzanene,0.778,98.09509746012995
+1318,ibrghosne,Tinghir,Drâa-Tafilalet,1,Tinghir,0.375,98.10986414648553
+1319,Corona,Driouch,Oriental,1,Ourdana,0.615,98.1246308328411
+1320,D G,Sidi Kacem,Rabat-Salé-Kénitra,1,Sidi Kacem,0.308,98.13939751919669
+1321,D ouar Bénimalek,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Beni Malek,0.692,98.15416420555228
+1322,D.Irahalen,Ouarzazate,Drâa-Tafilalet,1,Siroua,0.375,98.16893089190786
+1323,Bani sadden,Sefrou,Fès-Meknès,1,Aït Seghrouchen,0.462,98.18369757826343
+1324,Baraacca,Taza,Fès-Meknès,1,Jbarna,0.571,98.19846426461902
+1325,Baracca,Ouarzazate,Drâa-Tafilalet,1,Afra,0.545,98.2132309509746
+1326,Becheine,Taza,Fès-Meknès,1,Barkine,0.533,98.22799763733018
+1327,Ben CHEIKH,Al Haouz,Marrakech-Safi,1,Ouneine,0.353,98.24276432368576
+1328,Ben Charrou,Béni Mellal,Béni Mellal-Khénifra,1,Bni Bataou,0.571,98.25753101004135
+1329,D.Jihadia,Al Haouz,Marrakech-Safi,1,Sti Fadma,0.444,98.27229769639693
+1330,D.Jihadia,Tata,Souss-Massa,1,Adis,0.462,98.2870643827525
+1331,Bureau Ikaouen,Tinghir,Drâa-Tafilalet,1,Ikniouen,0.545,98.30183106910809
+1332,ighmnigrane,Tinghir,Drâa-Tafilalet,1,Tinghir,0.556,98.31659775546368
+1333,ighrmloune,Tinghir,Drâa-Tafilalet,1,Aghbalou N'Kerdous,0.5,98.33136444181926
+1334,imghrane,Tinghir,Drâa-Tafilalet,1,Tinghir,0.533,98.34613112817483
+1335,mirna,Tinghir,Drâa-Tafilalet,1,Imider,0.545,98.36089781453042
+1336,moqrisat,Ouezzane,Tanger-Tétouan-Al Hoceïma,1,Brikcha,0.4,98.375664500886
+1337,moujjou,Sefrou,Fès-Meknès,1,Ahermoumou,0.588,98.39043118724159
+1338,A/Hmmou,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Izemmouren,0.471,98.40519787359716
+1339,Abdellah Chefchaouni,Agadir-Ida Ou Tanane,Souss-Massa,1,Adaghas,0.37,98.41996455995275
+1340,Abdellah Chefchaouni,Ouarzazate,Drâa-Tafilalet,1,Afella N'Dra,0.438,98.43473124630833
+1341,Abdellah Chefchaouni,Tinghir,Drâa-Tafilalet,1,Ferkla El Oulia,0.4,98.44949793266392
+1342,Ad Sayeh,Essaouira,Marrakech-Safi,1,Sidi Ahmed Essayeh,0.615,98.46426461901949
+1343,jorf lmlha,Sidi Kacem,Rabat-Salé-Kénitra,1,Bir Taleb,0.316,98.47903130537507
+1344,karia ba ahmd,Taounate,Fès-Meknès,1,Aïn Aïcha,0.455,98.49379799173066
+1345,karia ba med,Taounate,Fès-Meknès,1,Ras El Oued,0.435,98.50856467808623
+1346,kariat,Nador,Oriental,1,Arekmane,0.429,98.52333136444182
+1347,kella,Tinghir,Drâa-Tafilalet,1,Toudgha El Oulia,0.381,98.5380980507974
+1348,kolla,Larache,Tanger-Tétouan-Al Hoceïma,1,Souk Tolba,0.533,98.55286473715299
+1349,igherme,Taroudant,Souss-Massa,1,Irherm,0.769,98.56763142350856
+1350,Coelma,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Oued Laou,0.533,98.58239810986414
+1351,oled mhala,Taroudant,Souss-Massa,1,Ouled Aissa,0.667,98.59716479621973
+1352,omyache,Tinghir,Drâa-Tafilalet,1,Imilchil,0.4,98.61193148257532
+1353,"A,Y,Ouali",Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Rouadi,0.533,98.62669816893089
+1354,"A,taourirt",Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Arbaa Taourirt,0.75,98.64146485528647
+1355,A. Hammou,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Aït Kamra,0.444,98.65623154164206
+1356,A. Taorirt,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,1,Arbaa Taourirt,0.75,98.67099822799764
+1357,A.D.C,Sidi Kacem,Rabat-Salé-Kénitra,1,Sidi Kacem,0.267,98.68576491435321
+1358,lagnat,Béni Mellal,Béni Mellal-Khénifra,1,Oulad Gnaou,0.588,98.7005316007088
+1359,laksir,El Hajeb,Fès-Meknès,1,Iqaddar,0.308,98.71529828706439
+1360,lamzem,El Kelâa des Sraghna,Marrakech-Safi,1,Oulad Amer,0.5,98.73006497341997
+1361,lbour,Tinghir,Drâa-Tafilalet,1,Outerbat,0.462,98.74483165977554
+1362,lhart,Tinghir,Drâa-Tafilalet,1,Aït Elfarsi,0.375,98.75959834613113
+1363,lharte,Tinghir,Drâa-Tafilalet,1,Aït Elfarsi,0.353,98.77436503248671
+1364,marnissa,Taounate,Fès-Meknès,1,Tissa,0.615,98.7891317188423
+1365,menzel,Sefrou,Fès-Meknès,1,El Menzel,0.8,98.80389840519787
+1366,mezguitem,Taza,Fès-Meknès,1,El Gouzate,0.421,98.81866509155346
+1367,qd ben aouda,Kénitra,Rabat-Salé-Kénitra,1,Ben Mansour,0.609,98.83343177790904
+1368,rahouana,Nador,Oriental,1,Selouane,0.5,98.84819846426461
+1369,rass lma,Nador,Oriental,1,Hassi Berkane,0.476,98.8629651506202
+1370,regraga,Al Haouz,Marrakech-Safi,1,Agafay,0.462,98.87773183697578
+1371,regragua,Essaouira,Marrakech-Safi,1,Sidi Aissa Regragui,0.519,98.89249852333137
+1372,saghro,Tinghir,Drâa-Tafilalet,1,Tinghir,0.462,98.90726520968694
+1373,sahel,Tiznit,Souss-Massa,1,Arbaa Sahel,0.625,98.92203189604253
+1374,sais,Fès,Fès-Meknès,1,Ain Kansra,0.429,98.93679858239811
+1375,sebte tafraoutene,Taroudant,Souss-Massa,1,Tafraouten,0.741,98.9515652687537
+1376,municipalité nador,Nador,Oriental,1,Nador,0.435,98.96633195510927
+1377,my abdelkader,Sidi Kacem,Rabat-Salé-Kénitra,1,Sidi Kacem,0.348,98.98109864146485
+1378,my abdelkrim,Taounate,Fès-Meknès,1,Moulay Ahmed Cherif,0.516,98.99586532782044
+1379,nakhla,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Azla,0.6,99.01063201417602
+1380,o ghalem,Settat,Casablanca-Settat,1,Toualet,0.533,99.0253987005316
+1381,oled bouaziri,Settat,Casablanca-Settat,1,Oulad Abbou,0.583,99.04016538688718
+1382,oled bouchair,Settat,Casablanca-Settat,1,Oulad Abbou,0.583,99.05493207324277
+1383,C boumalne,Tinghir,Drâa-Tafilalet,1,Boumalne Dadès,0.667,99.06969875959835
+1384,Cab,Chtouka-Aït Baha,Souss-Massa,1,Tabia,0.5,99.08446544595392
+1385,Chahid Baba,Sefrou,Fès-Meknès,1,Azzaba,0.471,99.09923213230951
+1386,Chahid Baha Rfaif,Sefrou,Fès-Meknès,1,Ahl Sidi Lahcen,0.438,99.1139988186651
+1387,Chahid baha,Sefrou,Fès-Meknès,1,Ahl Sidi Lahcen,0.538,99.12876550502067
+1388,Charf Souani,Tanger-Assilah,Tanger-Tétouan-Al Hoceïma,1,Dar Chaoui,0.545,99.14353219137625
+1389,Charrate,Taounate,Fès-Meknès,1,Zarkat,0.571,99.15829887773184
+1390,"Chatre III,Ait Taoukte",Agadir-Ida Ou Tanane,Souss-Massa,1,Ida Ou Kazzou,0.286,99.17306556408742
+1391,Chjahaid baha,Sefrou,Fès-Meknès,1,Ahl Sidi Lahcen,0.5,99.187832250443
+1392,Chourfa,Fquih Ben Salah,Béni Mellal-Khénifra,1,Tachraft,0.533,99.20259893679858
+1393,Chtouka Ait Baha,Chtouka-Aït Baha,Souss-Massa,1,Ait Baha,0.667,99.21736562315417
+1394,Cite Scolaire,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Bni Said,0.476,99.23213230950975
+1395,"A, Mediona A ,Medoina",Taounate,Fès-Meknès,1,Ain Mediouna,0.545,99.24689899586532
+1396,oued Kasaba,Taounate,Fès-Meknès,1,Oued Jemaa,0.667,99.26166568222091
+1397,oued fes,Fès,Fès-Meknès,1,Fès,0.545,99.2764323685765
+1398,ouledamghar,Driouch,Oriental,1,Ourdana,0.556,99.29119905493208
+1399,,Sefrou,Fès-Meknès,1,Tazouta,0.0,99.30596574128765
+1400,sghanghan,Nador,Oriental,1,Zeghanghane,0.8,99.32073242764324
+1401,sidi A Tadeli,Sefrou,Fès-Meknès,1,Ahl Sidi Lahcen,0.5,99.33549911399882
+1402,sidi A Tadeli Lalal yaza,Sefrou,Fès-Meknès,1,Dar El Hamra,0.389,99.3502658003544
+1403,sidi ahmed hamed,Essaouira,Marrakech-Safi,1,Sidi H'Mad Ou Hamed,0.743,99.36503248670998
+1404,sidi ahmed tadli,Meknès,Fès-Meknès,1,Oued Jdida,0.308,99.37979917306556
+1405,sidi kamel,Larache,Tanger-Tétouan-Al Hoceïma,1,Sidi Lyamani,0.636,99.39456585942115
+1406,"sidi med b,lahcen",Taounate,Fès-Meknès,1,Sidi M'Hamed Ben Lahcen,0.8,99.40933254577672
+1407,takkad,Chtouka-Aït Baha,Souss-Massa,1,Tabia,0.545,99.4240992321323
+1408,tamlalte,Tinghir,Drâa-Tafilalet,1,Imilchil,0.375,99.43886591848789
+1409,tanger ville,Tétouan,Tanger-Tétouan-Al Hoceïma,1,Martil,0.333,99.45363260484348
+1410,taouima,Nador,Oriental,1,Al Aroui,0.533,99.46839929119905
+1411,taoujtat,El Hajeb,Fès-Meknès,1,Agourai,0.533,99.48316597755463
+1412,A.Gdah,Taounate,Fès-Meknès,1,Ain Legdah,0.625,99.49793266391022
+1413,Béni assifan,Chefchaouen,Tanger-Tétouan-Al Hoceïma,1,Bni Selmane,0.609,99.5126993502658
+1414,Béninsser,Nador,Oriental,1,Beni Ansar,0.737,99.52746603662138
+1415,15 Gar,Taza,Fès-Meknès,1,Ras Laksar,0.375,99.54223272297696
+1416,7Eme Bsi Melitaire,Taza,Fès-Meknès,1,Msila,0.435,99.55699940933255
+1417,7eme BISI,Taza,Fès-Meknès,1,Msila,0.429,99.57176609568813
+1418,A H yahya,Tinghir,Drâa-Tafilalet,1,Aït Hani,0.471,99.5865327820437
+1419,A S J oulia,Tinghir,Drâa-Tafilalet,1,Ferkla El Oulia,0.615,99.60129946839929
+1420,A S J soufla,Tinghir,Drâa-Tafilalet,1,Ferkla Es-Soufla,0.714,99.61606615475488
+1421,,Fès,Fès-Meknès,1,Sidi Hrazem,0.0,99.63083284111046
+1422,,Guercif,Oriental,1,Tissaf,0.0,99.64559952746603
+1423,,Khénifra,Béni Mellal-Khénifra,1,Zaouiat Cheikh,0.0,99.66036621382162
+1424,A s jbel,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Jbel El Oulia,0.485,99.6751329001772
+1425,tkhabecht,Driouch,Oriental,1,Tafersit,0.471,99.68989958653279
+1426,z elbir,Tinghir,Drâa-Tafilalet,1,M'Semrir,0.533,99.70466627288836
+1427,zayo,Nador,Oriental,1,Zaïo,0.75,99.71943295924395
+1428,zegota,Sidi Kacem,Rabat-Salé-Kénitra,1,Zaggota,0.769,99.73419964559953
+1429,zgangan,Nador,Oriental,1,Zeghanghane,0.778,99.7489663319551
+1430,,Boulemane,Fès-Meknès,1,Talzemt,0.0,99.76373301831069
+1431,Beni-Ounjel,Taounate,Fès-Meknès,1,Bni Oulid,0.7,99.77849970466627
+1432,Bensergao,Azilal,Béni Mellal-Khénifra,1,Demnate,0.375,99.79326639102186
+1433,tisli,Tinghir,Drâa-Tafilalet,1,Tilmi,0.8,99.80803307737743
+1434,tizitounte,Chichaoua,Marrakech-Safi,1,Ain Tazitounte,0.75,99.82279976373302
+1435,15Eme Gare,Taza,Fès-Meknès,1,El Gouzate,0.5,99.8375664500886
+1436,tlat louta,Nador,Oriental,1,Bni Sidel Louta,0.56,99.85233313644419
+1437,trik alwahda,Taza,Fès-Meknès,1,Tahla,0.471,99.86709982279976
+1438,A S Jbel olia,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Jbel El Oulia,0.684,99.88186650915534
+1439,A S S charkia,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Sahl Charkia,0.703,99.89663319551093
+1440,A S Scharkia,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Sahl Charkia,0.667,99.91139988186652
+1441,A S gbel sofla,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Jbel El Soufla,0.65,99.92616656822209
+1442,A S jbel,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Jbel El Oulia,0.485,99.94093325457767
+1443,A S jbel olia,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Jbel El Oulia,0.684,99.95569994093326
+1444,A S jbel sofla,Tinghir,Drâa-Tafilalet,1,Ait Sedrate Jbel El Soufla,0.7,99.97046662728884
+1445,,Chtouka-Aït Baha,Souss-Massa,1,Toumliline,0.0,99.98523331364441
+1446,,El Kelâa des Sraghna,Marrakech-Safi,1,Znada,0.0,100.0

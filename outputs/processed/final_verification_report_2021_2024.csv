@@ -1,13 +1,4 @@
-region,cas_2021_combine,cas_2023_lct,cas_2024_lct
-Tanger-Tétouan-Al Hoceïma,74,92,56
-Oriental,104,83,109
-Fès-Meknès,219,318,330
-Rabat-Salé-Kénitra,17,47,25
-Béni Mellal-Khénifra,548,392,672
-Casablanca-Settat,153,135,263
-Marrakech-Safi,513,722,473
-Drâa-Tafilalet,1466,434,901
-Souss-Massa,95,135,186
-Guelmim-Oued Noun,0,1,0
-Laâyoune-Sakia El Hamra,0,0,0
-Eddakhla-Oued Eddahab,0,0,0
+MAE,RMSE,R2,n,annee,source_climat
+202.46877107266965,400.42757772229805,0.0193775865534969,12,2021,mesure_era5
+125.3752701790283,169.177134504127,0.3808360077495291,12,2023,climatologie_extrapolee
+183.6107010248677,284.9835142884151,-0.0174182605731456,12,2024,climatologie_extrapolee

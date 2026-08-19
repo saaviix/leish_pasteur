@@ -2,11 +2,14 @@
 RAPPORT DE VALIDATION DES ENTREES
 ============================================================
 
-ERREURS (1) :
-  [ERREUR] DOUBLONS dans communes_maroc_final.csv : 2 lignes (commune, province)
+OK : tous les fichiers requis sont presents et valides.
 
-AVERTISSEMENTS (2) :
-  Province : 2 valeurs manquantes sur 26016 lignes
-  Commune : 88 valeurs manquantes sur 26016 lignes
+AVERTISSEMENTS (6) :
+  DOUBLONS STRICTS dans leish_LCT.csv (fichier brut) : 1813 lignes -- deja corrige en sortie par clean_lct.py
+  Province : 2 valeurs manquantes sur 26016 lignes (0%)
+  Commune : 88 valeurs manquantes sur 26016 lignes (0%)
+  Classification : 798 valeurs manquantes sur 26016 lignes (3%)
+  Date_Diagnostic : 15978 valeurs manquantes sur 26016 lignes (61%)
+  Mois_Diagnostic : 8440 valeurs manquantes sur 26016 lignes (32%)
 
 ============================================================

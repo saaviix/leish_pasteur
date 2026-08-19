@@ -12,10 +12,23 @@ xarray>=2023.1
 netcdf4>=1.6
 cdsapi>=0.7          # telechargement ERA5 depuis le Climate Data Store (CDS)
 
-# --- modele bayesien ---
+# --- modele bayesien (occupancy ICAR/BYM2) ---
 pymc>=5.10
 pytensor>=2.18
 arviz>=0.17
+# linker numba requis par pytensor sur machines sans compilateur C (cf.
+# PYTENSOR_FLAGS="cxx=" dans bayesian_occupancy.py/occupancy_gp.py) --
+# plafonne car les versions plus recentes cassent la compat pytensor 3.x
+numba>=0.58,<=0.65.1
+
+# --- modeles de prediction (GBM spatio-temporel, PINN, ensemble, comparatif) ---
+lightgbm>=4.0
+scikit-learn>=1.3
+torch>=2.0
+joblib>=1.3
+statsmodels>=0.14   # model_benchmark.py : GLM/NB
+pygam>=0.9           # model_benchmark.py : GAM splines
+openpyxl>=3.1         # lecture mun_pop_source.xlsx (fix_mun_pop.py)
 
 # --- scraping / extraction ---
 requests>=2.31

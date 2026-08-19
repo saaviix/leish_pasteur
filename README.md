@@ -34,18 +34,28 @@ E:\leishpasteur
 |   |   |-- extract_climate.py        <- ERA5 NetCDF -> climate_morocco.db + covariables
 |   |   |-- build_environment.py      <- altitude/sol/vegetation/aridite -> environment_morocco.db
 |   |   |-- fetch_geojson.py          <- polygones communes -> geojson (carte)
-|   |   \-- build_province_table.py   <- table province + climat + voisinage ICAR
+|   |   |-- build_province_table.py   <- table province + climat + voisinage ICAR
+|   |   \-- build_commune_panel.py    <- panel Commune x Annee x Mois (climat + cas + lags)
 |   |-- scraping/
 |   |   |-- main.py / matching.py / text_extraction.py / urls.txt
 |   |-- models/
-|   |   |-- bayesian_occupancy.py     <- MODELE bayesien (inference des manques)
-|   |   |-- summarize_results.py      <- resume lisible des resultats
+|   |   |-- bayesian_occupancy.py     <- MODELE bayesien ICAR (inference des manques)
+|   |   |-- occupancy_gp.py           <- variante : occupancy bayesien a noyau GP spatial
+|   |   |-- bioclimatic_zoning.py     <- zonage bioclimatique/epi (K-means, 76 provinces)
+|   |   |-- gbm_spatial_temporal.py   <- prediction de cas (LightGBM, commune x mois)
+|   |   |-- pinn_seirv.py             <- PINN SEIR-V (physique vecteur-hote)
+|   |   |-- robust_ensemble_recalibrated.py <- stacking + recalibration
+|   |   |-- model_benchmark.py        <- comparatif etendu (GLM/ZINB/GAM/CatBoost/...)
+|   |   \-- summarize_results.py      <- resume lisible des resultats
 |   |-- analysis/                    <- couche d'analyse complete
 |   |   |-- seasonality.py           <- saisonnalite LCT + climat
 |   |   |-- climate_response.py      <- correlations climat / presence
 |   |   |-- projections.py           <- projections 2030-2100 (SSP126/SSP585)
 |   |   |-- spatial.py               <- clusters spatiaux, Moran's I
 |   |   |-- figures.py               <- generateur de figures publication
+|   |   |-- epi_map.py               <- carte zones bioclimatiques + charge de cas
+|   |   |-- forecast_future.py       <- projections 2025-2045 par commune/province/region
+|   |   |-- generate_full_report.py  <- rapport de verification 2021/2023/2024
 |   |   \-- run_analysis.py          <- lance toute l'analyse
 |   \-- interface/
 |       \-- dashboard.py              <- tableau de bord Flask (carte + risque)
@@ -196,15 +206,14 @@ automatiquement en mode "points".
 
 ## Nettoyage du projet
 
-Lance `CLEANUP.bat` a la racine pour deplacer tous les anciens dossiers
+Le nettoyage a deja ete fait : tous les anciens dossiers exploratoires
 (`data_MSANTE/`, `modelesself/`, `modeles_mathematiques/`, `phlebotomes/`,
-`articles/`, etc.) dans `_archive/`. Rien n'est supprime : tu peux verifier
-puis supprimer `_archive/` une fois que tout marche.
-
-```powershell
-# depuis E:\leishpasteur
-CLEANUP.bat
-```
+l'ancien `main src/` pre-restructure, l'`articles/` racine dedouble avec
+`data/external/`, etc.) vivent dans `_archive/`. Rien n'a ete supprime : tu
+peux verifier puis supprimer `_archive/` une fois que tout marche. La
+methodologie unique de `main src/` qui n'existait nulle part ailleurs a ete
+portee dans `src/` avant archivage (`bioclimatic_zoning.py`, `occupancy_gp.py`,
+`epi_map.py`, `model_benchmark.py` -- voir tableau ci-dessus).
 
 ---
 
@@ -228,6 +237,14 @@ python src/data_prep/build_province_table.py
 python src/models/bayesian_occupancy.py
 python src/models/summarize_results.py
 
+# Zonage bioclimatique/epidemiologique + carte (necessite extract_climate.py + build_environment.py)
+python src/models/bioclimatic_zoning.py
+python src/analysis/epi_map.py
+
+# Variantes / comparatifs de modeles (exploratoire, hors orchestrateur)
+python src/models/occupancy_gp.py       # occupancy bayesien, noyau GP spatial
+python src/models/model_benchmark.py    # GLM/ZINB/GAM/CatBoost/... vs GBM/LightGBM
+
 # Dashboard
 python src/interface/dashboard.py
 # ouvrir http://localhost:5050
@@ -240,6 +257,9 @@ python src/data_prep/download_era5.py --env    # couches environnementales stati
 ## Notes
 
 - Les fichiers volumineux (`.nc`, `.pdf`) restent sur disque mais sont ignores par git.
+  Idem pour les CSV generes volumineux (`commune_panel.csv` et les predictions
+  brutes GBM/PINN/ensemble dans `outputs/processed/`) : regenerables via le
+  pipeline, pas commites.
 - Les anciens dossiers (`modelesself/`, `modeles_mathematiques/`, `phlebotomes/`,
-  `data_MSANTE/`, `facteurs_*`, `interface/`) sont des versions historiques ; le code
-  canonique vit desormais dans `src/`. Ils peuvent etre archives ou supprimes.
+  `data_MSANTE/`, `facteurs_*`, `interface/`, `main src/`, `articles/` racine) sont des versions historiques ; le code
+  canonique vit desormais dans `src/`. Ils sont dans `_archive/` (rien de supprime).

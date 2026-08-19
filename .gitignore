@@ -22,6 +22,15 @@ outputs/posterior/*.nc
 outputs/processed/*.db
 outputs/processed/*.sqlite
 
+# outputs/processed volumineux et regenerables (panel complet, predictions
+# brutes) : on garde seulement les petits résultats de synthese
+# (province_table.csv, rapports, metriques) commités.
+outputs/processed/commune_panel.csv
+outputs/processed/lct_clean.csv
+outputs/processed/ensemble_recalibrated_predictions.csv
+outputs/processed/gbm_predictions_2018_2020.csv
+outputs/processed/pinn_predictions_2018_2020.csv
+
 # Archive locale (vieux dossiers, pas de suppression)
 _archive/
 

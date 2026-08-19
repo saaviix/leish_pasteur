@@ -1,4 +1,4 @@
-﻿id,commune,province,region,latitude,longitude,osm_id
+id,commune,province,region,latitude,longitude,osm_id
 1,Aarab Sebbah Gheris,Errachidia,Drâa-Tafilalet,31.417241,-4.423419,2884807
 2,Aarab Sebbah Ziz,Errachidia,Drâa-Tafilalet,31.487229,-3.994553,2884804
 3,Abadou,El Kelâa des Sraghna,Marrakech-Safi,31.599657,-7.304719,3535387
@@ -16,7 +16,7 @@
 15,Afella Ighir,Chtouka-Aït Baha,Souss-Massa,29.566395,-8.777766,2888750
 16,Afella N'Dra,Ouarzazate,Drâa-Tafilalet,30.807946,-6.507592,2884950
 17,Aferkat,Guelmim,Guelmim-Oued Noun,28.684497,-10.370969,2885950
-18,Afourar,Béni Mellal,Béni Mellal-Khénifra,32.195152,-6.518305,2887189
+18,Afourar,Azilal,Béni Mellal-Khénifra,32.195152,-6.518305,2887189
 19,Afra,Ouarzazate,Drâa-Tafilalet,30.807318,-6.278328,2884952
 20,Afsou,Driouch,Oriental,34.819776,-3.139035,2444881
 21,Agadir,Agadir-Ida Ou Tanane,Souss-Massa,30.422039,-9.580328,2529624
@@ -150,8 +150,8 @@
 149,Ait Yahya,Midelt,Drâa-Tafilalet,32.252935,-5.175913,2827199
 150,Ait Youl,Tinghir,Drâa-Tafilalet,31.311535,-5.979211,2887500
 151,Ait Zineb,Ouarzazate,Drâa-Tafilalet,30.999632,-7.124266,2887637
-152,Ajdir,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,34.769951,-3.940339,2754002
-153,Ajdir,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,35.197139,-3.912523,5954840
+152,Ajdir 1,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,34.769951,-3.940339,2754002
+153,Ajdir 2,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,35.197139,-3.912523,5954840
 154,Akarma,El Kelâa des Sraghna,Marrakech-Safi,31.899763,-7.632837,2881848
 155,Akhfennir,Tan-Tan,Guelmim-Oued Noun,27.936774,-11.901876,2891051
 156,Akka,Tata,Souss-Massa,29.339261,-8.153306,2885797
@@ -915,7 +915,7 @@
 914,Ouaklim,Tinghir,Drâa-Tafilalet,31.449126,-5.654565,2887551
 915,Oualili,Meknès,Fès-Meknès,34.089719,-5.520244,2561366
 916,Oualqadi,Taroudant,Souss-Massa,30.204494,-8.500246,2888913
-917,Ouaouizaght,Béni Mellal,Béni Mellal-Khénifra,32.185449,-6.342207,2887173
+917,Ouaouizaght,Azilal,Béni Mellal-Khénifra,32.185449,-6.342207,2887173
 918,Ouaoula,Azilal,Béni Mellal-Khénifra,31.798365,-6.785562,2887333
 919,Ouaoumana,Khénifra,Béni Mellal-Khénifra,32.689323,-5.826739,2826614
 920,Ouaouzgane,Taounate,Fès-Meknès,35.035846,-4.568968,2563403
@@ -1502,3 +1502,6 @@
 1501,Zoumi,Ouezzane,Tanger-Tétouan-Al Hoceïma,34.791036,-5.361766,2563388
 1502,Zrarda,Taza,Fès-Meknès,33.928597,-4.353851,2810074
 1503,Zrizer,Taounate,Fès-Meknès,34.595445,-4.635476,2754984
+1504,Ouzoud,Azilal,Béni Mellal-Khénifra,32.0152,-6.7189,
+1505,Tamraght,Agadir-Ida Ou Tanane,Souss-Massa,30.511,-9.6773,
+1506,Imi N'Oulaoune,Ouarzazate,Drâa-Tafilalet,31.412,-6.537,

@@ -1,0 +1,11 @@
+[INFO] 13 fichiers mensuels annee par annee detectes
+[INFO] concatenation de 13 fichiers annuels...
+[INFO] concatene : 156 pas de temps (dimension 'valid_time')
+[INFO] temps detecte : valid_time
+[INFO] variables     : {'t2m': 't2m', 'd2m': 'd2m', 'tp': 'tp'}
+[INFO] donnees MENSUELLES detectees (156 pas de temps)
+[INFO] 24 communes relocalisees vers le pixel ERA5 valide le plus proche (pixel initial masque -- typiquement cotier, cf. fix audit)
+[INFO] daily   : 234468 lignes  (commune x jour)
+[INFO] monthly : 234468 lignes (commune x mois, covariables modele)
+[OK] SQLite daily : E:\leishpasteur\outputs\processed\climate_morocco.db
+[OK] covariables : E:\leishpasteur\outputs\processed\communes_climate.csv
